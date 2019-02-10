@@ -1,7 +1,7 @@
 .sidebarWrapper {
     position: fixed;
-    background-color: seagreen;
-    width: 200px;
+    background-color: #040;
+    width: 300px;
     height: 100%;
     transition: left 0.5s ease;
 }
@@ -11,31 +11,43 @@
 }
 
 .sidebarClosed {
-    left: -200px;
+    left: -300px;
 }
 
 .togglebutton {
-    font-size: 20px;
-    width: 40px;
-    height: 50px;
     position: absolute;
-    background-color: rgb(205, 255, 205);
-    border: none;
-    transition: border-radius 0.5s ease, left 0.5s ease;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    outline: none;
+    transition: filter 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .buttonOpen {
-    border-radius: 50% 0 0 50%;
-    left: 160px;
+    background-color: transparent;
+    border: none;
+    left: 240px;
 }
 
-.buttonClose {
-    border-radius: 0 50% 50% 0;
-    left: 200px;
+.buttonOpen:hover {
+    filter: drop-shadow(0 0 5px white);
+}
+
+.buttonClosed {
+    background-color: white;
+    border: 3px solid #040;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #040;
+    padding-top: 5px;
+    left: 310px;
+}
+
+.buttonClosed:hover {
+    box-shadow: 0 0 10px #040;
 }
 
 .sidebar {
-    margin-top: 50px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -43,5 +55,6 @@
 }
 
 h2 {
+    font-size: 32px;
     padding: 30px 0;
 }
