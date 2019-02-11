@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SideBar from "./components/SideBar";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor(){
@@ -51,6 +52,7 @@ class App extends Component {
         <div className={"contentWrapper" + (this.state.sidebarOpen ? " contentShifted" : " contentUnshifted")}>
           <Content />
         </div>
+        <Footer />
       </div>
     );
   }
