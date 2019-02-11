@@ -11,3 +11,9 @@
     align-content: center;
     justify-items: center;
 }
+
+.subNavBar {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0 5px 30px;
+}
