@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideBar.css";
+import SideBarDropMenu from "./SideBarDropMenu";
 import menuimg from "../imgs/menu.png";
 import ximg from "../imgs/x.png";
 import logoimg from "../imgs/logo_placeholder.png";
@@ -30,9 +31,9 @@ class SideBar extends React.Component {
                 </button>
                 <img src={logoimg} width="240px" alt=""/>
                 <div className="sidebar">
-                    <h2>Nuorille</h2>
-                    <h2>Yrityksille</h2>
-                    <h2>Yhteistyötahoille</h2>
+                    <SideBarDropMenu title="Nuorille"/>
+                    <SideBarDropMenu title="Yrityksille"/>
+                    <SideBarDropMenu title="Yhteistyötahoille"/>
                 </div>
             </div>
         );
