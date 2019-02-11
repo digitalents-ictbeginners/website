@@ -2,3 +2,7 @@ h1 {
     /*just for filler*/
     margin: 100px auto 0 auto;
 }
+
+h1:last-child {
+    margin-bottom: 100px;
+}
