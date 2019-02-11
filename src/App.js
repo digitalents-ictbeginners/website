@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import SideBar from "./components/SideBar";
 import Content from "./components/Content";
+import TopNavBar from "./components/TopNavBar";
 
 class App extends Component {
   constructor(){
@@ -26,7 +27,7 @@ class App extends Component {
         this.setState(s => {
             return {
                 mobile: false,
-                sidebarOpen: true
+                sidebarOpen: false
             }
         });
       }
@@ -45,9 +46,10 @@ class App extends Component {
   }
 
   render() {
+    const navComponent = this.state.mobile ? <SideBar parent={this}/> : <TopNavBar />
     return (
       <div className="App">
-        <SideBar parent={this}/>
+        {navComponent}
         <div className={"contentWrapper" + (this.state.sidebarOpen ? " contentShifted" : " contentUnshifted")}>
           <Content />
         </div>
