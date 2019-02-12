@@ -30,10 +30,6 @@
     left: 240px;
 }
 
-.buttonOpen:hover {
-    filter: drop-shadow(0 0 5px white);
-}
-
 .buttonClosed {
     background-color: white;
     border: 3px solid #040;
@@ -41,10 +37,6 @@
     box-shadow: 0 0 5px #040;
     padding-top: 5px;
     left: 310px;
-}
-
-.buttonClosed:hover {
-    box-shadow: 0 0 10px #040;
 }
 
 .sidebar {

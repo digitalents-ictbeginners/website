@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div className="App">
         {navComponent}
-        <div className={"contentWrapper" + (this.state.sidebarOpen ? " contentShifted" : " contentUnshifted")}>
+        <div className="contentWrapper">
           <Content />
         </div>
         <Footer />

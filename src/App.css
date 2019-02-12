@@ -4,13 +4,5 @@
 }
 
 .contentWrapper {
-    transition: margin-left 0.5s ease;
-}
-
-.contentUnshifted {
     margin-left: 20px;
-}
-
-.contentShifted {
-    margin-left: 320px;
 }
