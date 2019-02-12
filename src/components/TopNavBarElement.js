@@ -19,7 +19,7 @@ class TopNavBarElement extends React.Component {
         });
         this.props.parent.setState(s => {
             return {
-                openIndex: this.props.id
+                openIndex: this.props.index
             }
         });
     }
