@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import './App.css';
 import navData from "./navData.json";
 import SideBar from "./components/SideBar";
@@ -51,6 +52,9 @@ class App extends Component {
     const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar data={navData.navdata}/>
     return (
       <div className="App">
+        <Helmet>
+          <title>ICT Beginners</title>
+        </Helmet>
         {navComponent}
         <div className="contentWrapper">
           <Content />
