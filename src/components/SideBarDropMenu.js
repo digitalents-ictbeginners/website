@@ -2,8 +2,8 @@ import React from "react";
 import "./SideBarDropMenu.css";
 
 class SideBarDropMenu extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             dropMenuOpen: false
         }
@@ -21,14 +21,16 @@ class SideBarDropMenu extends React.Component {
 
     render(){
         const openClass = this.state.dropMenuOpen ? "sidebarSublinksContainer sscOpen" : "sidebarSublinksContainer";
+        const links = this.props.data.map(e => {
+            return(
+                <a href={e.link}>{e.name}</a>
+            );
+        });
         return (
             <div className="sidebarDropMenu">
                 <h2 onClick={this.handleClick} className="sidebarCategoryTitle">{this.props.title}</h2>
                 <div className={openClass}>
-                    <a href="none">Link here</a>
-                    <a href="none">Link here</a>
-                    <a href="none">Link here</a>
-                    <a href="none">Link here</a>
+                    {links}
                 </div>
             </div>
         );

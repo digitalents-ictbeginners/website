@@ -48,7 +48,7 @@ class App extends Component {
   }
 
   render() {
-    const navComponent = this.state.mobile ? <SideBar parent={this}/> : <TopNavBar data={navData.topNav}/>
+    const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar data={navData.navdata}/>
     return (
       <div className="App">
         {navComponent}

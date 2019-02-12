@@ -6,8 +6,8 @@ import ximg from "../imgs/x.png";
 import logoimg from "../imgs/logo_placeholder.png";
 
 class SideBar extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.handleButton = this.handleButton.bind(this);
     }
 
@@ -24,6 +24,11 @@ class SideBar extends React.Component {
         const openstateClass = "sidebarWrapper" + (parentState.sidebarOpen ? " sidebarOpen" : " sidebarClosed");
         const buttonClass = "togglebutton" + (parentState.sidebarOpen ? " buttonOpen" : " buttonClosed");
         const buttonImg = parentState.sidebarOpen ? ximg : menuimg;
+        const categories = this.props.data.map(e =>{
+            return (
+                <SideBarDropMenu key={e.id} title={e.title} data={e.subLinks}/>
+            );
+        });
         return (
             <div className={openstateClass}>
                 <button onClick={this.handleButton} className={buttonClass}>
@@ -31,9 +36,7 @@ class SideBar extends React.Component {
                 </button>
                 <img src={logoimg} width="240px" alt=""/>
                 <div className="sidebar">
-                    <SideBarDropMenu title="Nuorille"/>
-                    <SideBarDropMenu title="Yrityksille"/>
-                    <SideBarDropMenu title="Yhteistyötahoille"/>
+                    {categories}
                 </div>
             </div>
         );
