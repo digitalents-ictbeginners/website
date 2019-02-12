@@ -19,7 +19,7 @@ class TopNavBarElement extends React.Component {
         const openClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem tnbElemClosed";
         return (
             <div onMouseEnter={this.handleHover} className={openClass}>
-                Element
+                {this.props.title}
             </div>
         );
     }

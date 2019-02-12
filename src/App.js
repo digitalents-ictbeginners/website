@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import navData from "./navData.json";
 import SideBar from "./components/SideBar";
 import Content from "./components/Content";
 import TopNavBar from "./components/TopNavBar";
@@ -47,7 +48,7 @@ class App extends Component {
   }
 
   render() {
-    const navComponent = this.state.mobile ? <SideBar parent={this}/> : <TopNavBar />
+    const navComponent = this.state.mobile ? <SideBar parent={this}/> : <TopNavBar data={navData.topNav}/>
     return (
       <div className="App">
         {navComponent}
