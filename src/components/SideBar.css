@@ -1,6 +1,6 @@
 .sidebarWrapper {
     position: fixed;
-    background-color: #040;
+    background-color: #55e;
     width: 300px;
     height: 100%;
     transition: left 0.5s ease;
@@ -32,9 +32,9 @@
 
 .buttonClosed {
     background-color: white;
-    border: 3px solid #040;
+    border: 3px solid #55e;
     border-radius: 50%;
-    box-shadow: 0 0 5px #040;
+    box-shadow: 0 0 5px #55e;
     padding-top: 5px;
     left: 310px;
 }

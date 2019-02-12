@@ -9,7 +9,7 @@
         {"id": 1, "name": "Tilauslomake", "link": "linkhere"},
         {"id": 2, "name": "CV-Pankki", "link": "linkhere"}
     ]},
-    {"id": 2, "title": "Yhteistyökumppaneille", "subLinks": [
+    {"id": 2, "title": "Yhteistyötahoille", "subLinks": [
         {"id": 0, "name": "TE-työntekijät", "link": "linkhere"},
         {"id": 1, "name": "Digitalents", "link": "linkhere"}
     ]}
