@@ -1,6 +1,6 @@
 {"navdata": [
     {"id": 0, "title": "Esittely", "link": "/", "subLinks": [
-        {"id": 0, "name": "Mikä?", "link": "/#hakuinfo"},
+        {"id": 0, "name": "Hakuinfo", "link": "#hakuinfo"},
         {"id": 1, "name": "Miten?", "link": "linkhere"},
         {"id": 2, "name": "Missä?", "link": "linkhere"}
     ]},
