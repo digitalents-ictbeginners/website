@@ -59,7 +59,7 @@ class App extends Component {
           </Helmet>
           {navComponent}
           <div className="contentWrapper">
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" render={props => <Home {...props} mobile={true}/>} />
           </div>
           <Footer />
         </div>

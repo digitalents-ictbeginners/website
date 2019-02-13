@@ -16,7 +16,7 @@ class TopNavBar extends React.Component {
         const navElements = [];
         const subNavBars = [];
         this.props.data.forEach(e => {
-            navElements.push(<TopNavBarElement key={e.id} parent={this} index={e.id} openid={this.state.openIndex} title={e.title}/>);
+            navElements.push(<TopNavBarElement key={e.id} parent={this} index={e.id} openid={this.state.openIndex} link={e.link} title={e.title}/>);
             subNavBars.push(<SubNavBar data={e.subLinks}/>);
         });
         return (

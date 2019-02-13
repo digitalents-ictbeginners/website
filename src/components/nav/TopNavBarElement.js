@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./TopNavBarElement.css";
 
 class TopNavBarElement extends React.Component {
@@ -19,7 +20,7 @@ class TopNavBarElement extends React.Component {
         const openClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem tnbElemClosed";
         return (
             <div onMouseEnter={this.select} onClick={this.select} className={openClass}>
-                {this.props.title}
+                <Link to={this.props.link}>{this.props.title}</Link>
             </div>
         );
     }

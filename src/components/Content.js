@@ -14,7 +14,7 @@ class Content extends React.Component{
             <main>
                 <div style={imgStyle} className="container">
                     <img src={logo} alt="" className="logo" />
-                    <h4 className="subtitle">ICT Beginners ... </h4>
+                    <h4 className="subtitle">{this.props.title}</h4>
                 </div>
             </main>
         );
