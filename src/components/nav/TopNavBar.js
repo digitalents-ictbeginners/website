@@ -11,7 +11,6 @@ class TopNavBar extends React.Component {
         this.state = {
             openIndex: 0
         }
-        console.log(this.props.data);
     }
     render(){
         const navElements = [];

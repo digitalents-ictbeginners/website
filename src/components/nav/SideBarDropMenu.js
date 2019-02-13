@@ -23,7 +23,7 @@ class SideBarDropMenu extends React.Component {
         const openClass = this.state.dropMenuOpen ? "sidebarSublinksContainer sscOpen" : "sidebarSublinksContainer";
         const links = this.props.data.map(e => {
             return(
-                <a href={e.link}>{e.name}</a>
+                <a key={e.id} href={e.link}>{e.name}</a>
             );
         });
         return (
