@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import './App.css';
 import navData from "./navData.json";
-import SideBar from "./components/SideBar";
+import SideBar from "./components/nav/SideBar";
 import Content from "./components/Content";
-import TopNavBar from "./components/TopNavBar";
+import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
 
 class App extends Component {

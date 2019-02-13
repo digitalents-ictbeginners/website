@@ -1,9 +1,9 @@
 import React from "react";
 import "./SideBar.css";
 import SideBarDropMenu from "./SideBarDropMenu";
-import menuimg from "../imgs/menu.png";
-import ximg from "../imgs/x.png";
-import logoimg from "../imgs/logo_placeholder.png";
+import menuimg from "../../imgs/menu.png";
+import ximg from "../../imgs/x.png";
+import logoimg from "../../imgs/logo_placeholder.png";
 
 class SideBar extends React.Component {
     constructor(props){

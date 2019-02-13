@@ -3,7 +3,7 @@ import "./TopNavBar.css";
 import "./TopNavBarElement";
 import TopNavBarElement from "./TopNavBarElement";
 import SubNavBar from "./SubNavBar";
-import logo from "../imgs/logo_placeholder.png";
+import logo from "../../imgs/logo_placeholder.png";
 
 class TopNavBar extends React.Component {
     constructor(props){
