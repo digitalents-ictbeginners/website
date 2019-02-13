@@ -1,6 +1,6 @@
 {"navdata": [
     {"id": 0, "title": "Nuorille", "subLinks": [
-        {"id": 0, "name": "Mikä?", "link": "linkhere"},
+        {"id": 0, "name": "Mikä?", "link": "/"},
         {"id": 1, "name": "Miten?", "link": "linkhere"},
         {"id": 2, "name": "Missä?", "link": "linkhere"}
     ]},

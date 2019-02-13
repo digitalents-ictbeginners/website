@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
 import navData from "./navData.json";
 import SideBar from "./components/nav/SideBar";
-import Content from "./components/Content";
 import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
 
@@ -51,16 +52,18 @@ class App extends Component {
   render() {
     const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar data={navData.navdata}/>
     return (
-      <div className="App">
-        <Helmet>
-          <title>ICT Beginners</title>
-        </Helmet>
-        {navComponent}
-        <div className="contentWrapper">
-          <Content />
+      <Router>
+        <div className="App">
+          <Helmet>
+            <title>ICT Beginners</title>
+          </Helmet>
+          {navComponent}
+          <div className="contentWrapper">
+            <Route exact path="/" component={Home} />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
