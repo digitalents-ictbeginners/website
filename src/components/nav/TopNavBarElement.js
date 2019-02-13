@@ -4,10 +4,10 @@ import "./TopNavBarElement.css";
 class TopNavBarElement extends React.Component {
     constructor(props){
         super(props);
-        this.handleHover = this.handleHover.bind(this);
+        this.select = this.select.bind(this);
     }
 
-    handleHover(){
+    select(){
         this.props.parent.setState(s => {
             return {
                 openIndex: this.props.index
@@ -18,7 +18,7 @@ class TopNavBarElement extends React.Component {
     render(){
         const openClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem tnbElemClosed";
         return (
-            <div onMouseEnter={this.handleHover} className={openClass}>
+            <div onMouseEnter={this.select} onClick={this.select} className={openClass}>
                 {this.props.title}
             </div>
         );

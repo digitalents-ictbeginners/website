@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 class App extends Component {
   constructor(){
     super();
-    this.VIEW_THRESHOLD = 1000;
+    this.VIEW_THRESHOLD = 600;
     this.state = {
       mobile: true,
       sidebarOpen: false
