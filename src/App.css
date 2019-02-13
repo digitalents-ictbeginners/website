@@ -2,3 +2,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.contentWrapper {
+    position: fixed;
+    overflow: scroll;
+    height: 100%;
+    z-index: -1;
+}
+
+.appMobile {
+    margin-top: 0;
+}
+
+.appDesktop {
+    margin-top: 95px;
+}

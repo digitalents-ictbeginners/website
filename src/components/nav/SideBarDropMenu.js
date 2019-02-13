@@ -11,7 +11,6 @@ class SideBarDropMenu extends React.Component {
     }
 
     handleClick(){
-        console.log("test");
         this.setState(s => {
             return {
                 dropMenuOpen: !s.dropMenuOpen

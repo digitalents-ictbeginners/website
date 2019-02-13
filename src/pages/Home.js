@@ -16,10 +16,9 @@ export default class Home extends React.Component {
     const textBlocks = data.content.map(e => {
       return <TextBlock data={e}/>
     });
-    const mobileClass = this.props.mobile ? "container contMobile" : "container contDesktop";
     return (
       <main>
-        <div style={imgStyle} className={mobileClass}>
+        <div style={imgStyle} className="container">
             <img src={logo} alt="" className="logo" />
             <h4 className="subtitle">{data.slogan}</h4>
         </div>

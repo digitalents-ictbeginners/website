@@ -14,7 +14,7 @@ class TextBlock extends React.Component {
             )
         });
         return (
-            <div id={data.id} className="textBlock">
+            <div style={{scrollTop: "100px"}} id={data.id} className="textBlock">
                 <h2>{data.title}</h2>
                 {subElements}
             </div>

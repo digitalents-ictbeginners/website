@@ -51,6 +51,7 @@ class App extends Component {
 
   render() {
     const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar data={navData.navdata}/>
+    const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
       <Router>
         <div className="App">
@@ -58,10 +59,10 @@ class App extends Component {
             <title>ICT Beginners</title>
           </Helmet>
           {navComponent}
-          <div className="contentWrapper">
+          <div className={viewClass}>
             <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile}/>} />
+            <Footer />
           </div>
-          <Footer />
         </div>
       </Router>
     );
