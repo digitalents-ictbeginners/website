@@ -3,3 +3,8 @@
     grid-auto-flow: column;
     justify-items: center;
 }
+
+.subNavBar div a:any-link {
+    text-decoration: none;
+    color: #000;
+}
