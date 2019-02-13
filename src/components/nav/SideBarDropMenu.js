@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 import "./SideBarDropMenu.css";
 
 class SideBarDropMenu extends React.Component {
@@ -22,7 +23,7 @@ class SideBarDropMenu extends React.Component {
         const openClass = this.state.dropMenuOpen ? "sidebarSublinksContainer sscOpen" : "sidebarSublinksContainer";
         const links = this.props.data.map(e => {
             return(
-                <a key={e.id} href={e.link}>{e.name}</a>
+                <div key={e.id}><Link to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
             );
         });
         return (
