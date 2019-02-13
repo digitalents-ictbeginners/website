@@ -5,10 +5,11 @@ class TextBlock extends React.Component {
     render(){
         const data = this.props.data;
         const subElements = data.texts.map(e => {
+            let html  = {__html: e.text};
             return (
                 <div>
                     <h3>{e.subtitle}</h3>
-                    <p>{e.text}</p>
+                    <p dangerouslySetInnerHTML={html}></p>
                 </div>
             )
         });
