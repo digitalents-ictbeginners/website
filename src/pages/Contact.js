@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import data from "../Contact.json";
 import TextBlock from "../components/TextBlock";
+import People from "../components/People";
 
 class Contact extends React.Component {
 
@@ -14,7 +15,7 @@ class Contact extends React.Component {
             }
         });
     }
-    
+
     render(){
         const map = `<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.919258654117588%2C60.16585541850837%2C24.92373794317246%2C60.16704165634451&amp;layer=mapnik&amp;marker=60.16644854277959%2C24.92149829864502" style="border: 1px solid black"></iframe>
         <br/>
@@ -27,9 +28,9 @@ class Contact extends React.Component {
           });
         return (
             <div>
-                {textBlocks[0]}
+                {textBlocks}
                 <div className="map" dangerouslySetInnerHTML={html} ></div>
-                {textBlocks[1]}
+                <People />
             </div>
         );
     }
