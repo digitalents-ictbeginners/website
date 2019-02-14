@@ -10,6 +10,6 @@
     ]},
     {"id": 2, "title": "Yhteystiedot", "link": "/yhteystiedot", "subLinks": [
         {"id": 0, "name": "Sijainti", "link": "/yhteystiedot#sijainti"},
-        {"id": 1, "name": "Ihmiset", "link": "linkhere"}
+        {"id": 1, "name": "Ihmiset", "link": "/yhteystiedot#ihmiset"}
     ]}
 ]}

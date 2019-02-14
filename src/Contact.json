@@ -19,6 +19,24 @@
             ]
           }
         ]
+      },
+      {
+        "id": "ihmiset",
+        "title":  "Ihmiset",
+        "texts": [
+          {
+            "subtitle": "Kouluttaja",
+            "text": [
+              "Krishna Regmi","09 310 23369, 040 5080336","krishna.regmi(at)edu.hel.fi"
+            ]
+          },
+          {
+            "subtitle": "Työvalmentaja",
+            "text": [
+              "Arto Aitta","09 310 20374, 040 829 1342","arto.aitta(at)edu.hel.fi"
+            ]
+          }
+        ]
       }
    ]
 }

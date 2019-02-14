@@ -16,8 +16,9 @@ class Contact extends React.Component {
           });
         return (
             <div>
-                {textBlocks}
+                {textBlocks[0]}
                 <div className="map" dangerouslySetInnerHTML={html} ></div>
+                {textBlocks[1]}
             </div>
         );
     }
