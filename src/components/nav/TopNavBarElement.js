@@ -9,9 +9,9 @@ class TopNavBarElement extends React.Component {
     }
 
     select(){
-        this.props.parent.setState(s => {
+        this.props.app.setState(s => {
             return {
-                openIndex: this.props.index
+                navTab: this.props.index
             }
         });
     }
