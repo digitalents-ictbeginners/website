@@ -1,60 +1,26 @@
 import React from "react";
+import data from "../Contact.json";
 import "./People.css";
 
 class People extends React.Component{
     //TODO: Import person-elements from json
     //Also maybe add a picture for each person
     render(){
+        const people = data.people.map(e => {
+            return (
+                <div className="person">
+                    <h3>{e.name}</h3>
+                    <h4>{e.title}</h4>
+                    <h4>{e.landline}</h4>
+                    <h4>{e.mobile}</h4>
+                    <h4>{e.email}</h4>
+                </div>
+            );
+        });
+
         return (
             <div className="peopleGrid">
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
-                <div className="person">
-                    <h3>Etunimi Sukunimi</h3>
-                    <h4>Titteli/Rooli/Asema</h4>
-                    <h4>040 1235678</h4>
-                    <h4>etunimi.sukunimi@hel.fi</h4>
-                </div>
+                {people}
             </div>
         );
     }

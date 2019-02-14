@@ -5,9 +5,6 @@ import './Location.css'
 export default class Location extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      location: data.content[0]
-    }
   }
   
   render() {
@@ -17,15 +14,13 @@ export default class Location extends React.Component {
     return (
       <div>
         <div className="locationBlock">
-          <h2>{this.state.location.title}</h2>
-          {this.state.location.texts.map((location, id) => (
-            <div>
-              <h3>{location.subtitle}</h3>
-              {location.text.map((paragraph, id) => (
-                <p>{paragraph}</p>
-              ))}
-            </div>
-          ))}
+          <h2>Sijainti</h2>
+          <div>
+            <h3>Käyntiosoite</h3>
+            <p>{data.location.visitaddress}</p>
+            <h3>Postiosoite</h3>
+            <p>{data.location.postaddress}</p>
+          </div>
         </div>
         <div className="map" dangerouslySetInnerHTML={html} ></div>
       </div>

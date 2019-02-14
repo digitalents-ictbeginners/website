@@ -1,24 +1,37 @@
 {
     "id": "contact",
-    "slogan": "ICT Beginners ...",
-    "content": [
-      {
-        "id": "sijainti",
-        "title":  "Sijainti",
-        "texts": [
-          {
-            "subtitle": "Käyntiosoite",
-            "text": [
-              "Lapinlahdenkatu 16, 00101 Helsinki"
-            ]
-          },
-          {
-            "subtitle": "Postiosoite",
-            "text": [
-              "PL 18201, 00099 Helsingin kaupunki"
-            ]
-          }
-        ]
-      }
-   ]
+    "location": {
+        "visitaddress": "address",
+        "postaddress": "address2"
+    },
+    "people": [
+        {
+            "name": "name",
+            "title": "title",
+            "landline": "0351315",
+            "mobile": "0401241251",
+            "email": "afef.eafae@hel.fi"
+        },
+        {
+            "name": "name",
+            "title": "title",
+            "landline": "0351315",
+            "mobile": "0401241251",
+            "email": "afef.eafae@hel.fi"
+        },
+        {
+            "name": "name",
+            "title": "title",
+            "landline": "0351315",
+            "mobile": "0401241251",
+            "email": "afef.eafae@hel.fi"
+        },
+        {
+            "name": "name",
+            "title": "title",
+            "landline": "0351315",
+            "mobile": "0401241251",
+            "email": "afef.eafae@hel.fi"
+        }
+    ]
 }
