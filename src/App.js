@@ -16,7 +16,8 @@ class App extends Component {
     this.VIEW_THRESHOLD = 600;
     this.state = {
       mobile: true,
-      sidebarOpen: false
+      sidebarOpen: false,
+      navTab: 0
     }
     this.setView = this.setView.bind(this);
     window.addEventListener("resize", this.setView);
@@ -33,7 +34,8 @@ class App extends Component {
         this.setState(s => {
             return {
                 mobile: false,
-                sidebarOpen: false
+                sidebarOpen: false,
+                navTab: s.navTab
             }
         });
       }
@@ -44,7 +46,8 @@ class App extends Component {
         this.setState(s => {
           return {
               mobile: true,
-              sidebarOpen: false
+              sidebarOpen: false,
+              navTab: s.navTab
           }
       });
       }
@@ -52,7 +55,7 @@ class App extends Component {
   }
 
   render() {
-    const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar data={navData.navdata}/>
+    const navComponent = this.state.mobile ? <SideBar parent={this} data={navData.navdata}/> : <TopNavBar parent={this} data={navData.navdata} openTab={this.state.navTab}/>
     const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
       <Router>
@@ -62,9 +65,9 @@ class App extends Component {
           </Helmet>
           {navComponent}
           <div className={viewClass}>
-            <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile}/>} />
-            <Route path="/yhteystiedot" component={Contact} />
-            <Route path="/yrityksille" component={Business} />
+            <Route exact path="/" render={props => <Home {...props} app={this} mobile={this.state.mobile} navId={0}/>} />
+            <Route exact path="/yrityksille" render={props => <Business {...props} app={this} mobile={this.state.mobile} navId={1}/>} />
+            <Route exact path="/yhteystiedot" render={props => <Contact {...props} app={this} mobile={this.state.mobile} navId={2}/>} />
             <Footer />
           </div>
         </div>

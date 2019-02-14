@@ -1,2 +1,2 @@
-- Navigointipalkki näyttämään oikeata tabia sivulle mennessä
+- DONE: Navigointipalkki näyttämään oikeata tabia sivulle mennessä
 - Kartta samaan elementtiin sijaintitekstin kanssa

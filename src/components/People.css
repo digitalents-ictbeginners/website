@@ -1,0 +1,20 @@
+.peopleGrid {
+    background-color: lightgray;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.person {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.person h3 {
+    text-align: center;
+}
+
+.person h4 {
+    text-align: center;
+}

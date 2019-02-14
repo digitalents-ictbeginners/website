@@ -12,6 +12,16 @@ const imgStyle = {
 
 export default class Home extends React.Component {
   
+  componentDidMount(){
+    this.props.app.setState(s => {
+        return {
+            mobile: s.mobile,
+            sidebarOpen: s.sidebarOpen,
+            navTab: this.props.navId
+        }
+    });
+}
+
   render() {
     const textBlocks = data.content.map(e => {
       return <TextBlock data={e}/>
