@@ -1,0 +1,12 @@
+.locationBlock {
+  background-color: lightgray;
+  padding: 30px;
+}
+
+.locationBlock h2 {
+  margin: 0;
+}
+
+.locationBlock p {
+  margin: 0 0 10px 0;
+}
