@@ -3,7 +3,6 @@ import data from "../Contact.json";
 import "./People.css";
 
 class People extends React.Component{
-    //TODO: Import person-elements from json
     //Also maybe add a picture for each person
     render(){
         const people = data.people.map(e => {
