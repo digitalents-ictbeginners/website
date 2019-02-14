@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Contact from "./pages/Contact";
+import Business from "./pages/Business";
 import navData from "./navData.json";
 import SideBar from "./components/nav/SideBar";
 import TopNavBar from "./components/nav/TopNavBar";
@@ -63,6 +64,7 @@ class App extends Component {
           <div className={viewClass}>
             <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile}/>} />
             <Route path="/yhteystiedot" component={Contact} />
+            <Route path="/yrityksille" component={Business} />
             <Footer />
           </div>
         </div>

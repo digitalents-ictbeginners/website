@@ -1,5 +1,5 @@
 {
-    "id": "home",
+    "id": "contact",
     "slogan": "ICT Beginners ...",
     "content": [
       {
@@ -20,5 +20,5 @@
           }
         ]
       }
-    ]
-  }
+   ]
+}

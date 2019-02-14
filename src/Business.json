@@ -1,0 +1,18 @@
+{
+    "id": "business",
+    "slogan": "ICT Beginners ...",
+    "content": [
+      {
+        "id": "wip",
+        "title":  "Under Construction",
+        "texts": [
+          {
+            "subtitle": "Under Construction",
+            "text": [
+              "Under Construction"
+            ]
+          }
+        ]
+      }
+   ]
+}
