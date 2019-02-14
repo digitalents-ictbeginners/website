@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
+import Contact from "./pages/Contact";
 import navData from "./navData.json";
 import SideBar from "./components/nav/SideBar";
 import TopNavBar from "./components/nav/TopNavBar";
@@ -61,6 +62,7 @@ class App extends Component {
           {navComponent}
           <div className={viewClass}>
             <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile}/>} />
+            <Route path="/yhteystiedot" component={Contact} />
             <Footer />
           </div>
         </div>

@@ -1,0 +1,24 @@
+{
+    "id": "home",
+    "slogan": "ICT Beginners ...",
+    "content": [
+      {
+        "id": "sijainti",
+        "title":  "Sijainti",
+        "texts": [
+          {
+            "subtitle": "Käyntiosoite",
+            "text": [
+              "Lapinlahdenkatu 16, 00101 Helsinki"
+            ]
+          },
+          {
+            "subtitle": "Postiosoite",
+            "text": [
+              "PL 18201, 00099 Helsingin kaupunki"
+            ]
+          }
+        ]
+      }
+    ]
+  }
