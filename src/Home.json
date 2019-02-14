@@ -8,15 +8,20 @@
       "texts": [
         {
           "subtitle": "Kuka voi hakea",
-          "text": "Pajalle voivat hakea 16-29 vuotiaat helsinkiläiset nuoret, jotka ovat työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa."
+          "text": [
+            "Pajalle voivat hakea 16-29 vuotiaat helsinkiläiset nuoret, jotka ovat työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa."
+          ]
         },
         {
           "subtitle": "Työkokeilujaksot",
-          "text": "Voit päästä pajoille työkokeiluun 1-6 kuukauden jaksolle. Pajoilla toteutetaan, TE-toimiston työkokeilua tai Stadin ammattiopiston osaamisen hankkimista työpajalla . Työkokeilu työpajalla antaa mahdollisuuden tutustua ja hankkia kokemusta kyseisiltä aloilta. Työpajan jälkeisiä mahdollisia jatkopolkuja ovat: oppisopimus, opiskelupaikka tai työpaikka. Työkokeiluajalta maksetaan työmarkkinatukea."
+          "text": [
+            "Voit päästä pajoille työkokeiluun 1-6 kuukauden jaksolle. Pajoilla toteutetaan, TE-toimiston työkokeilua tai Stadin ammattiopiston osaamisen hankkimista työpajalla . Työkokeilu työpajalla antaa mahdollisuuden tutustua ja hankkia kokemusta kyseisiltä aloilta. Työpajan jälkeisiä mahdollisia jatkopolkuja ovat: oppisopimus, opiskelupaikka tai työpaikka. Työkokeiluajalta maksetaan työmarkkinatukea."
+          ]
         },
         {
           "subtitle": "Miten hakea",
-          "text": "Haku työpajalle on käynnissä jatkuvasti. Kaikilla pajoilla on toimintaa elokuun puolivälistä kesäkuun loppuun saakka. Ryhmän aloitus on aina kuun ensimmäisenä maanantaina, kun on vapaita paikkoja. Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan. Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian."
+          "text": ["Haku työpajalle on käynnissä jatkuvasti. Kaikilla pajoilla on toimintaa elokuun puolivälistä kesäkuun loppuun saakka. Ryhmän aloitus on aina kuun ensimmäisenä maanantaina, kun on vapaita paikkoja. Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan. Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian."
+          ]
         }
       ]
     },
@@ -26,11 +31,16 @@
       "texts": [
         {
           "subtitle": "Mitä pajalla tehdään?",
-          "text": "Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.<br /><br />Työpajatoiminta on matalan kynnyksen toimintaa, johon voi osallistua lähtötasosta riippumatta. Sisältö räätälöidään jokaiselle sopivaksi, niin että sekä vasta-alkajat kuin alan parissa jo pidempään pyörineet saavat sopivaa haastetta ja laadukasta ammattimaista ohjausta, alan tämänhetkiset vaatimukset huomioiden. Pajajakson alussa kartoitetaan kunkin nuoren tavoitteet ja tehdään suunnitelma mitä pajajaksolla halutaan saavuttaa, niin ammatillisesti kuin sosiaalisessa ja henkilökohtaisessa kontekstissa.<br /><br />Pajajakson aikana pyritään antamaan avaimia ja eväitä nuorten tulevaisuuteen. Tavoitteena on jatkopoluttaa nuoria koulutukseen, työelämään tai muuhun ohjattuun tukitoimintaan nuoren elämäntilanne ja lähtökohdat huomioiden. Työpajalla ollaan työkokeilussa ja siellä pätevät työelämän pelisäännöt ja lainalaisuudet."
+          "text": ["Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.",
+          "Työpajatoiminta on matalan kynnyksen toimintaa, johon voi osallistua lähtötasosta riippumatta. Sisältö räätälöidään jokaiselle sopivaksi, niin että sekä vasta-alkajat kuin alan parissa jo pidempään pyörineet saavat sopivaa haastetta ja laadukasta ammattimaista ohjausta, alan tämänhetkiset vaatimukset huomioiden. Pajajakson alussa kartoitetaan kunkin nuoren tavoitteet ja tehdään suunnitelma mitä pajajaksolla halutaan saavuttaa, niin ammatillisesti kuin sosiaalisessa ja henkilökohtaisessa kontekstissa.",
+          "Pajajakson aikana pyritään antamaan avaimia ja eväitä nuorten tulevaisuuteen. Tavoitteena on jatkopoluttaa nuoria koulutukseen, työelämään tai muuhun ohjattuun tukitoimintaan nuoren elämäntilanne ja lähtökohdat huomioiden. Työpajalla ollaan työkokeilussa ja siellä pätevät työelämän pelisäännöt ja lainalaisuudet."
+          ]
         },
         {
           "subtitle": "Tilat ja teknologiat",
-          "text": "Pajalla käytetään useita eri teknologioita riippuen nuoren osaamistasosta ja mielenkiinnonkohteista. Yleinen suunta on kuitekin web design/development-painotteista, ja usein pajalaiset aloittavatkin HTML5, CSS3 sekä JavaScript-kielien oppimateriaaleista ja tutustuvat mm. React-kirjastoon. Kehityksessä käytetään työkaluna myös Adobe XD-ohjelmaa nettisivujen ulkoasun suunnitteluun. Muita teknologioita joita opiskellaan tarpeen, mahdollisuuksien  ja mielenkiinnon mukaan ovat mm. Unity, Java, Adobe CC, Python ja Scrum.<br /><br />Pajalla on yhteensä 20(?) tietokonepaikkaa, joista viisi ovat iMac-koneita ja loput PC-paikkoja. Pajalainen saa käyttöönsä tietokoneen sekä omat kuulokkeet, josta nuori on itse vastuussa. Tilassa on käytössä myös tulostin, sekä Digitalentsin palvelut ja välineet ovat pajalaisen lainattavissa (esim. kamerat ja kuvauspalvelut)."
+          "text": ["Pajalla käytetään useita eri teknologioita riippuen nuoren osaamistasosta ja mielenkiinnonkohteista. Yleinen suunta on kuitekin web design/development-painotteista, ja usein pajalaiset aloittavatkin HTML5, CSS3 sekä JavaScript-kielien oppimateriaaleista ja tutustuvat mm. React-kirjastoon. Kehityksessä käytetään työkaluna myös Adobe XD-ohjelmaa nettisivujen ulkoasun suunnitteluun. Muita teknologioita joita opiskellaan tarpeen, mahdollisuuksien  ja mielenkiinnon mukaan ovat mm. Unity, Java, Adobe CC, Python ja Scrum.",
+          "Pajalla on yhteensä 20(?) tietokonepaikkaa, joista viisi ovat iMac-koneita ja loput PC-paikkoja. Pajalainen saa käyttöönsä tietokoneen sekä omat kuulokkeet, josta nuori on itse vastuussa. Tilassa on käytössä myös tulostin, sekä Digitalentsin palvelut ja välineet ovat pajalaisen lainattavissa (esim. kamerat ja kuvauspalvelut)."
+          ]
         }
       ]
     }
