@@ -1,6 +1,17 @@
 {
   "id": "home",
   "slogan": "ICT Beginners ...",
+  "shortcuts": [
+    {
+      "name": "Hae nyt!", "link": "/#hakuinfo"
+    },
+    {
+      "name": "Toimintamme", "link": "/#toiminta"
+    },
+    {
+      "name": "Yhteystiedot", "link": "/yhteystiedot#sijainti"
+    }
+  ],
   "content": [
     {
       "id": "hakuinfo",

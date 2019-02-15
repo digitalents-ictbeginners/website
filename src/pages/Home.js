@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
 import data from '../Home.json';
 import image from "../imgs/office.jpg"
@@ -26,11 +27,17 @@ export default class Home extends React.Component {
     const textBlocks = data.content.map(e => {
       return <TextBlock data={e}/>
     });
+    const shortcuts = data.shortcuts.map(e => {
+      return <div className="shortcut"><Link className="shortcutLink" to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
+    });
     return (
       <main>
         <div style={imgStyle} className="container">
             <img src={logo} alt="" className="logo" />
             <h4 className="subtitle">{data.slogan}</h4>
+            <div className="shortcutContainer">
+              {shortcuts}
+            </div>
         </div>
         {textBlocks}
       </main>

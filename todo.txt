@@ -2,4 +2,4 @@
 - DONE: Kartta samaan elementtiin sijaintitekstin kanssa
 - DONE: Paranna sijaintielementin ulkonäköä ja responsiivisuutta
 - DONE: Mobiilinäkymässä sulje sivupalkki navigoitaessa
-- Etusivun etunäkymään oikopolkulinkit
+- DONE: Etusivun etunäkymään oikopolkulinkit
