@@ -1,9 +1,15 @@
-.locationBlock {
+.location {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 30px 30px 0 0;
+}
+
+.locationInfo {
   display: flex;
   flex-flow: column;
   align-items: center;
   text-align: center;
-  background-color: lightgray;
   padding: 30px;
 }
 
@@ -17,4 +23,9 @@
 
 .locationBlock p {
   margin: 0 0 10px 0;
+}
+
+.map {
+  width: 100%;
+  padding-left: 5px;
 }
