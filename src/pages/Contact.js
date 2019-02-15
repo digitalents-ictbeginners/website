@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import data from "../Contact.json";
-import TextBlock from "../components/TextBlock";
 import Location from "../components/Location";
 import People from "../components/People";
 
@@ -20,8 +19,8 @@ class Contact extends React.Component {
     render(){
         return (
             <div>
-                <Location />
-                <People />
+                <Location data={data} />
+                <People data={data}/>
             </div>
         );
     }

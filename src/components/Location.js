@@ -1,5 +1,4 @@
 import React from 'react'
-import data from '../Contact.json'
 import './Location.css'
 
 export default class Location extends React.Component {
@@ -10,12 +9,12 @@ export default class Location extends React.Component {
     return (
       <div>
         <div className="locationBlock" id="sijainti">
-          <h2>Sijainti</h2>
+          <h2>{this.props.data.location.title}</h2>
           <div >
-            <h3>Käyntiosoite</h3>
-            <p>{data.location.visitaddress}</p>
-            <h3>Postiosoite</h3>
-            <p>{data.location.postaddress}</p>
+            <h3>{this.props.data.location.visitaddress.title}</h3>
+            <p>{this.props.data.location.visitaddress.address}</p>
+            <h3>{this.props.data.location.postaddress.title}</h3>
+            <p>{this.props.data.location.postaddress.address}</p>
           </div>
         </div>
         <div className="map" dangerouslySetInnerHTML={html} ></div>

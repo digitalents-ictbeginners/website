@@ -1,8 +1,15 @@
 {
     "id": "contact",
     "location": {
-        "visitaddress": "address",
-        "postaddress": "address2"
+        "title": "Sijainti",
+        "visitaddress": {
+            "title": "Käyntiosoite",
+            "address": "Lapinlahdenkatu 16 ????? Helsinki"
+        },
+        "postaddress": {
+            "title": "Postiosoite",
+            "address": "Joku postiosoite"
+        }
     },
     "people": [
         {
