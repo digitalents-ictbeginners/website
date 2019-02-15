@@ -9,9 +9,9 @@ export default class Location extends React.Component {
 
     return (
       <div>
-        <div className="locationBlock">
+        <div className="locationBlock" id="sijainti">
           <h2>Sijainti</h2>
-          <div>
+          <div >
             <h3>Käyntiosoite</h3>
             <p>{data.location.visitaddress}</p>
             <h3>Postiosoite</h3>

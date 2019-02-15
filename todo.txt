@@ -1,5 +1,5 @@
 - DONE: Navigointipalkki näyttämään oikeata tabia sivulle mennessä
 - DONE: Kartta samaan elementtiin sijaintitekstin kanssa
-- Paranna sijaintielementin ulkonäköä ja responsiivisuutta
-- Mobiilinäkymässä sulje sivupalkki navigoitaessa
+- DONE: Paranna sijaintielementin ulkonäköä ja responsiivisuutta
+- DONE: Mobiilinäkymässä sulje sivupalkki navigoitaessa
 - Etusivun etunäkymään oikopolkulinkit

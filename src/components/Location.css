@@ -1,10 +1,18 @@
 .locationBlock {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
   background-color: lightgray;
   padding: 30px;
 }
 
 .locationBlock h2 {
-  margin: 0;
+  margin: 0 0 10px 0;
+}
+
+.locationBlock h3 {
+  margin: 0 0 10px 0;
 }
 
 .locationBlock p {

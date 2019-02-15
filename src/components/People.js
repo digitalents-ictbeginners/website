@@ -18,7 +18,7 @@ class People extends React.Component{
         });
 
         return (
-            <div className="peopleGrid">
+            <div className="peopleGrid" id="ihmiset">
                 {people}
             </div>
         );
