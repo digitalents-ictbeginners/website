@@ -12,21 +12,16 @@ class SideBar extends React.Component {
     }
 
     handleButton(){
-        this.props.parent.setState(s => {
-            return {
-                sidebarOpen: !s.sidebarOpen
-            }
-        });
+        this.props.toggleFunc();
     }
 
     render(){
-        const parentState = this.props.parent.state;
-        const openstateClass = "sidebarWrapper" + (parentState.sidebarOpen ? " sidebarOpen" : " sidebarClosed");
-        const buttonClass = "togglebutton" + (parentState.sidebarOpen ? " buttonOpen" : " buttonClosed");
-        const buttonImg = parentState.sidebarOpen ? ximg : menuimg;
+        const openstateClass = "sidebarWrapper" + (this.props.open ? " sidebarOpen" : " sidebarClosed");
+        const buttonClass = "togglebutton" + (this.props.open ? " buttonOpen" : " buttonClosed");
+        const buttonImg = this.props.open ? ximg : menuimg;
         const categories = this.props.data.map(e =>{
             return (
-                <SideBarDropMenu key={e.id} title={e.title} data={e.subLinks}/>
+                <SideBarDropMenu key={e.id} toggleFunc={this.props.toggleFunc} title={e.title} data={e.subLinks}/>
             );
         });
         return (
