@@ -31,7 +31,7 @@ export default class Home extends React.Component {
       return <div className="shortcut"><Link className="shortcutLink" to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
     });
     return (
-      <main>
+      <div>
         <div style={imgStyle} className="container">
             <img src={logo} alt="" className="logo" />
             <h4 className="subtitle">{data.slogan}</h4>
@@ -39,8 +39,11 @@ export default class Home extends React.Component {
               {shortcuts}
             </div>
         </div>
+        <div className="scrollIndicator">
+          O
+        </div>
         {textBlocks}
-      </main>
+      </div>
     )
   }
 }
