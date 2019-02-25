@@ -1,24 +1,21 @@
 .topNavBar {
-    background-color: #55e;
+    background-color: white;
     position: fixed;
     width: 100%;
+    border-bottom: lightgrey;
 }
 
 .topNavBar img {
     position: fixed;
-    margin-left: 10px;
+    left: 40px;
+    background-color: black;
 }
 
 .navElementContainer {
-    margin: 20px 20px 0px 85px;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
     justify-items: center;
-}
-
-.subNavBar {
-    background-color: #abe;
-    border-bottom: 1px solid #55e;
-    padding: 5px 0 5px 30px;
 }

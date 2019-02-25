@@ -1,6 +1,7 @@
 .App {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .contentWrapper {
@@ -16,5 +17,5 @@
 }
 
 .appDesktop {
-    margin-top: 95px;
+    margin-top: 65px;
 }

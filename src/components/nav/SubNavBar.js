@@ -11,7 +11,9 @@ class SubNavBar extends React.Component {
         });
         return (
             <div className="subNavBar">
-                {links}
+                <div className="snbLinks">
+                    {links}
+                </div>
             </div>
         );
     }

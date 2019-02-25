@@ -1,24 +1,24 @@
 .tnbElem {
-    width: 100%;
-    height: 40px;
-    font-size: 24px;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
     text-align: center;
-    color: white;
     padding-top: 5px;
     cursor: pointer;
 }
 
-.tnbElem a {
-    color: white;
+.tnbElem a:any-link {
     text-decoration: none;
+    color: black;
 }
 
 .tnbElemOpen {
-    background-color: #abe;
-    color: black;
-    border-radius: 10px 10px 0 0;
+    background-color: #444;
+    color: white;
+    border-radius: 30px;
 }
 
-.tnbElemClosed {
-
+.tnbElemOpen a:any-link {
+    color:white;
 }

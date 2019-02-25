@@ -21,6 +21,7 @@ class App extends Component {
     }
     this.setView = this.setView.bind(this);
     this.toggleSidebar = this.toggleSidebar.bind(this);
+    this.closeSubNav = this.closeSubNav.bind(this);
     window.addEventListener("resize", this.setView);
   }
 
@@ -65,8 +66,18 @@ class App extends Component {
     });
   }
 
+  closeSubNav(){
+    this.setState(s => {
+        return {
+          mobile: s.mobile,
+          sidebarOpen: s.sidebarOpen,
+          navTab: 0
+        }
+    });
+  }
+
   render() {
-    const navComponent = this.state.mobile ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/> : <TopNavBar parent={this} data={navData.navdata} openTab={this.state.navTab}/>
+    const navComponent = this.state.mobile ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/> : <TopNavBar parent={this} closeFunc={this.closeSubNav} data={navData.navdata} openTab={this.state.navTab}/>
     const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
       <Router>

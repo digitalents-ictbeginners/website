@@ -12,15 +12,16 @@ class TopNavBar extends React.Component {
             openIndex: 0
         }
     }
+
     render(){
         const navElements = [];
-        const subNavBars = [];
+        const subNavBars = [""]; //first element is empty, index 0 -> no subnavbar
         this.props.data.forEach(e => {
-            navElements.push(<TopNavBarElement key={e.id} app={this.props.parent} index={e.id} openid={this.props.openTab} link={e.link} title={e.title}/>);
+            navElements.push(<TopNavBarElement key={e.id} app={this.props.parent} index={e.id+1} openid={this.props.openTab} link={e.link} title={e.title}/>);
             subNavBars.push(<SubNavBar data={e.subLinks}/>);
         });
         return (
-            <div className="topNavBar">
+            <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
             <img src={logo} alt="" width="64px" />
                 <div className="navElementContainer">
                     {navElements}
