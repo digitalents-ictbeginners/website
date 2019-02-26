@@ -1,0 +1,48 @@
+.srElem { /*all of this is temporary*/
+    position: absolute;
+    transition: left 1s ease, width 1s ease, height 1s ease, margin 1s ease;
+}
+
+.srElemMid {
+    width: 600px;
+    height: 500px;
+    background-color: grey;
+    border: 1px solid black;
+    left: calc(50% - 300px);
+    z-index: 2;
+}
+
+.srElemLeft {
+    margin-top: 50px;
+    width: 450px;
+    height: 375px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    left: calc(20% - 225px);
+    
+}
+
+.srElemRight {
+    margin-top: 50px;
+    width: 450px;
+    height: 375px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    left: calc(80% - 225px);
+}
+
+.srElemOffLeft {
+    margin-top: 50px;
+    left: -400px;
+    display: none;
+}
+
+.srElemOffRight {
+    margin-top: 50px;
+    left: calc(100% + 400px);
+    display: none;
+}
+
+.srElemHidden {
+    display: none;
+}

@@ -4,9 +4,9 @@ import './Home.css';
 import data from '../Home.json';
 import image from "../imgs/office.jpg"
 import logo from '../imgs/logo_placeholder.png'
-import TextBlock from "../components/TextBlock";
 import Intro from "../components/Intro";
 import ProgressionTeaser from "../components/ProgressionTeaser";
+import ShowReel from "../components/ShowReel";
 
 const imgStyle = {
     backgroundImage: `url(${image})`,
@@ -39,10 +39,9 @@ export default class Home extends React.Component {
             </div>
         </div>
         <Intro data={data.intro}/>
+        <div className="scrollIndicator">O</div>
         <ProgressionTeaser data={data.teaser}/>
-        <div className="scrollIndicator">
-          O
-        </div>
+        <ShowReel />
       </div>
     )
   }
