@@ -7,15 +7,21 @@
     position: absolute;
     left: 50%;
     width: 1px;
-    height: 300px;
+    height: 350px;
     background-color: black;
     z-index: -1;
 }
 
-.teaser h2, .teaser h3 {
+.teaser h2, .teaser h3, .teaser h1 {
     margin: 50px 0;
     background-color: white;
     padding: 10px;
+}
+
+.teaser h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
 }
 
 .teaser h3 {
@@ -26,4 +32,9 @@
 .teaser h2{
     font-size: 36px;
     font-weight: 400;
+}
+
+.teaser .fa-chevron-down {
+    color: grey;
+    font-size: 60px;
 }
