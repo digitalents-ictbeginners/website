@@ -26,9 +26,6 @@ export default class Home extends React.Component {
 }
 
   render() {
-    const textBlocks = data.content.map(e => {
-      return <TextBlock data={e}/>
-    });
     const shortcuts = data.shortcuts.map(e => {
       return <div className="shortcut"><Link className="shortcutLink" to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
     });
@@ -41,12 +38,11 @@ export default class Home extends React.Component {
               {shortcuts}
             </div>
         </div>
-        <Intro />
-        <ProgressionTeaser />
+        <Intro data={data.intro}/>
+        <ProgressionTeaser data={data.teaser}/>
         <div className="scrollIndicator">
           O
         </div>
-        {textBlocks}
       </div>
     )
   }

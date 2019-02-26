@@ -3,18 +3,14 @@ import "./Intro.css";
 
 class Intro extends React.Component {
     render(){
+        const data = this.props.data;
         return (
-            <div className="introBlock">
+            <div id={data.id} className="introBlock">
                 <div className="introInner">
-                    <h2>Keitä olemme</h2>
-                    <p>Digitalents-ICT-työpajalla alle 29 vuotiaat nuoret pääsevät 
-                        kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä 
-                        aiheen parissa. Nuorella ei tarvitse olla aikaisempaa osaamista, 
-                        ja opetussuunnitelma räätälöidään osallistujan toiveiden 
-                        ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu 
-                        niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien.</p>
-                    <h4>Oletko alle 29-vuotias ja kiinnostunut alasta?</h4>
-                    <h3>Tule Mukaan!</h3>
+                    <h2>{data.title}</h2>
+                    <p>{data.text}</p>
+                    <h4>{data.question}</h4>
+                    <h3>{data.joinus}</h3>
                 </div>
             </div>
         );
