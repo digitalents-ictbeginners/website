@@ -14,7 +14,6 @@ class ShowReel extends React.Component {
     }
 
     leftToRight(){
-        console.log("shifting left to right");
         this.setState(s => {
             if(s.reelPos-1 < 0){
                 return {
@@ -29,7 +28,6 @@ class ShowReel extends React.Component {
     }
 
     rightToLeft(){
-        console.log("shifting right to left");
         this.setState(s => {
             if(s.reelPos+1 >= this.numElems){
                 return {

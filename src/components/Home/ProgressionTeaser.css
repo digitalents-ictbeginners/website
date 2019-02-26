@@ -7,9 +7,14 @@
     position: absolute;
     left: 50%;
     width: 1px;
-    height: 350px;
+    height: 0;
+    transition: height 3s;
     background-color: black;
     z-index: -1;
+}
+
+.teaser .vLineFull {
+    height: 350px;
 }
 
 .teaser h2, .teaser h3, .teaser h1 {
