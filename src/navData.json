@@ -1,6 +1,6 @@
 {"navdata": [
     {"id": 0, "title": "Esittely", "link": "/", "subLinks": [
-        {"id": 0, "name": "Hakuinfo", "link": "/#hakuinfo"},
+        {"id": 0, "name": "Keitä olemme", "link": "/#intro"},
         {"id": 1, "name": "Toiminta", "link": "/#toiminta"}
     ]},
     {"id": 1, "title": "Yrityksille", "link": "/yrityksille", "subLinks": [

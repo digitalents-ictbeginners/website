@@ -6,7 +6,7 @@ class SubNavBar extends React.Component {
     render(){
         const links = this.props.data.map(e => {
             return (
-                <div key={e.id}><Link to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
+                <div key={e.id}><Link to={e.link} onClick={this.props.closeFunc} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
             )
         });
         return (

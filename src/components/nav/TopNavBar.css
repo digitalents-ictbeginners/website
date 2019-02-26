@@ -2,7 +2,6 @@
     background-color: white;
     position: fixed;
     width: 100%;
-    border-bottom: lightgrey;
 }
 
 .topNavBar img {
@@ -18,4 +17,5 @@
     grid-auto-flow: column;
     align-content: center;
     justify-items: center;
+    border-bottom: 1px solid lightgray;
 }
