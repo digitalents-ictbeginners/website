@@ -18,6 +18,11 @@
     "item2": "Opi uutta",
     "item3": "Onko juttusi?"
   },
+  "showreel": {
+    "id": "toiminta",
+    "title": "Opit ohjelmointia modernissa oppimisympäristössä",
+    "subtitle": "Täällä sinulle on"
+  },
   "content": [
     {
       "id": "hakuinfo",

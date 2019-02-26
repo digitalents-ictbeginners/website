@@ -44,6 +44,7 @@ class ShowReel extends React.Component {
     }
 
     render(){
+        const data = this.props.data;
         const srElems = [
             <ShowReelElement key={0} index={0} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
             <ShowReelElement key={1} index={1} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
@@ -53,9 +54,9 @@ class ShowReel extends React.Component {
             <ShowReelElement key={5} index={5} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>
         ]
         return (
-            <div className="showreel">
-                <h1>Opit ohjelmointia modernissa oppimisympäristössä</h1>
-                <h3>Täällä sinulle on</h3>
+            <div id={data.id} className="showreel">
+                <h1>{data.title}</h1>
+                <h3>{data.subtitle}</h3>
                 <div className="srElemContainer"> 
                     {srElems}
                 </div>
