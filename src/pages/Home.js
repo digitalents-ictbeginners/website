@@ -3,10 +3,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
 import data from '../Home.json';
 import image from "../imgs/office.jpg"
-import logo from '../imgs/logo_placeholder.png'
-import Intro from "../components/Intro";
-import ProgressionTeaser from "../components/ProgressionTeaser";
-import ShowReel from "../components/ShowReel";
+import Landing from "../components/Home/Landing";
+import Intro from "../components/Home/Intro";
+import ProgressionTeaser from "../components/Home/ProgressionTeaser";
+import ShowReel from "../components/ShowReel/ShowReel";
 
 const imgStyle = {
     backgroundImage: `url(${image})`,
@@ -26,18 +26,9 @@ export default class Home extends React.Component {
 }
 
   render() {
-    const shortcuts = data.shortcuts.map(e => {
-      return <div className="shortcut"><Link className="shortcutLink" to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
-    });
     return (
       <div>
-        <div style={imgStyle} className="container">
-            <img src={logo} alt="" className="logo" />
-            <h4 className="subtitle">{data.slogan}</h4>
-            <div className="shortcutContainer">
-              {shortcuts}
-            </div>
-        </div>
+        <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <div className="scrollIndicator">O</div>
         <ProgressionTeaser data={data.teaser}/>
@@ -46,3 +37,19 @@ export default class Home extends React.Component {
     )
   }
 }
+
+//Some deprecated stuff:
+/*
+const shortcuts = data.shortcuts.map(e => {
+      return <div className="shortcut"><Link className="shortcutLink" to={e.link} scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{e.name}</Link></div>
+    });
+*/
+
+/*
+<div style={imgStyle} className="container">
+            <img src={logo} alt="" className="logo" />
+            <h4 className="subtitle">{data.slogan}</h4>
+            <div className="shortcutContainer">
+              {shortcuts}
+            </div>
+        </div>*/

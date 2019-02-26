@@ -1,17 +1,9 @@
 {
-  "id": "home",
-  "slogan": "ICT Beginners ...",
-  "shortcuts": [
-    {
-      "name": "Hae nyt!", "link": "/#hakuinfo"
-    },
-    {
-      "name": "Toimintamme", "link": "/#toiminta"
-    },
-    {
-      "name": "Yhteystiedot", "link": "/yhteystiedot#sijainti"
-    }
-  ],
+  "landing": {
+    "title": "Digitalents ICT",
+    "slogan": "Meillä tutustut ohjelmoinnin maailmaan",
+    "subslogan": "Yksin ja tiimissä, ohjatusti ja itsenäisesti"
+  },
   "intro": {
     "id": "intro",
     "title": "Keitä olemme",
