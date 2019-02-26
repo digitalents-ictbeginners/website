@@ -11,39 +11,35 @@ class ShowReelElement extends React.Component {
         if(pos === id){ //this is the element in view
             cname = "srElem srElemMid";
         }
-        else if(pos === id+1){ //the next element is in view, this one is left
+        else if( (pos === id+1) || (pos === 0 && id === len-1) ){
+            //the next element is in view so this one is left OR
+            //the first(0th) element is in view and this is the last so this is left
             cname = "srElem srElemLeft";
             clicked = this.props.ltrFunc;
         }
-        else if(pos === id+2){ //the element two ahead is in view, this is off left
+        else if( (pos === id+2) || (pos === 0 && id === len-2) || (pos === 1 && id === len-1) ){
+            //the element two ahead is in view OR
+            //the first(0th) element is in view and this is second to last OR
+            //the second element is in view and this is the last element SO
+            //this element is off the screen to the left
             cname = "srElem srElemOffLeft";
         }
-        else if(pos === id-1){ //the previous element is in view, this one is right
+        else if( (pos === id-1) || (pos === len-1 && id === 0) ){
+            //the previous element is in view OR
+            //the last element is in view and this is the first(0th) SO
+            //this element is the one on the right
             cname = "srElem srElemRight";
             clicked = this.props.rtlFunc;
         }
-        else if(pos === id-2){ //the element two back is in view, this is off right
+        else if( (pos === id-2) || (pos === len-1 && id === 1) || (pos === len-2 && id === 0)){
+            //the element two back is in view OR
+            //the last element is in view and this is the second element OR
+            //the second to last element is in view and this is the first(0th) element SO
+            //this element is off the screen to the right
             cname = "srElem srElemOffRight";
         }
-        else if(pos === 0 && id === len-1){ //the first(0th) element is in view, this is last and left
-            cname = "srElem srElemLeft";
-            clicked = this.props.ltrFunc;
-        }
-        else if(pos === len-1 && id === 0){ //the last element is in view, this is first and right
-            cname = "srElem srElemRight";
-            clicked = this.props.rtlFunc;
-        }
-        else if(pos === len-2 && id === 0){
-            cname = "srElem srElemOffRight";
-        }
-        else if(pos === 0 && id === len-2){
-            cname = "srElem srElemOffLeft";
-        }
-        else if(pos === len-1 && id === 1){
-            cname = "srElem srElemOffRight";
-        }
-        //TODO: STILL NEED ANOTHER IF OR TWO
-        else { //this is somewhere else so just hidden
+        else {
+            //this element is somewhere else so it's just hidden
             cname = "srElem srElemHidden";
         }
         return (

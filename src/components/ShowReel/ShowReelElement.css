@@ -1,53 +1,38 @@
 .srElem {
+    width: 600px;
+    height: 500px;
     font-size: 300px;
+    background-color: grey;
+    border: 1px solid black;
     position: absolute;
-    transition: left 1s ease, width 1s ease, height 1s ease, margin 1s ease;
+    transition: transform 0.6s ease-in-out, filter 0.6s;
 }
 
 .srElemMid {
-    width: 600px;
-    height: 500px;
-    background-color: grey;
-    border: 1px solid black;
-    left: calc(50% - 300px);
-    z-index: 2;
+    transform: translateX(calc(50vw - 300px));
+    cursor: default;
+    z-index: 1;
+}
+
+.srElemLeft, .srElemRight, .srElemOffLeft, .srElemOffRight {
+    filter: brightness(150%) contrast(40%);
+    cursor: pointer;
 }
 
 .srElemLeft {
-    margin-top: 50px;
-    width: 450px;
-    height: 375px;
-    background-color: lightgrey;
-    border: 1px solid grey;
-    left: calc(20% - 225px);
-    
+    transform: translateX(calc(20vw - 300px)) scale(0.75);
 }
 
 .srElemRight {
-    margin-top: 50px;
-    width: 450px;
-    height: 375px;
-    background-color: lightgrey;
-    border: 1px solid grey;
-    left: calc(80% - 225px);
+    transform: translateX(calc(80vw - 300px)) scale(0.75);
 }
 
 .srElemOffLeft {
-    width: 450px;
-    height: 375px;
-    margin-top: 50px;
-    left: -500px;
-    background-color: lightgrey;
-    border: 1px solid grey;
+    transform: translateX(-530px) scale(0.75);
 }
 
 .srElemOffRight {
-    width: 450px;
-    height: 375px;
-    margin-top: 50px;
-    left: calc(100% + 300px);
-    background-color: lightgrey;
-    border: 1px solid grey;
+    transform: translateX(110vw) scale(0.75);
 }
 
 .srElemHidden {
