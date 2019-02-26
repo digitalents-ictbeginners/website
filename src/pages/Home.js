@@ -5,6 +5,7 @@ import data from '../Home.json';
 import image from "../imgs/office.jpg"
 import logo from '../imgs/logo_placeholder.png'
 import TextBlock from "../components/TextBlock";
+import Intro from "../components/Intro";
 
 const imgStyle = {
     backgroundImage: `url(${image})`,
@@ -39,6 +40,7 @@ export default class Home extends React.Component {
               {shortcuts}
             </div>
         </div>
+        <Intro />
         <div className="scrollIndicator">
           O
         </div>

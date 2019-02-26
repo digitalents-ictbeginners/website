@@ -1,0 +1,32 @@
+.introBlock {
+    background-color: white;
+}
+
+.introInner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px; /*temp*/
+}
+
+.introInner h2 {
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.introInner p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.introInner h4 {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.introInner h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
