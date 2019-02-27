@@ -2,6 +2,7 @@
     height: 100vh;
     background-image: url("../../imgs/landingbg.png");
     background-attachment: fixed;
+    background-size: cover;
     text-align: center;
 }
 
