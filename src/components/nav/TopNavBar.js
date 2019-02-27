@@ -22,9 +22,11 @@ class TopNavBar extends React.Component {
         });
         return (
             <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
-            <img src={logo} alt="" width="64px" />
-                <div className="navElementContainer">
-                    {navElements}
+                <img src={logo} alt="" width="64px" />
+                <div className="navElementWrapper">
+                    <div className="navElementContainer">
+                        {navElements}
+                    </div>
                 </div>
                 {subNavBars[this.props.openTab]}
             </div>
