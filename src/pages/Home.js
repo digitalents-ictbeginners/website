@@ -8,6 +8,7 @@ import Intro from "../components/Home/Intro";
 import ProgressionTeaser from "../components/Home/ProgressionTeaser";
 import ShowReel from "../components/ShowReel/ShowReel";
 import MoreInfo from "../components/Home/MoreInfo";
+import ApplyInfo from "../components/Home/ApplyInfo";
 
 const imgStyle = {
     backgroundImage: `url(${image})`,
@@ -35,6 +36,7 @@ export default class Home extends React.Component {
         <ProgressionTeaser data={data.teaser}/>
         <ShowReel data={data.showreel}/>
         <MoreInfo data={data.moreinfo}/>
+        <ApplyInfo data={data.applyinfo}/>
       </div>
     )
   }

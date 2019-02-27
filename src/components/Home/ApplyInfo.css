@@ -1,0 +1,51 @@
+.applyInfo {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aiUnderlined {
+    width: 600px;
+    margin: 0 auto 100px auto;
+    border-bottom: 1px solid grey;
+}
+
+.aiUnderlined h2 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.applyInfo h1 {
+    font-size: 48px;
+}
+
+.aiContentWrapper {
+    background-color: lightgray;
+    width: 130vw;
+    transform: translateX(-15vw);
+    height: 800px;
+    border-radius: 50% 50% 0 0;
+}
+
+.aiContent {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 600px;
+}
+
+.aiText {
+    margin-right: 50px;
+}
+
+.aiToApply {
+    margin: 100px 0;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.aiContent h2 {
+    font-size: 36px;
+}
