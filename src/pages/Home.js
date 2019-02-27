@@ -7,6 +7,7 @@ import Landing from "../components/Home/Landing";
 import Intro from "../components/Home/Intro";
 import ProgressionTeaser from "../components/Home/ProgressionTeaser";
 import ShowReel from "../components/ShowReel/ShowReel";
+import MoreInfo from "../components/Home/MoreInfo";
 
 const imgStyle = {
     backgroundImage: `url(${image})`,
@@ -33,6 +34,7 @@ export default class Home extends React.Component {
         <div className="scrollIndicator">O</div>
         <ProgressionTeaser data={data.teaser}/>
         <ShowReel data={data.showreel}/>
+        <MoreInfo data={data.moreinfo}/>
       </div>
     )
   }

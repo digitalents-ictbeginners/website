@@ -23,6 +23,12 @@
     "title": "Opit ohjelmointia modernissa oppimisympäristössä",
     "subtitle": "Täällä sinulle on"
   },
+  "moreinfo": {
+    "id": "info",
+    "title": "Työpajalla",
+    "text": "Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.",
+    "toblog": "Katso toimintaa blogistamme!"
+  },
   "content": [
     {
       "id": "hakuinfo",
