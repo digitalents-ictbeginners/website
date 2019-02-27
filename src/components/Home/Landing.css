@@ -1,5 +1,12 @@
 .landing {
     height: 100vh;
-    margin-top: 200px;
+    background-image: url("../../imgs/landingbg.png");
+    background-attachment: fixed;
     text-align: center;
+}
+
+.landingContent {
+    padding: 200px 0;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
