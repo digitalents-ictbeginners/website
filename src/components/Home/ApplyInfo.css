@@ -22,16 +22,15 @@
 
 .aiContentWrapper {
     background-color: lightgray;
-    width: 150vw;
-    transform: translateX(-25vw);
     padding-bottom: 100px;
-    border-radius: 50% 50% 0 0;
+    border-radius: 50% / 200px 200px 0 0;
 }
 
 .aiContent {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 20px;
+    justify-content: center;
     justify-items: center;
     margin: 0 auto;
     padding-top: 150px;
@@ -40,7 +39,7 @@
 }
 
 .aiText {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .aiToApply {
@@ -55,4 +54,10 @@
 
 .aiContent h2 {
     font-size: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+    .aiContentWrapper {
+        border-radius: 0;
+    }
 }
