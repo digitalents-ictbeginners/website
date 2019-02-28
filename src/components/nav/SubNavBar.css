@@ -6,7 +6,7 @@
 }
 
 .snbLinks {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     display: grid;
     grid-auto-flow: column;

@@ -6,7 +6,7 @@
 
 .topNavBar img {
     position: fixed;
-    left: 40px;
+    left: 2%;
     background-color: black;
 }
 
@@ -17,6 +17,7 @@
 }
 
 .navElementContainer {
+    width: 75%;
     max-width: 800px;
     margin: 20px auto 0 auto;
     display: grid;
