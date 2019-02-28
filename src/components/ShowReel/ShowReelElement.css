@@ -1,17 +1,35 @@
 .srElem {
-    width: 600px;
-    height: 500px;
-    font-size: 300px;
+    /*Temporary placeholder graphics*/
     background-color: grey;
     border: 1px solid black;
+
     position: absolute;
     transition: transform 0.6s ease-in-out, filter 0.6s;
 }
 
+.srElemDesktop {
+    width: 600px;
+    height: 500px;
+    font-size: 300px;
+}
+
+.srElemMob {
+    width: 250px;
+    height: 300px;
+    font-size: 200px;
+}
+
 .srElemMid {
-    transform: translateX(calc(50vw - 300px));
     cursor: default;
     z-index: 1;
+}
+
+.srElemMidDtop {
+    transform: translateX(calc(50vw - 300px));
+}
+
+.srElemMidMob {
+    transform: translateX(calc(50vw - 125px));
 }
 
 .srElemLeft, .srElemRight, .srElemOffLeft, .srElemOffRight {
@@ -19,12 +37,20 @@
     cursor: pointer;
 }
 
-.srElemLeft {
+.srElemLeftDtop {
     transform: translateX(calc(20vw - 300px)) scale(0.75);
 }
 
-.srElemRight {
+.srElemLeftMob {
+    transform: translateX(calc(20vw - 125px)) scale(0.75);
+}
+
+.srElemRightDtop {
     transform: translateX(calc(80vw - 300px)) scale(0.75);
+}
+
+.srElemRightMob {
+    transform: translateX(calc(80vw - 125px)) scale(0.75);
 }
 
 .srElemOffLeft {

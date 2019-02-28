@@ -16,7 +16,7 @@ export default class Home extends React.Component {
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <ProgressionTeaser data={data.teaser}/>
-        <ShowReel data={data.showreel}/>
+        <ShowReel data={data.showreel} mobile={this.props.mobile}/>
         <MoreInfo data={data.moreinfo}/>
         <ApplyInfo data={data.applyinfo}/>
       </div>

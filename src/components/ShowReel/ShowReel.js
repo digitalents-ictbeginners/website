@@ -43,14 +43,22 @@ class ShowReel extends React.Component {
 
     render(){
         const data = this.props.data;
+        const showReelData = {
+            mobile: this.props.mobile,
+            ltrFunc: this.leftToRight,
+            rtlFunc: this.rightToLeft,
+            reelPos: this.state.reelPos,
+            reelLen: this.numElems
+        };
         const srElems = [
-            <ShowReelElement key={0} index={0} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
-            <ShowReelElement key={1} index={1} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
-            <ShowReelElement key={2} index={2} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
-            <ShowReelElement key={3} index={3} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
-            <ShowReelElement key={4} index={4} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>,
-            <ShowReelElement key={5} index={5} ltrFunc={this.leftToRight} rtlFunc={this.rightToLeft} reelPos={this.state.reelPos} reelLen={this.numElems}/>
-        ]
+            <ShowReelElement key={0} index={0} showReelData={showReelData}/>,
+            <ShowReelElement key={1} index={1} showReelData={showReelData}/>,
+            <ShowReelElement key={2} index={2} showReelData={showReelData}/>,
+            <ShowReelElement key={3} index={3} showReelData={showReelData}/>,
+            <ShowReelElement key={4} index={4} showReelData={showReelData}/>,
+            <ShowReelElement key={5} index={5} showReelData={showReelData}/>
+        ];
+        const containerClass = this.props.mobile ? "srElemContMobile" : "srElemContDesktop";
         return (
             <div id={data.id} className="showreel">
                 <h1>{data.title}</h1>

@@ -8,15 +8,16 @@
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100% - 65px);
     width: 100%;
     z-index: -1;
 }
 
 .appMobile {
     margin-top: 0;
+    height: 100%;
 }
 
 .appDesktop {
     margin-top: 65px;
+    height: calc(100% - 65px);
 }
