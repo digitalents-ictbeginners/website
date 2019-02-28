@@ -1,6 +1,5 @@
 footer {
-  background-color: black;
-  width: 100%;
+  background-color: grey;
 }
 
 .contactInfo {
@@ -8,5 +7,12 @@ footer {
 }
 
 .contactInfo p {
+  margin: 0;
+  padding-top: 20px;
   color: white;
+}
+
+.footLogo {
+  display: block;
+  margin: 0 auto;
 }

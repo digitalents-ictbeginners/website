@@ -14,8 +14,8 @@ class Footer extends React.Component {
             <br />
             sähköposti@email.fi
           </p>
-          <img src={logo} alt="logo" width="240px" />
         </div>
+        <img className="footLogo" src={logo} alt="logo" width="200px" />
       </footer>
     )
   }
