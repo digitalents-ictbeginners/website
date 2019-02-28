@@ -87,9 +87,9 @@ class App extends Component {
           </Helmet>
           {navComponent}
           <div className={viewClass}>
-            <Route exact path="/" render={props => <Home {...props} app={this} mobile={this.state.mobile} navId={0}/>} />
-            <Route exact path="/yrityksille" render={props => <Business {...props} app={this} mobile={this.state.mobile} navId={1}/>} />
-            <Route exact path="/yhteystiedot" render={props => <Contact {...props} app={this} mobile={this.state.mobile} navId={2}/>} />
+            <Route exact path="/" render={props => <Home {...props} app={this} mobile={this.state.mobile}/>} />
+            <Route exact path="/yrityksille" render={props => <Business {...props} app={this} mobile={this.state.mobile}/>} />
+            <Route exact path="/yhteystiedot" render={props => <Contact {...props} app={this} mobile={this.state.mobile}/>} />
             <Footer />
           </div>
         </div>
