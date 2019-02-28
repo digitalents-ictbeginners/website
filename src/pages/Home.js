@@ -32,7 +32,6 @@ export default class Home extends React.Component {
       <div>
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
-        <div className="scrollIndicator">O</div>
         <ProgressionTeaser data={data.teaser}/>
         <ShowReel data={data.showreel}/>
         <MoreInfo data={data.moreinfo}/>
