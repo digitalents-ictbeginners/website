@@ -4,7 +4,8 @@
 }
 
 .aiUnderlined {
-    width: 600px;
+    width: 60%;
+    max-width: 600px;
     margin: 0 auto 100px auto;
     border-bottom: 1px solid grey;
 }
@@ -21,29 +22,35 @@
 
 .aiContentWrapper {
     background-color: lightgray;
-    width: 130vw;
-    transform: translateX(-15vw);
-    height: 800px;
+    width: 150vw;
+    transform: translateX(-25vw);
+    padding-bottom: 100px;
     border-radius: 50% 50% 0 0;
 }
 
 .aiContent {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20px;
+    justify-items: center;
     margin: 0 auto;
     padding-top: 150px;
-    width: 600px;
+    width: 60%;
+    max-width: 800px;
 }
 
 .aiText {
-    margin-right: 50px;
+    max-width: 500px;
 }
 
 .aiToApply {
-    margin: 100px 0;
-    padding: 10px 20px;
+    margin-top: 30px;
+    padding: 0 10px;
     border: 1px solid black;
     border-radius: 30px;
+    max-width: 250px;
+    max-height: 150px;
+    align-self: center;
 }
 
 .aiContent h2 {
