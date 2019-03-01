@@ -6,16 +6,6 @@ import People from "../components/People";
 
 class Contact extends React.Component {
 
-    componentDidMount(){
-        this.props.app.setState(s => {
-            return {
-                mobile: s.mobile,
-                sidebarOpen: s.sidebarOpen,
-                navTab: this.props.navId
-            }
-        });
-    }
-
     render(){
         return (
             <div>
