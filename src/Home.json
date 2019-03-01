@@ -24,13 +24,13 @@
     "subtitle": "Täällä sinulle on"
   },
   "moreinfo": {
-    "id": "info",
+    "id": "tietoa",
     "title": "Työpajalla",
     "text": "Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.",
     "toblog": "Katso toimintaa blogistamme!"
   },
   "applyinfo": {
-    "id": "apply",
+    "id": "hae",
     "interested": "Kiinnostuitko?",
     "applynow": "Hae meille!",
     "process": "Hakeminen",
