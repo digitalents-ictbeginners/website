@@ -1,22 +1,16 @@
 footer {
   background-color: grey;
   min-height: 300px;
-  padding: 50px;
+  padding: 30px 0;
 }
 
 .ftContent {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
   justify-items: center;
   align-items: center;
-}
-
-.ftLocation {
-  text-align: center;
-  font-size: 20px;
-  line-height: 2;
 }
 
 .ftPerson {
@@ -27,4 +21,20 @@ footer {
   width: 150px;
   height: 200px;
   background-color: lightgray;
+}
+
+.ftLocation {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 600px){
+  .ftContent {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+  .ftLocation {
+    grid-row: 2;
+    grid-column: 1 / 3;
+  }
 }

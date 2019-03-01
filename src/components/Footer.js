@@ -22,7 +22,7 @@ class Footer extends React.Component {
             <span>Lapinlahdenkatu 16</span><br/>
             <span>00180 HELSINKI</span><br/>
             <span>Puh. 09 123 4567</span><br/>
-            <Link to="/yhteystiedot">Lisää yhteystietoja</Link>
+            <Link to="/yhteystiedot"><h2>Lisää Yhteystietoja</h2></Link>
           </div>
         </div>
       </footer>
