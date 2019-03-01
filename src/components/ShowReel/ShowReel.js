@@ -11,6 +11,7 @@ class ShowReel extends React.Component {
         }
         this.leftToRight = this.leftToRight.bind(this);
         this.rightToLeft = this.rightToLeft.bind(this);
+        this.showReelData = this.showReelData.bind(this);
     }
 
     leftToRight(){
@@ -41,22 +42,26 @@ class ShowReel extends React.Component {
         })
     }
 
-    render(){
-        const data = this.props.data;
-        const showReelData = {
+    showReelData(elemId){
+        return {
             mobile: this.props.mobile,
             ltrFunc: this.leftToRight,
             rtlFunc: this.rightToLeft,
             reelPos: this.state.reelPos,
-            reelLen: this.numElems
+            reelLen: this.numElems,
+            content: this.props.data.elements[elemId]
         };
+    }
+
+    render(){
+        const data = this.props.data;
         const srElems = [
-            <ShowReelElement key={0} index={0} showReelData={showReelData}/>,
-            <ShowReelElement key={1} index={1} showReelData={showReelData}/>,
-            <ShowReelElement key={2} index={2} showReelData={showReelData}/>,
-            <ShowReelElement key={3} index={3} showReelData={showReelData}/>,
-            <ShowReelElement key={4} index={4} showReelData={showReelData}/>,
-            <ShowReelElement key={5} index={5} showReelData={showReelData}/>
+            <ShowReelElement key={0} index={0} showReelData={this.showReelData(0)}/>,
+            <ShowReelElement key={1} index={1} showReelData={this.showReelData(1)}/>,
+            <ShowReelElement key={2} index={2} showReelData={this.showReelData(1)}/>,
+            <ShowReelElement key={3} index={3} showReelData={this.showReelData(1)}/>,
+            <ShowReelElement key={4} index={4} showReelData={this.showReelData(1)}/>,
+            <ShowReelElement key={5} index={5} showReelData={this.showReelData(1)}/>
         ];
         const containerClass = this.props.mobile ? "srElemContMobile" : "srElemContDesktop";
         return (

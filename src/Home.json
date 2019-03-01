@@ -21,7 +21,17 @@
   "showreel": {
     "id": "toiminta",
     "title": "Opit ohjelmointia modernissa oppimisympäristössä",
-    "subtitle": "Täällä sinulle on"
+    "subtitle": "Täällä sinulle on",
+    "elements": [
+      {
+        "title": "Harjoituksia ja oikeita projekteja",
+        "subtitle": "Koska asiat oppii tekemällä"
+      },
+      {
+        "title": "Vertaistukea",
+        "subtitle": "On kivempaa olla ongelmissa yhdessä"
+      }
+    ]
   },
   "moreinfo": {
     "id": "tietoa",

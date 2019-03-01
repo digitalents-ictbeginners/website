@@ -1,5 +1,6 @@
 import React from "react";
 import "./ShowReelElement.css";
+import Img0 from "../../imgs/showreelimg0.png";
 
 class ShowReelElement extends React.Component {
     render(){
@@ -7,6 +8,7 @@ class ShowReelElement extends React.Component {
         const id = this.props.index;
         const len = this.props.showReelData.reelLen;
         const mob = this.props.showReelData.mobile;
+        const cont = this.props.showReelData.content;
         let cname = mob ? "srElem srElemMob" : "srElem srElemDesktop";
         let clicked;
         if(pos === id){ //this is the element in view
@@ -47,7 +49,10 @@ class ShowReelElement extends React.Component {
             cname += " srElemHidden";
         }
         return (
-            <div className={cname} onClick={clicked}>{id}</div>
+            <div className={cname} onClick={clicked}>
+                <h2>{cont.title}</h2>
+                <h3>{cont.subtitle}</h3>
+            </div>
         );
     }
 }
