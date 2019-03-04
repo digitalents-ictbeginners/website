@@ -1,6 +1,7 @@
-import React from "react"
+import React from "react";
 import {Link} from "react-router-dom";
-import "./Footer.css"
+import "./Footer.css";
+import data from "../Footer.json";
 
 class Footer extends React.Component {
   render() {
@@ -8,21 +9,21 @@ class Footer extends React.Component {
       <footer>
         <div className="ftContent">
           <div className="ftPerson">
-            <h4>Työvalmentaja</h4>
+            <h4>{data.person1.title}</h4>
             <div className="ftFaceImg"></div>
-            <h4>Arto Aitta</h4>
+            <h4>{data.person1.name}</h4>
           </div>
           <div className="ftPerson">
-            <h4>Kouluttaja</h4>
+            <h4>{data.person2.title}</h4>
             <div className="ftFaceImg"></div>
-            <h4>Krishna Regmi</h4>
+            <h4>{data.person2.name}</h4>
           </div>
           <div className="ftLocation">
             <i className="fas fa-map-marker-alt fa-3x"></i><br/>
-            <span>Lapinlahdenkatu 16</span><br/>
-            <span>00180 HELSINKI</span><br/>
-            <span>Puh. 09 123 4567</span><br/>
-            <Link to="/yhteystiedot"><h2>Lisää Yhteystietoja</h2></Link>
+            <span>{data.streetaddress}</span><br/>
+            <span>{data.postnumbercity}</span><br/>
+            <span>{data.phonenum}</span><br/>
+            <Link to="/yhteystiedot"><h2>{data.morecontacts}</h2></Link>
           </div>
         </div>
       </footer>

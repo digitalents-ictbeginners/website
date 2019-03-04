@@ -1,0 +1,14 @@
+{
+    "person1": {
+        "title": "Työvalmentaja",
+        "name": "Arto Aitta"
+    },
+    "person2": {
+        "title": "Kouluttaja",
+        "name": "Krishna Regmi"
+    },
+    "streetaddress": "Lapinlahdenkatu 16",
+    "postnumbercity": "00180 HELSINKI",
+    "phonenum": "Puh. 09 123 4567",
+    "morecontacts": "Lisää Yhteystietoja"
+}
