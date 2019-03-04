@@ -1,16 +1,18 @@
 import React from "react";
 import "./ShowReelElement.css";
-import Img0 from "../../imgs/showreelimg0.png";
 
 class ShowReelElement extends React.Component {
     render(){
         const pos = this.props.showReelData.reelPos;
-        const id = this.props.index;
         const len = this.props.showReelData.reelLen;
         const mob = this.props.showReelData.mobile;
         const cont = this.props.showReelData.content;
+        const id = cont.id;
         let cname = mob ? "srElem srElemMob" : "srElem srElemDesktop";
         let clicked;
+
+        // IF ELSE LOGIC TO DETERMINE WHAT THIS ELEMENT SHOULD LOOK LIKE
+        // BASED ON ITS ID AND THE CURRENT ELEMENT BEING SHOWN
         if(pos === id){ //this is the element in view
             cname += " srElemMid";
             cname += mob ? " srElemMidMob" : " srElemMidDtop";
@@ -48,8 +50,16 @@ class ShowReelElement extends React.Component {
             //this element is somewhere else so it's just hidden
             cname += " srElemHidden";
         }
+
+        //works but images have to be placed in public folder
+        const bgImgUrl = "../../imgs/showreel/" + cont.bgimg;
+        const bgImgStyle = {
+            backgroundImage: `url(${bgImgUrl})`,
+            backgroundSize: "cover"
+        }
+
         return (
-            <div className={cname} onClick={clicked}>
+            <div style={bgImgStyle} className={cname} onClick={clicked}>
                 <h2>{cont.title}</h2>
                 <h3>{cont.subtitle}</h3>
             </div>

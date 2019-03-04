@@ -24,12 +24,40 @@
     "subtitle": "Täällä sinulle on",
     "elements": [
       {
+        "id": 0,
+        "bgimg": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
         "subtitle": "Koska asiat oppii tekemällä"
       },
       {
+        "id": 1,
+        "bgimg": "placeholder1.png",
         "title": "Vertaistukea",
         "subtitle": "On kivempaa olla ongelmissa yhdessä"
+      },
+      {
+        "id": 2,
+        "bgimg": "placeholder2.png",
+        "title": "Placeholdertitle 3",
+        "subtitle": "Lorem ipsum placeholder"
+      },
+      {
+        "id": 3,
+        "bgimg": "placeholder3.png",
+        "title": "Placeholdertitle 4",
+        "subtitle": "Lorem ipsum placeholder"
+      },
+      {
+        "id": 4,
+        "bgimg": "placeholder4.png",
+        "title": "Placeholdertitle 5",
+        "subtitle": "Lorem ipsum placeholder"
+      },
+      {
+        "id": 5,
+        "bgimg": "placeholder5.png",
+        "title": "Placeholdertitle 6",
+        "subtitle": "Lorem ipsum placeholder"
       }
     ]
   },
