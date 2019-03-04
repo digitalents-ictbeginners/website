@@ -18,7 +18,7 @@ class Footer extends React.Component {
             <h4>Krishna Regmi</h4>
           </div>
           <div className="ftLocation">
-            <i class="fas fa-map-marker-alt fa-3x"></i><br/>
+            <i className="fas fa-map-marker-alt fa-3x"></i><br/>
             <span>Lapinlahdenkatu 16</span><br/>
             <span>00180 HELSINKI</span><br/>
             <span>Puh. 09 123 4567</span><br/>

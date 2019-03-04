@@ -32,7 +32,7 @@ class App extends Component {
   setView(){
     if(document.documentElement.clientWidth >= this.VIEW_THRESHOLD){
       if(this.state.mobile) {
-        console.log("Now in desktop view");
+        //console.log("Now in desktop view");
         this.setState(s => {
             return {
                 mobile: false,
@@ -44,7 +44,7 @@ class App extends Component {
     }
     else {
       if(!this.state.mobile){
-        console.log("Now in mobile view");
+        //console.log("Now in mobile view");
         this.setState(s => {
           return {
               mobile: true,

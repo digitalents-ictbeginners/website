@@ -3,7 +3,7 @@
         {"id": 0, "name": "Keitä olemme", "link": "/#intro"},
         {"id": 1, "name": "Toiminta", "link": "/#toiminta"},
         {"id": 2, "name": "Lisätietoa", "link": "/#tietoa"},
-        {"id": 1, "name": "Hae!", "link": "/#hae"}
+        {"id": 3, "name": "Hae!", "link": "/#hae"}
     ]},
     {"id": 1, "title": "Yrityksille", "link": "/yrityksille", "subLinks": [
         {"id": 0, "name": "Projektimme", "link": "linkhere"},
