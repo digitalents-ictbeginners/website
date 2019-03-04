@@ -1,0 +1,14 @@
+{
+    "person1": {
+        "title": "Job Coach",
+        "name": "Arto Aitta"
+    },
+    "person2": {
+        "title": "Educator",
+        "name": "Krishna Regmi"
+    },
+    "streetaddress": "Lapinlahdenkatu 16",
+    "postnumbercity": "00180 HELSINKI",
+    "phonenum": "Ph. 09 123 4567",
+    "morecontacts": "More Contacts"
+}

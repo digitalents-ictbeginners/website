@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import data from "../Contact.json";
+import data from "../data/Contact.json";
 import Location from "../components/Location";
 import People from "../components/People";
 

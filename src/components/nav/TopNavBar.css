@@ -11,6 +11,7 @@
 }
 
 .navElementWrapper {
+    display: flex;
     max-width: 90%;
     margin: 0 auto;
     border-bottom: 1px solid lightgray;
@@ -24,4 +25,13 @@
     grid-auto-flow: column;
     align-content: center;
     justify-items: center;
+}
+
+.langSelector {
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.langSelector:hover {
+    text-decoration: underline;
 }

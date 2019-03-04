@@ -1,0 +1,20 @@
+{
+    "navdata": [
+        {"id": 0, "title": "Esittely", "link": "/", "subLinks": [
+            {"id": 0, "name": "Keitä olemme", "link": "/#intro"},
+            {"id": 1, "name": "Toiminta", "link": "/#toiminta"},
+            {"id": 2, "name": "Lisätietoa", "link": "/#tietoa"},
+            {"id": 3, "name": "Hae!", "link": "/#hae"}
+        ]},
+        {"id": 1, "title": "Yrityksille", "link": "/yrityksille", "subLinks": [
+            {"id": 0, "name": "Projektimme", "link": "linkhere"},
+            {"id": 1, "name": "Tilauslomake", "link": "linkhere"},
+            {"id": 2, "name": "CV-Pankki", "link": "linkhere"}
+        ]},
+        {"id": 2, "title": "Yhteystiedot", "link": "/yhteystiedot", "subLinks": [
+            {"id": 0, "name": "Sijainti", "link": "/yhteystiedot#sijainti"},
+            {"id": 1, "name": "Ihmiset", "link": "/yhteystiedot#ihmiset"}
+        ]}
+    ],
+    "langswitch": "In English"
+}

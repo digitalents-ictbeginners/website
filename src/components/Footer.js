@@ -1,10 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./Footer.css";
-import data from "../Footer.json";
+import dataFI from "../data/Footer_fi.json";
+import dataEN from "../data/Footer_en.json";
 
 class Footer extends React.Component {
   render() {
+    const data = this.props.english ? dataEN : dataFI;
     return (
       <footer>
         <div className="ftContent">

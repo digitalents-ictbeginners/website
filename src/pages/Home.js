@@ -1,7 +1,8 @@
 import React from 'react';
 //import { HashLink as Link } from 'react-router-hash-link';
 import './Home.css';
-import data from '../Home.json';
+import dataFI from '../data/Home_fi.json';
+import dataEN from '../data/Home_en.json';
 import Landing from "../components/Home/Landing";
 import Intro from "../components/Home/Intro";
 import ProgressionTeaser from "../components/Home/ProgressionTeaser";
@@ -11,6 +12,7 @@ import ApplyInfo from "../components/Home/ApplyInfo";
 
 export default class Home extends React.Component {
   render() {
+    const data = this.props.english ? dataEN : dataFI;
     return (
       <div>
         <Landing data={data.landing}/>

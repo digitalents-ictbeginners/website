@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../Business.json";
+import data from "../data/Business.json";
 import TextBlock from "../components/TextBlock";
 
 class Business extends React.Component {

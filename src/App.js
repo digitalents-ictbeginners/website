@@ -5,7 +5,8 @@ import './App.css';
 import Home from './pages/Home';
 import Contact from "./pages/Contact";
 import Business from "./pages/Business";
-import navData from "./navData.json";
+import navDataFI from "./data/navData_fi.json";
+import navDataEN from "./data/navData_en.json";
 import SideBar from "./components/nav/SideBar";
 import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
@@ -16,12 +17,14 @@ class App extends Component {
     this.VIEW_THRESHOLD = 600;
     this.state = {
       mobile: true,
+      english: false,
       sidebarOpen: false,
       navTab: 0
     }
     this.setView = this.setView.bind(this);
     this.toggleSidebar = this.toggleSidebar.bind(this);
     this.closeSubNav = this.closeSubNav.bind(this);
+    this.toggleLanguage = this.toggleLanguage.bind(this);
     window.addEventListener("resize", this.setView);
   }
 
@@ -34,11 +37,9 @@ class App extends Component {
       if(this.state.mobile) {
         //console.log("Now in desktop view");
         this.setState(s => {
-            return {
-                mobile: false,
-                sidebarOpen: false,
-                navTab: s.navTab
-            }
+          s.mobile = false;
+          s.sidebarOpen = false;
+          return s;
         });
       }
     }
@@ -46,38 +47,42 @@ class App extends Component {
       if(!this.state.mobile){
         //console.log("Now in mobile view");
         this.setState(s => {
-          return {
-              mobile: true,
-              sidebarOpen: false,
-              navTab: s.navTab
-          }
-      });
+          s.mobile = true;
+          s.sidebarOpen = false;
+          return s;
+        });
       }
     }
   }
 
   toggleSidebar(){
     this.setState(s => {
-      return {
-        mobile: s.mobile,
-        sidebarOpen: !s.sidebarOpen,
-        navTab: s.navTab
-      }
+      s.sidebarOpen = !s.sidebarOpen;
+      return s;
     });
   }
 
   closeSubNav(){
     this.setState(s => {
-        return {
-          mobile: s.mobile,
-          sidebarOpen: s.sidebarOpen,
-          navTab: 0
-        }
+      s.navTab = 0;
+      return s;
+    });
+  }
+
+  toggleLanguage(){
+    this.setState(s => {
+      s.english = !s.english
+      return s;
     });
   }
 
   render() {
-    const navComponent = this.state.mobile ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/> : <TopNavBar parent={this} closeFunc={this.closeSubNav} data={navData.navdata} openTab={this.state.navTab}/>
+    const navData = this.state.english ? navDataEN : navDataFI;
+    const navComponent =
+      this.state.mobile
+      ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/>
+      : <TopNavBar parent={this} closeFunc={this.closeSubNav} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
+
     const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
       <Router>
@@ -87,10 +92,10 @@ class App extends Component {
           </Helmet>
           {navComponent}
           <div className={viewClass}>
-            <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile}/>} />
+            <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
             <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
             <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile}/>} />
-            <Footer />
+            <Footer english={this.state.english}/>
           </div>
         </div>
       </Router>
