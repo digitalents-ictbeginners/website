@@ -95,7 +95,7 @@ class App extends Component {
             <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
             <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
             <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile}/>} />
-            <Footer english={this.state.english}/>
+            <Footer english={this.state.english} navdata={navData.navdata}/>
           </div>
         </div>
       </Router>

@@ -1,11 +1,15 @@
 {
     "person1": {
         "title": "Työvalmentaja",
-        "name": "Arto Aitta"
+        "name": "Arto Aitta",
+        "email": "arto.aitta@edu.hel.fi",
+        "phone": "040 829 1342"
     },
     "person2": {
         "title": "Kouluttaja",
-        "name": "Krishna Regmi"
+        "name": "Krishna Regmi",
+        "email": "krishna.regmi@edu.hel.fi",
+        "phone": "040 508 0336"
     },
     "streetaddress": "Lapinlahdenkatu 16",
     "postnumbercity": "00180 HELSINKI",
