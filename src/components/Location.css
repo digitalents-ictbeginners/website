@@ -1,8 +1,10 @@
 .location {
-  background-color: lightgray;
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 30px 30px 0 0;
+  padding-bottom: 10px;
 }
 
 .locationInfo {
@@ -13,19 +15,30 @@
   padding: 30px;
 }
 
-.locationBlock h2 {
-  margin: 0 0 10px 0;
+.locationAddress {
+  margin: 10px 0;
 }
 
-.locationBlock h3 {
-  margin: 0 0 10px 0;
+.locationAddressTitle {
+  font-size: 20px;
+  font-weight: 600;
+  border-right: 1px solid black;
+  padding-right: 5px;
+  margin-right: 10px;
 }
 
-.locationBlock p {
-  margin: 0 0 10px 0;
+.locationText {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .map {
   width: 100%;
-  padding-left: 5px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .map{
+    height: 300px;
+  }
 }

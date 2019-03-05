@@ -4,11 +4,19 @@
         "title": "Sijainti",
         "visitaddress": {
             "title": "Käyntiosoite",
-            "address": "Lapinlahdenkatu 16 ????? Helsinki"
+            "address": "Lapinlahdenkatu 16 00180 Helsinki"
         },
         "postaddress": {
             "title": "Postiosoite",
-            "address": "Joku postiosoite"
+            "address": "PL 18201, 00099 Helsingin kaupunki"
+        },
+        "directions": {
+            "title": "Ajo-ohjeet",
+            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
+        },
+        "publictransit": {
+            "title": "Julkinen liikenne",
+            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem."
         }
     },
     "people": [

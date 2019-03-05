@@ -9,14 +9,24 @@ export default class Location extends React.Component {
     return (
       <div className="location">
         <div className="locationInfo" id="sijainti">
-          <div>
-            <h2>{this.props.data.location.title}</h2>
-            <div>
-              <h3>{this.props.data.location.visitaddress.title}</h3>
-              <p>{this.props.data.location.visitaddress.address}</p>
-              <h3>{this.props.data.location.postaddress.title}</h3>
-              <p>{this.props.data.location.postaddress.address}</p>
+          <h2>{this.props.data.location.title}</h2>
+          <div className="locationAddressContainer">
+            <div className="locationAddress">
+              <span className="locationAddressTitle">{this.props.data.location.visitaddress.title}</span>
+              <span className="locationText">{this.props.data.location.visitaddress.address}</span>
             </div>
+            <div className="locationAddress">
+              <span className="locationAddressTitle">{this.props.data.location.postaddress.title}</span>
+              <span className="locationText">{this.props.data.location.postaddress.address}</span>
+            </div>
+          </div>
+          <div className="locationDirections">
+            <h3>{this.props.data.location.directions.title}</h3>
+            <p>{this.props.data.location.directions.text}</p>
+          </div>
+          <div className="locationPublicTransit">
+            <h3>{this.props.data.location.publictransit.title}</h3>
+            <p>{this.props.data.location.publictransit.text}</p>
           </div>
         </div>
         <div className="map" dangerouslySetInnerHTML={html} ></div>
