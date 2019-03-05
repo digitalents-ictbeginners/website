@@ -1,12 +1,14 @@
 .landing {
-    height: 90vh;
+    height: 105vh;
     background-image: url("../../imgs/landingbg.png");
-    background-size: cover;
+    background-size: 100% 87%;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
 .landingContent {
     padding: 100px 0;
+    margin-bottom: 150px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -16,19 +18,34 @@
 }
 
 .scrollIndicator {
-    position: fixed;
-    top: 85vh;
-    margin-left: calc(50% - 25px);
+    width: 200px;
+    margin-left: calc(50vw - 100px);
     z-index: 2;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid black;
+    color: goldenrod;
     text-align: center;
-    transition: opacity 0.5s;
+    /*transition: top 1.5s;*/
 }
 
-.siHidden {
+.scrollIndicatorFixed {
+    position: fixed;
+    top: 88vh;
+}
+
+.scrollIndicatorStuck {
+    top: 93vh;
+    position: absolute;
+}
+
+.scrollText {
+    margin-top: 10px;
+    font-size: 20px;
+    transition: opacity 0.4s;
+}
+
+.scrollTextVisible {
+    opacity: 1;
+}
+
+.scrollTextHidden {
     opacity: 0;
 }
