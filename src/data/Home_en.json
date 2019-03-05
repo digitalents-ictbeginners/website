@@ -2,7 +2,8 @@
   "landing": {
     "title": "Digitalents ICT",
     "slogan": "With us you'll introduce yourself to the world of programming",
-    "subslogan": "Alone and in a team, guided and independently"
+    "subslogan": "Alone and in a team, guided and independently",
+    "scrollind": "Read more"
   },
   "intro": {
     "id": "intro",

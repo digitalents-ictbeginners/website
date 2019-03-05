@@ -46,7 +46,7 @@ class Landing extends React.Component {
                 </div>
                 <div className={scrollIndClass}>
                     <i className="fas fa-arrow-alt-circle-down fa-4x"></i>
-                    <div className={scrollTextClass}>Lisää meistä</div>
+                    <div className={scrollTextClass}>{data.scrollind}</div>
                 </div>
             </div>
         );

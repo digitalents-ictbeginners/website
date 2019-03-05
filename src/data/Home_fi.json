@@ -2,7 +2,8 @@
   "landing": {
     "title": "Digitalents ICT",
     "slogan": "Meillä tutustut ohjelmoinnin maailmaan",
-    "subslogan": "Yksin ja tiimissä, ohjatusti ja itsenäisesti"
+    "subslogan": "Yksin ja tiimissä, ohjatusti ja itsenäisesti",
+    "scrollind": "Lisää meistä"
   },
   "intro": {
     "id": "intro",
