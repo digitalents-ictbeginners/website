@@ -1,5 +1,6 @@
 .location {
   background-color: white;
+  width: 85%;
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -34,11 +35,12 @@
 
 .map {
   width: 100%;
-  padding: 10px;
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 600px){
   .map{
     height: 300px;
+    margin: 0;
   }
 }
