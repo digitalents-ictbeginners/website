@@ -7,7 +7,7 @@ class Landing extends React.Component {
     constructor(){
         super();
         this.state = {
-            scrollIndMode: false //false: default, true: after scroll
+            scrollIndText: false //false: default, true: after scroll
         }
         this.handleScroll = this.handleScroll.bind(this);
         //this.DOMNode = null;
@@ -21,22 +21,25 @@ class Landing extends React.Component {
     }
 
     handleScroll(){
-        if(this.wrapper.scrollTop > 80){
-            setTimeout(() => {
-                this.setState(s => {
-                    return {
-                        scrollIndMode: true
-                    }
-                });
-            }, 50);
-            this.wrapper.removeEventListener("scroll", this.handleScroll);
+        if(this.wrapper.scrollTop > 80 && !this.state.scrollIndText){
+            this.setState(s => {
+                return {
+                    scrollIndText: true
+                }
+            });
+        }
+        else if(this.wrapper.scrollTop < 100 && this.state.scrollIndText){
+            this.setState(s => {
+                return {
+                    scrollIndText: false
+                }
+            });
         }
     }
 
     render(){
         const data = this.props.data;
-        const scrollIndClass = this.state.scrollIndMode ? "scrollIndicator scrollIndicatorStuck" : "scrollIndicator scrollIndicatorFixed";
-        const scrollTextClass = this.state.scrollIndMode ? "scrollText scrollTextVisible" : "scrollText scrollTextHidden";
+        const scrollTextClass = this.state.scrollIndText ? "scrollText scrollTextVisible" : "scrollText scrollTextHidden";
         return (
             <div className="landing">
                 <div className="landingContent">
@@ -44,7 +47,7 @@ class Landing extends React.Component {
                     <h1>{data.slogan}</h1>
                     <h4>{data.subslogan}</h4>
                 </div>
-                <div className={scrollIndClass}>
+                <div className="scrollIndicator">
                     <i className="fas fa-arrow-alt-circle-down fa-4x"></i>
                     <div className={scrollTextClass}>{data.scrollind}</div>
                 </div>

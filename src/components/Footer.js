@@ -27,14 +27,14 @@ class Footer extends React.Component {
         </div>
         <div className="ftContent">
           <div className="ftPerson">
-            <i class="fas fa-user fa-2x"></i>
+            <i className="fas fa-user fa-2x"></i>
             <h4>{data.person1.title}</h4>
             <h5>{data.person1.name}</h5>
             <h5>{data.person1.email}</h5>
             <h5>{data.person1.phone}</h5>
           </div>
           <div className="ftPerson">
-            <i class="fas fa-user fa-2x"></i>
+            <i className="fas fa-user fa-2x"></i>
             <h4>{data.person2.title}</h4>
             <h5>{data.person2.name}</h5>
             <h5>{data.person2.email}</h5>

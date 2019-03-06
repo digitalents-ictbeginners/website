@@ -1,39 +1,29 @@
 .landing {
-    height: 105vh;
+    height: calc(100vh + 70px);
     background-image: url("../../imgs/landingbg.png");
-    background-size: 100% 87%;
+    background-size: 100% calc(100vh - 70px);
     background-repeat: no-repeat;
     text-align: center;
 }
 
 .landingContent {
     padding: 100px 0;
-    margin-bottom: 150px;
     width: 100%;
+    max-height: 370px;
+    margin-bottom: 125px;
     position: sticky;
     top: 0;
     background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 10px rgba(255,255,255,0.7);
-    z-index: 1;
 }
 
 .scrollIndicator {
+    position: sticky;
+    top: calc(100vh - 200px);
     width: 200px;
     margin-left: calc(50vw - 100px);
-    z-index: 2;
     color: goldenrod;
     text-align: center;
-    /*transition: top 1.5s;*/
-}
-
-.scrollIndicatorFixed {
-    position: fixed;
-    top: 88vh;
-}
-
-.scrollIndicatorStuck {
-    top: 93vh;
-    position: absolute;
 }
 
 .scrollText {
@@ -48,4 +38,10 @@
 
 .scrollTextHidden {
     opacity: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .landingContent {
+        padding: 20px 0;
+    }
 }
