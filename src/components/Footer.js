@@ -8,11 +8,16 @@ class Footer extends React.Component {
   render() {
     const data = this.props.english ? dataEN : dataFI;
     const sitemapElems = this.props.navdata.map(e => {
-      const sitemapSubElems = e.subLinks.map(se => {
-        return (
-          <Link key={se.id} to={se.link} className="ftSitemapLink">{se.name}</Link>
-        );
-      });
+    const sitemapSubElems = e.subLinks.map(se => {
+      const toObj = {
+        pathname: se.link,
+        search: this.props.english ? "?lang=en" : "",
+        hash: se.hash
+      }
+      return (
+        <Link key={se.id} to={toObj} className="ftSitemapLink">{se.name}</Link>
+      );
+    });
       return (
         <div key={e.id} className="ftSitemapSub">
           <h4>{e.title}</h4>
