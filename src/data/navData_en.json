@@ -1,19 +1,19 @@
 {
     "navdata": [
         {"id": 0, "title": "Introduction", "link": "/", "subLinks": [
-            {"id": 0, "name": "Who we are", "link": "/#intro"},
-            {"id": 1, "name": "Activity", "link": "/#toiminta"},
-            {"id": 2, "name": "Information", "link": "/#tietoa"},
-            {"id": 3, "name": "Apply!", "link": "/#hae"}
+            {"id": 0, "name": "Who we are", "link": "/", "hash": "#intro"},
+            {"id": 1, "name": "Activity", "link": "/", "hash": "#toiminta"},
+            {"id": 2, "name": "Information", "link": "/", "hash": "#tietoa"},
+            {"id": 3, "name": "Apply!", "link": "/", "hash": "#hae"}
         ]},
         {"id": 1, "title": "For Businesses", "link": "/yrityksille", "subLinks": [
-            {"id": 0, "name": "Our Projects", "link": "linkhere"},
-            {"id": 1, "name": "Order Form", "link": "linkhere"},
-            {"id": 2, "name": "CV-Bank", "link": "linkhere"}
+            {"id": 0, "name": "Our Projects", "link": "linkhere", "hash": "#hash"},
+            {"id": 1, "name": "Order Form", "link": "linkhere", "hash": "#hash"},
+            {"id": 2, "name": "CV-Bank", "link": "linkhere", "hash": "#hash"}
         ]},
         {"id": 2, "title": "Contacts", "link": "/yhteystiedot", "subLinks": [
-            {"id": 0, "name": "Location", "link": "/yhteystiedot#sijainti"},
-            {"id": 1, "name": "People", "link": "/yhteystiedot#ihmiset"}
+            {"id": 0, "name": "Location", "link": "/yhteystiedot", "hash": "#sijainti"},
+            {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#ihmiset"}
         ]}
     ],
     "langswitch": "Suomeksi"

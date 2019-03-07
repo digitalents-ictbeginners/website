@@ -12,7 +12,7 @@ class TopNavBar extends React.Component {
         const subNavBars = [""]; //first element is empty, index 0 -> no subnavbar
         this.props.data.navdata.forEach(e => {
             navElements.push(<TopNavBarElement key={e.id} app={this.props.parent} index={e.id+1} openid={this.props.openTab} link={e.link} title={e.title}/>);
-            subNavBars.push(<SubNavBar closeFunc={this.props.closeFunc} data={e.subLinks}/>);
+            subNavBars.push(<SubNavBar closeFunc={this.props.closeFunc} english={this.props.english} data={e.subLinks}/>);
         });
         //the wrapper element is just for the underline border
         return (

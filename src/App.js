@@ -17,7 +17,7 @@ class App extends Component {
     this.VIEW_THRESHOLD = 600;
     this.state = {
       mobile: true,
-      english: false,
+      english: (new URL(window.location).searchParams.get("lang") === "en") || false,
       sidebarOpen: false,
       navTab: 0
     }
@@ -72,6 +72,11 @@ class App extends Component {
   toggleLanguage(){
     this.setState(s => {
       s.english = !s.english
+      if(s.english){
+        window.history.replaceState(null, null, window.location.href.split("?")[0] + "?lang=en");
+      } else {
+        window.history.replaceState(null, null, window.location.href.split("?")[0] + "?lang=fi");
+      }
       return s;
     });
   }
@@ -81,7 +86,7 @@ class App extends Component {
     const navComponent =
       this.state.mobile
       ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/>
-      : <TopNavBar parent={this} closeFunc={this.closeSubNav} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
+      : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
 
     const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
