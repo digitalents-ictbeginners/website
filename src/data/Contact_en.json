@@ -1,0 +1,55 @@
+{
+    "id": "contact",
+    "location": {
+        "title": "Location",
+        "visitaddress": {
+            "title": "Visit Address",
+            "address": "Lapinlahdenkatu 16 00180 Helsinki"
+        },
+        "postaddress": {
+            "title": "Post Address",
+            "address": "PL 18201, 00099 Helsingin kaupunki"
+        },
+        "directions": {
+            "title": "Driving directions",
+            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
+        },
+        "publictransit": {
+            "title": "Public transit",
+            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem."
+        }
+    },
+    "people": {
+        "title": "People",
+        "peoplecards": [
+            {
+                "name": "Arto Aitta",
+                "title": "Job Coach",
+                "landline": "09 123 4567",
+                "mobile": "040 123 4567",
+                "email": "arto.aitta@edu.hel.fi"
+            },
+            {
+                "name": "Krishna Regmi",
+                "title": "Educator",
+                "landline": "09 123 4567",
+                "mobile": "040 123 4567",
+                "email": "krishna.regmi@edu.hel.fi"
+            },
+            {
+                "name": "name",
+                "title": "title",
+                "landline": "0351315",
+                "mobile": "0401241251",
+                "email": "afef.eafae@hel.fi"
+            },
+            {
+                "name": "name",
+                "title": "title",
+                "landline": "0351315",
+                "mobile": "0401241251",
+                "email": "afef.eafae@hel.fi"
+            }
+        ]
+    }
+}
