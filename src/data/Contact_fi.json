@@ -11,12 +11,19 @@
             "address": "PL 18201, 00099 Helsingin kaupunki"
         },
         "directions": {
-            "title": "Ajo-ohjeet",
-            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
-        },
-        "publictransit": {
-            "title": "Julkinen liikenne",
-            "text": "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem."
+            "title": "Saapuminen",
+            "byfoot": {
+                "title": "Jalan tai polkien",
+                "text": "Tähän ohjeita siitä miten saavutaan paikalla kulkemalla jalan tai polkemalla polkupyörällä jne jne"
+            },
+            "bycar": {
+                "title": "Autolla",
+                "text": "Ohjeita paikalle löytämiseen ajaen. Mitä kautta, mitkä tiet, mistä sisään jne jne"
+            },
+            "bypublictransit": {
+                "title": "Julkisella liikenteellä",
+                "text": "Bussi-, ratikka-, metro-, junalinjat ja niiden pysäkit. Eri suunnista jne jne"
+            }
         }
     },
     "people": {
