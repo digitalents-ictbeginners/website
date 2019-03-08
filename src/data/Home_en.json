@@ -73,7 +73,23 @@
     "interested": "Kiinnostuitko?",
     "applynow": "Hae meille!",
     "process": "Hakeminen",
-    "text": "Haku työpajalle on käynnissä jatkuvasti. Kaikilla pajoilla on toimintaa elokuun puolivälistä kesäkuun loppuun saakka. Ryhmän aloitus on aina kuun ensimmäisenä maanantaina, kun on vapaita paikkoja. Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan. Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+    "text": [
+      {
+        "id": 0,
+        "bold": "Voit hakea työpajalle, jos olet 17-29-vuotias Helsinkiläinen nuori ja olet työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa.",
+        "normal": "Työkokeilu kestää 1-6 kuukautta, jonka päätteeksi tavoitteena on löytää jatkopolku, kuten työ- tai opiskelupaikka, jos ala tuntuu itselle sopivalta."
+      },
+      {
+        "id": 1,
+        "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat aina kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
+        "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan."
+      },
+      {
+        "id": 2,
+        "bold": "Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+        "normal": ""
+      }
+    ],
     "toapply": "Siirry hakemukseen"
   }
 }

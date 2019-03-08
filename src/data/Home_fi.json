@@ -1,14 +1,14 @@
 {
   "landing": {
-    "title": "Digitalents ICT",
+    "title": "Digitalents Academy",
     "slogan": "Meillä tutustut ohjelmoinnin maailmaan",
     "subslogan": "Yksin ja tiimissä, ohjatusti ja itsenäisesti",
     "scrollind": "Lisää meistä"
   },
   "intro": {
     "id": "intro",
-    "title": "Keitä olemme",
-    "text": "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa. Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien.",
+    "title": "Haaveissa työ- tai opiskelupaikka ICT-alalta?",
+    "text": "Digitalents Academy on nykyaikainen ja luova oppimisympäristö 17-29-vuotiaille Helsinkiläisille työttömille työnhakijoille. Työharjoittelussa perehdyt ohjelmoinnin perusteisiin ja pääset tekemään harjoitus- ja tilaustöitä aiheen parissa. Sinulla ei tarvitse olla aikaisempaa osaamista alalta. Opetussuunnitelmasi räätälöidään toiveittesi ja mielenkiintosi mukaan, ja voit esimerkiksi perehtyä nettisivujen koodaamiseen, suunnitteluun ja ylläpitoon tai keskittyä kokonaan vaikkapa peliohjelmointiin.",
     "question": "Oletko alle 29-vuotias ja kiinnostunut alasta?",
     "joinus": "Tule Mukaan!"
   },
@@ -28,25 +28,25 @@
         "id": 0,
         "bgimg": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
-        "subtitle": "Koska asiat oppii tekemällä"
+        "subtitle": "Koska asiat oppii parhaiten tekemällä"
       },
       {
         "id": 1,
         "bgimg": "placeholder1.png",
         "title": "Vertaistukea",
-        "subtitle": "On kivempaa olla ongelmissa yhdessä"
+        "subtitle": "On kivempaa olla pulassa yhdessä"
       },
       {
         "id": 2,
         "bgimg": "placeholder2.png",
-        "title": "Placeholdertitle 3",
-        "subtitle": "Lorem ipsum placeholder"
+        "title": "Avustavat ohjaajat",
+        "subtitle": "Kysy mitä vaan, milloin vaan!"
       },
       {
         "id": 3,
         "bgimg": "placeholder3.png",
-        "title": "Placeholdertitle 4",
-        "subtitle": "Lorem ipsum placeholder"
+        "title": "Apua jatkopolulle ja työnhakuun",
+        "subtitle": ""
       },
       {
         "id": 4,
@@ -65,15 +65,31 @@
   "moreinfo": {
     "id": "tietoa",
     "title": "Työpajalla",
-    "text": "Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.",
+    "text": "Työpajajaksolla ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan kokeilemalla ja tekemällä virheitä apunasi monimuotoiset opiskelumateriaalit sekä hyvä porukka jossa vertaisoppia. Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan tilanteessa missä hyvänsä, liittyi ongelma sitten ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin.",
     "toblog": "Katso toimintaa blogistamme!"
   },
   "applyinfo": {
     "id": "hae",
     "interested": "Kiinnostuitko?",
-    "applynow": "Hae meille!",
-    "process": "Hakeminen",
-    "text": "Haku työpajalle on käynnissä jatkuvasti. Kaikilla pajoilla on toimintaa elokuun puolivälistä kesäkuun loppuun saakka. Ryhmän aloitus on aina kuun ensimmäisenä maanantaina, kun on vapaita paikkoja. Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan. Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+    "applynow": "Hae mukaan!",
+    "process": "Haku",
+    "text": [
+      {
+        "id": 0,
+        "bold": "Voit hakea työpajalle, jos olet 17-29-vuotias Helsinkiläinen nuori ja olet työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa.",
+        "normal": "Työkokeilu kestää 1-6 kuukautta, jonka päätteeksi tavoitteena on löytää jatkopolku, kuten työ- tai opiskelupaikka, jos ala tuntuu itselle sopivalta."
+      },
+      {
+        "id": 1,
+        "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat aina kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
+        "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan."
+      },
+      {
+        "id": 2,
+        "bold": "Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+        "normal": ""
+      }
+    ],
     "toapply": "Siirry hakemukseen"
   }
 }

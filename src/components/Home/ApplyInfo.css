@@ -28,18 +28,34 @@
 
 .aiContent {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 20px;
     justify-content: center;
     justify-items: center;
     margin: 0 auto;
     padding-top: 150px;
-    width: 60%;
-    max-width: 800px;
+    width: 75%;
+    max-width: 1000px;
 }
 
-.aiText {
-    max-width: 400px;
+.aiTextBox {
+    text-align: start;
+    max-width: 450px;
+}
+
+.aiTextBox p {
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.aiBoldText {
+    color: #333;
+    font-weight: 700;
+}
+
+.aiNormalText {
+    color: #222;
+    font-weight: 500;
 }
 
 .aiToApply {
