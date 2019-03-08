@@ -58,14 +58,23 @@
     font-weight: 500;
 }
 
-.aiToApply {
+.aiToApply { /* Needs more styling */
+    box-sizing: border-box;
     margin-top: 30px;
-    padding: 0 10px;
+    padding: 20px 10px;
+    background-color: #4d64c1;
+    color: white;
     border: 1px solid black;
     border-radius: 30px;
-    max-width: 250px;
-    max-height: 150px;
+    font-size: 24px;
+    font-weight: 600;
+    height: 200px;
+    max-width: 350px;
     align-self: center;
+}
+
+.aiToApply:any-link {
+    text-decoration: none;
 }
 
 .aiContent h2 {

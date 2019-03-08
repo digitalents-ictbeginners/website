@@ -90,6 +90,9 @@
         "normal": ""
       }
     ],
-    "toapply": "Siirry hakemukseen"
+    "toapply": {
+      "text": "Siirry tästä työpajojen yhteiseen hakemuslomakkeeseen. Valitse Yrityksissä tapahtuva valmennus (Digitalents).",
+      "link": "https://response.questback.com/isa/qbv.dll/ShowQuest?QuestID=5039569&sid=dClp3aBhxG"
+    }
   }
 }
