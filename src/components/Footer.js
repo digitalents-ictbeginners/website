@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link";
 import "./Footer.css";
 import dataFI from "../data/Footer_fi.json";
 import dataEN from "../data/Footer_en.json";
@@ -15,7 +15,7 @@ class Footer extends React.Component {
         hash: se.hash
       }
       return (
-        <Link key={se.id} to={toObj} className="ftSitemapLink">{se.name}</Link>
+        <Link key={se.id} to={toObj} className="ftSitemapLink" scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{se.name}</Link>
       );
     });
       return (
