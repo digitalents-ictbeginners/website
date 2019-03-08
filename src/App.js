@@ -72,16 +72,19 @@ class App extends Component {
   toggleLanguage(){
     this.setState(s => {
       s.english = !s.english
-      if(s.english){
-        window.history.replaceState(null, null, window.location.href.split("?")[0] + "?lang=en");
-      } else {
-        window.history.replaceState(null, null, window.location.href.split("?")[0] + "?lang=fi");
-      }
       return s;
     });
   }
 
   render() {
+    const host = window.location.host;
+    const hash = window.location.hash;
+    if(this.state.english){
+      window.history.replaceState(null, null, "http://" + host + "?lang=en" + hash);
+    } else {
+      window.history.replaceState(null, null, "http://" + host + hash);
+    }
+
     const navData = this.state.english ? navDataEN : navDataFI;
     const navComponent =
       this.state.mobile
