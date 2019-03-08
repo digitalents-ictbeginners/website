@@ -2,18 +2,28 @@
   background-color: white;
   width: 85%;
   max-width: 1000px;
-  margin: 0 auto 50px auto;
-  display: grid;
+  margin: 50px auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-bottom: 10px;
 }
 
 .locationInfo {
-  display: flex;
-  flex-flow: column;
   align-items: center;
   text-align: center;
   padding: 30px;
+}
+
+.location h1 {
+  font-size: 32px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.locationAddressContainer {
+  margin: 0 0 50px 0;
 }
 
 .locationAddress {
@@ -28,6 +38,10 @@
   margin-right: 10px;
 }
 
+.locationDirectionsTitle {
+  margin: 0 0 30px 0;
+}
+
 .locationDirections h3 {
   margin: 10px 0;
   padding: 0;
@@ -39,14 +53,32 @@
   font-weight: 500;
 }
 
-.map {
+.locationMapsContainer {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 400px);
+}
+
+.locationDirectionsGraphic {
+  background-color: lightgrey;
+  width: 350px;
+  height: 350px;
+}
+
+.locationMapWrapper {
+}
+
+.locationMap {
+  height: 350px;
   width: 100%;
   margin: 20px 0;
 }
 
 @media only screen and (max-width: 600px){
-  .map{
-    height: 300px;
+  .locationMap{
     margin: 0;
   }
 }
