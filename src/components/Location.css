@@ -72,6 +72,7 @@
 }
 
 .locationMap {
+  filter: saturate(50%);
   height: 350px;
   width: 100%;
   margin: 20px 0;
