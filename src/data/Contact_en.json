@@ -30,6 +30,7 @@
         "title": "People",
         "peoplecards": [
             {
+                "id": 0,
                 "name": "Arto Aitta",
                 "title": "Job Coach",
                 "landline": "09 123 4567",
@@ -37,25 +38,12 @@
                 "email": "arto.aitta@edu.hel.fi"
             },
             {
+                "id": 1,
                 "name": "Krishna Regmi",
                 "title": "Educator",
                 "landline": "09 123 4567",
                 "mobile": "040 123 4567",
                 "email": "krishna.regmi@edu.hel.fi"
-            },
-            {
-                "name": "name",
-                "title": "title",
-                "landline": "0351315",
-                "mobile": "0401241251",
-                "email": "afef.eafae@hel.fi"
-            },
-            {
-                "name": "name",
-                "title": "title",
-                "landline": "0351315",
-                "mobile": "0401241251",
-                "email": "afef.eafae@hel.fi"
             }
         ]
     }
