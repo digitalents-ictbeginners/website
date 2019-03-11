@@ -5,9 +5,6 @@ class Person extends React.Component {
 
     constructor(props){
         super(props);
-        this.state = {
-            image: null
-        }
         this.image = require("../imgs/people/" + this.props.data.picture);
     }
 

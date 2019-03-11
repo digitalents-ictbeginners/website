@@ -2,6 +2,12 @@ import React from "react";
 import "./ShowReelElement.css";
 
 class ShowReelElement extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.image = require("../../imgs/showreel/" + this.props.showReelData.content.bgimg);
+    }
+
     render(){
         const pos = this.props.showReelData.reelPos;
         const len = this.props.showReelData.reelLen;
@@ -51,10 +57,8 @@ class ShowReelElement extends React.Component {
             cname += " srElemHidden";
         }
 
-        //works but images have to be placed in public folder
-        const bgImgUrl = "../../imgs/showreel/" + cont.bgimg;
         const bgImgStyle = {
-            backgroundImage: `url(${bgImgUrl})`,
+            backgroundImage: `url(${this.image})`,
             backgroundSize: "cover"
         }
 
