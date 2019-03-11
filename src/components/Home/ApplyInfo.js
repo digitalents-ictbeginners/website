@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom"
 import "./ApplyInfo.css";
 
 class ApplyInfo extends React.Component {
@@ -23,7 +22,7 @@ class ApplyInfo extends React.Component {
                             <h2>{data.process}</h2>
                             {texts}
                         </div>
-                        <a className="aiToApply" href={data.toapply.link} target="_blank">
+                        <a className="aiToApply" href={data.toapply.link} rel="noopener noreferrer" target="_blank">
                             <div>
                                 {data.toapply.text}
                             </div>

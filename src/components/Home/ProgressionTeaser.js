@@ -12,7 +12,6 @@ class ProgressionTeaser extends React.Component {
         this.wrapper = null;
         this.timer = null;
         this.handleScroll = this.handleScroll.bind(this);
-        this.updateState = this.updateState.bind(this);
     }
 
     componentDidMount(){
@@ -33,8 +32,8 @@ class ProgressionTeaser extends React.Component {
         }
     }
 
-    updateState(){
-        
+    componentWillUnmount(){
+        this.wrapper.removeEventListener("scroll", this.handleScroll);
     }
 
     render(){
