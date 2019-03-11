@@ -5,7 +5,6 @@ import ShowReelElement from "./ShowReelElement";
 class ShowReel extends React.Component {
     constructor(props){
         super(props);
-        //todo: obviously don't hardcode this:
         this.state = {
             reelPos: 0
         }
