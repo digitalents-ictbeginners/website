@@ -19,12 +19,16 @@ class App extends Component {
       mobile: true,
       english: (new URL(window.location).searchParams.get("lang") === "en") || false,
       sidebarOpen: false,
-      navTab: 0
+      navTab: 0,
+      overlayOpen: false,
+      overlayImg: null
     }
     this.setView = this.setView.bind(this);
     this.toggleSidebar = this.toggleSidebar.bind(this);
     this.closeSubNav = this.closeSubNav.bind(this);
     this.toggleLanguage = this.toggleLanguage.bind(this);
+    this.setOverlay = this.setOverlay.bind(this);
+    this.closeOverlay = this.closeOverlay.bind(this);
     window.addEventListener("resize", this.setView);
   }
 
@@ -76,6 +80,21 @@ class App extends Component {
     });
   }
 
+  setOverlay(img){
+    this.setState(s => {
+      s.overlayImg = img;
+      s.overlayOpen = true;
+      return s;
+    })
+  }
+
+  closeOverlay(){
+    this.setState(s => {
+      s.overlayOpen = false;
+      return s;
+    });
+  }
+
   render() {
     const host = window.location.host;
     const hash = window.location.hash;
@@ -83,6 +102,12 @@ class App extends Component {
       window.history.replaceState(null, null, "http://" + host + "?lang=en" + hash);
     } else {
       window.history.replaceState(null, null, "http://" + host + hash);
+    }
+
+    const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
+    const overlayFuncs = {
+      set: this.setOverlay,
+      close: this.closeOverlay
     }
 
     const navData = this.state.english ? navDataEN : navDataFI;
@@ -102,8 +127,14 @@ class App extends Component {
           <div className={viewClass}>
             <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
             <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
-            <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english}/>} />
+            <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
             <Footer english={this.state.english} navdata={navData.navdata}/>
+          </div>
+          <div className={overlayClass}>
+            <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
+            <div className="foContent">
+              <img alt="" src={this.state.overlayImg}/>
+            </div>
           </div>
         </div>
       </Router>

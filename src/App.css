@@ -21,3 +21,37 @@
     margin-top: 65px;
     height: calc(100% - 65px);
 }
+
+.fixedOverlay {
+    position: fixed;
+    background-color: rgba(180, 180, 180, 0.8);
+    height: 100vh;
+    width: 100vw;
+    text-align: end;
+}
+
+.fixedOverlay i {
+    margin: 20px;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.foHidden {
+    display: none;
+}
+
+.foVisible {
+    display: block;
+}
+
+.foContent {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: 0 auto;
+}
+
+.foContent img {
+    display: block;
+    margin: 0 auto;
+}

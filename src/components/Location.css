@@ -62,9 +62,36 @@
 }
 
 .locationDirectionsGraphic {
+  position: relative;
   background-color: lightgrey;
   width: 350px;
   height: 350px;
+}
+
+.locationDirectionsGraphic img {
+  width: 350px;
+}
+
+.locationDirGrZoomOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+  color: lightgrey;
+  opacity: 0.7;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+.locationDirectionsGraphic:hover .locationDirGrZoomOverlay {
+  display: block;
+}
+
+.locationDirGrZoomOverlay i {
+  margin-top: 100px;
 }
 
 .locationMapWrapper {

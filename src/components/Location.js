@@ -1,7 +1,17 @@
 import React from 'react'
 import './Location.css'
+import ArrivalGraphic from "../imgs/arrivalgraphicplaceholder.png";
 
 export default class Location extends React.Component {
+  constructor(){
+    super();
+    this.openGraphic = this.openGraphic.bind(this);
+  }
+
+  openGraphic(){
+    this.props.overlay.set(ArrivalGraphic);
+  }
+
   render() {
     const map = `<iframe class="locationMap" width="${document.documentElement.clientWidth}" height="500" width="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.919258654117588%2C60.16585541850837%2C24.92373794317246%2C60.16704165634451&amp;layer=mapnik&amp;marker=60.16644854277959%2C24.92149829864502"></iframe>`
     const html = {__html: map};
@@ -42,7 +52,10 @@ export default class Location extends React.Component {
 
         <div className="locationMapsContainer">
           <div className="locationMapWrapper" dangerouslySetInnerHTML={html} ></div>
-          <div className="locationDirectionsGraphic">Helpful arrival graphic here</div>
+          <div className="locationDirectionsGraphic">
+            <img alt="" src={ArrivalGraphic}/>
+            <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
+          </div>
         </div>
 
       </div>
