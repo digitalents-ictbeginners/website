@@ -36,7 +36,7 @@
                 "landline": "09 310 20374",
                 "mobile": "040 829 1342",
                 "email": "arto.aitta@edu.hel.fi",
-                "picture": "",
+                "picture": "personplaceholder.png",
                 "quote": "Some nice quote here"
             },
             {
@@ -46,7 +46,7 @@
                 "landline": "09 310 23369",
                 "mobile": "040 508 0336",
                 "email": "krishna.regmi@edu.hel.fi",
-                "picture": "",
+                "picture": "personplaceholder.png",
                 "quote": "Some nice quote here"
             },
             {
@@ -56,7 +56,7 @@
                 "landline": "09 310 2287",
                 "mobile": "040 641 2092",
                 "email": "ellin email tähän",
-                "picture": "",
+                "picture": "personplaceholder.png",
                 "quote": "Some nice quote here"
             },
             {
@@ -66,7 +66,7 @@
                 "landline": "09 310 23406",
                 "mobile": "040 506 1549",
                 "email": "nina.maneejun@edu.hel.fi",
-                "picture": "",
+                "picture": "personplaceholder.png",
                 "quote": "Some nice quote here"
             },
             {
@@ -76,7 +76,7 @@
                 "landline": "-",
                 "mobile": "040 669 2530",
                 "email": "tarja.kurvinen@hel.fi",
-                "picture": "",
+                "picture": "personplaceholder.png",
                 "quote": "Some nice quote here"
             }
         ]

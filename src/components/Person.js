@@ -3,6 +3,14 @@ import "./Person.css";
 
 class Person extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.state = {
+            image: null
+        }
+        this.image = require("../imgs/people/" + this.props.data.picture);
+    }
+
     render(){
         const data = this.props.data;
         return (
@@ -14,10 +22,10 @@ class Person extends React.Component {
                     <h4><i className="fas fa-mobile-alt"></i> {data.mobile}</h4>
                     <h4><i className="fas fa-envelope"></i> <a className="personEmail" href={"mailto:"+data.email}>{data.email}</a></h4>
                 </div>
-                <div className="personImg">Picture here</div>
+                <img alt="" src={this.image} className="personImg" />
                 <div className="personQuote">
                     <i className="fas fa-quote-left fa-2x"></i>
-                    <p>Some nice quote text here</p>
+                    <p>{data.quote}</p>
                     <i className="fas fa-quote-right fa-2x personRightQuote"></i>
                 </div>
             </div>
