@@ -17,11 +17,13 @@ class TopNavBarElement extends React.Component {
     }
 
     render(){
-        const openClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem tnbElemClosed";
+        const elemClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem";
         return (
-            <div onMouseEnter={this.select} onClick={this.select} className={openClass}>
-                <Link to={this.props.link}>{this.props.title}</Link>
-            </div>
+            <Link className={elemClass} to={this.props.link}>
+                <div onMouseEnter={this.select} onClick={this.select}>
+                    {this.props.title}
+                </div>
+            </Link>
         );
     }
 }

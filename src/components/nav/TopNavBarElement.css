@@ -1,3 +1,7 @@
+.tnbElemLink:any-link {
+    text-decoration: none;
+}
+
 .tnbElem {
     width: 120px;
     height: 30px;
@@ -8,7 +12,7 @@
     cursor: pointer;
 }
 
-.tnbElem a:any-link {
+.tnbElem:any-link {
     text-decoration: none;
     color: black;
 }
@@ -19,6 +23,6 @@
     border-radius: 30px;
 }
 
-.tnbElemOpen a:any-link {
+.tnbElemOpen:any-link {
     color:white;
 }
