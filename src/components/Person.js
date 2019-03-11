@@ -9,10 +9,10 @@ class Person extends React.Component {
             <div className="person">
                 <div className="personText">
                     <h3>{data.name}</h3>
-                    <h4>{data.title}</h4>
+                    <h4><i class="fas fa-briefcase"></i> {data.title}</h4>
                     <h4><i className="fas fa-phone"></i> {data.landline}</h4>
                     <h4><i className="fas fa-mobile-alt"></i> {data.mobile}</h4>
-                    <h4>{data.email}</h4>
+                    <h4><i class="fas fa-envelope"></i> <a className="personEmail" href={"mailto:"+data.email}>{data.email}</a></h4>
                 </div>
                 <div className="personImg">Picture here</div>
                 <div className="personQuote">

@@ -33,17 +33,51 @@
                 "id": 0,
                 "name": "Arto Aitta",
                 "title": "Job Coach",
-                "landline": "09 123 4567",
-                "mobile": "040 123 4567",
-                "email": "arto.aitta@edu.hel.fi"
+                "landline": "09 310 20374",
+                "mobile": "040 829 1342",
+                "email": "arto.aitta@edu.hel.fi",
+                "picture": "",
+                "quote": "Some nice quote here"
             },
             {
                 "id": 1,
                 "name": "Krishna Regmi",
                 "title": "Educator",
-                "landline": "09 123 4567",
-                "mobile": "040 123 4567",
-                "email": "krishna.regmi@edu.hel.fi"
+                "landline": "09 310 23369",
+                "mobile": "040 508 0336",
+                "email": "krishna.regmi@edu.hel.fi",
+                "picture": "",
+                "quote": "Some nice quote here"
+            },
+            {
+                "id": 2,
+                "name": "Elli Vähäkangas",
+                "title": "IT-Assistant",
+                "landline": "09 310 2287",
+                "mobile": "040 641 2092",
+                "email": "ellin email tähän",
+                "picture": "",
+                "quote": "Some nice quote here"
+            },
+            {
+                "id": 3,
+                "name": "Nina Maneejun",
+                "title": "nina english title here",
+                "landline": "09 310 23406",
+                "mobile": "040 506 1549",
+                "email": "nina.maneejun@edu.hel.fi",
+                "picture": "",
+                "quote": "Some nice quote here"
+            },
+            {
+                "id": 4,
+                "name": "Tarja Kurvinen",
+                "title": "tarja title here",
+                "landline": "-",
+                "mobile": "040 669 2530",
+                "email": "tarja.kurvinen@hel.fi",
+                "picture": "",
+                "quote": "Some nice quote here"
             }
         ]
     }

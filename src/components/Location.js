@@ -13,12 +13,12 @@ export default class Location extends React.Component {
         <div className="locationInfo">
           <div className="locationAddressContainer">
             <div className="locationAddress">
-              <span className="locationAddressTitle">{data.location.visitaddress.title}</span>
-              <span className="locationText">{data.location.visitaddress.address}</span>
+              <h4 className="locationAddressTitle">{data.location.visitaddress.title}</h4>
+              <p className="locationText">{data.location.visitaddress.address}</p>
             </div>
             <div className="locationAddress">
-              <span className="locationAddressTitle">{data.location.postaddress.title}</span>
-              <span className="locationText">{data.location.postaddress.address}</span>
+              <h4 className="locationAddressTitle">{data.location.postaddress.title}</h4>
+              <p className="locationText">{data.location.postaddress.address}</p>
             </div>
           </div>
 
@@ -41,8 +41,8 @@ export default class Location extends React.Component {
         </div>
 
         <div className="locationMapsContainer">
-          <div className="locationDirectionsGraphic">Helpful arrival graphic here</div>
           <div className="locationMapWrapper" dangerouslySetInnerHTML={html} ></div>
+          <div className="locationDirectionsGraphic">Helpful arrival graphic here</div>
         </div>
 
       </div>

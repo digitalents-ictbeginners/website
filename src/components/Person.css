@@ -1,6 +1,7 @@
 .person {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
+    column-gap: 20px;
     justify-items: center;
     justify-content: center;
     border-bottom: 1px solid grey;
@@ -13,25 +14,42 @@
 }
 
 .personText {
-    text-align: center;
+    text-align: start;
     min-width: 250px;
-    margin-top: 10px;
+    margin: 40px 0 0 40px;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.personText i {
+    margin-right: 5px;
+}
+
+.personText .fa-mobile-alt {
+    margin-right: 12px;
+}
+
 .personText h3 {
-    font-size: 32px;
+    font-size: 28px;
     margin: 0 0 20px 0;
 }
 
 .personText h4 {
     font-size: 18px;
-    margin: 5px 0 10px 0;
+    margin: 20px 0;
+}
+
+.personEmail:any-link {
+    text-decoration: none;
+    color: #08415c;
+}
+
+.personEmail:any-link:hover {
+    color: #4d64c1;
 }
 
 .personImg {
-    width: 180px;
-    height: 240px;
+    width: 250px;
+    height: 300px;
     margin: 10px 0;
     background-color: lightgrey;
 }
@@ -39,14 +57,14 @@
 .personQuote {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: 50px 1fr 50px;
-    background-color: #eee;
-    border-left: 3px solid navy;
+    grid-template-columns: 32px 1fr 32px;
+    grid-template-rows: 32px 1fr 32px;
+    background-color: #f2f2dd;
+    border-left: 3px solid #4d64c1;
     border-radius: 10px;
     width: 300px;
-    margin: 10px 0 50px 0;
-    padding: 10px 5px 0 5px;
+    margin: 50px 0;
+    padding: 5px;
 }
 
 .personQuote p {
@@ -61,4 +79,16 @@
     grid-column: 3;
     grid-row: 3;
     justify-self: end;
+}
+
+@media only screen and (max-width: 600px){
+    .person {
+        padding: 20px 0 0 0;
+    }
+    .personQuote {
+        margin: 10px 0 20px 0;
+    }
+    .personText {
+        margin-top: 0;
+    }
 }
