@@ -98,10 +98,11 @@ class App extends Component {
   render() {
     const host = window.location.host;
     const hash = window.location.hash;
+    const path = window.location.pathname;
     if(this.state.english){
-      window.history.replaceState(null, null, "http://" + host + "?lang=en" + hash);
+      window.history.replaceState(null, null, "http://" + host + path + "?lang=en" + hash);
     } else {
-      window.history.replaceState(null, null, "http://" + host + hash);
+      window.history.replaceState(null, null, "http://" + host + path + hash);
     }
 
     const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
@@ -121,7 +122,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Helmet>
-            <title>ICT Beginners</title>
+            <title>Digitalents Academy</title>
           </Helmet>
           {navComponent}
           <div className={viewClass}>
