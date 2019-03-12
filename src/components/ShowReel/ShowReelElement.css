@@ -1,5 +1,5 @@
 .srElem {
-    box-shadow: 0 0 30px white;
+    box-shadow: 0 0 10px white;
     position: absolute;
     transition: transform 0.6s ease-in-out, filter 0.6s, box-shadow 0.3s;
 }
@@ -8,6 +8,9 @@
     font-weight: 500;
     text-align: start;
     padding-left: 50px;
+    color: white;
+    text-shadow: 2px 0 2px black, -2px 0 2px black,
+                 0 2px 2px black, 0 -2px 2px black;
 }
 
 .srElem h2 {
@@ -47,15 +50,15 @@
 }
 
 .srElemLeftDtop {
-    transform: translateX(calc(20vw - 300px)) scale(0.75);
+    transform: translateX(calc(20vw - 300px)) scale(0.5);
 }
 
 .srElemLeftMob {
-    transform: translateX(calc(20vw - 125px)) scale(0.75);
+    transform: translateX(calc(20vw - 125px)) scale(0.5);
 }
 
 .srElemRightDtop {
-    transform: translateX(calc(80vw - 300px)) scale(0.75);
+    transform: translateX(calc(80vw - 300px)) scale(0.5);
 }
 
 .srElemRightDtop:hover, .srElemLeftDtop:hover {
@@ -63,15 +66,15 @@
 }
 
 .srElemRightMob {
-    transform: translateX(calc(80vw - 125px)) scale(0.75);
+    transform: translateX(calc(80vw - 125px)) scale(0.5);
 }
 
 .srElemOffLeft {
-    transform: translateX(-530px) scale(0.75);
+    transform: translateX(-530px) scale(0.5);
 }
 
 .srElemOffRight {
-    transform: translateX(110vw) scale(0.75);
+    transform: translateX(110vw) scale(0.5);
 }
 
 .srElemHidden {
