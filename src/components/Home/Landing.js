@@ -10,12 +10,10 @@ class Landing extends React.Component {
             scrollIndText: false //false: default, true: after scroll
         }
         this.handleScroll = this.handleScroll.bind(this);
-        //this.DOMNode = null;
         this.wrapper = null;
     }
 
     componentDidMount(){
-        //this.DOMNode = ReactDOM.findDOMNode(this);
         this.wrapper = document.querySelector(".App .contentWrapper");
         this.wrapper.addEventListener("scroll", this.handleScroll);
     }
