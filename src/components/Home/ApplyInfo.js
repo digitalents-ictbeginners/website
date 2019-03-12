@@ -16,6 +16,9 @@ class ApplyInfo extends React.Component {
             <div id={data.id} className="applyInfo">
                 <div className="aiUnderlined"><h2>{data.interested}</h2></div>
                 <h1>{data.applynow}</h1>
+                <svg className="aiCurve" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
+                    <circle cy="1100" cx="500" r="1100" fill="lightgrey" />
+                </svg>
                 <div className="aiContentWrapper">
                     <div className="aiContent">
                         <div className="aiTextBox">

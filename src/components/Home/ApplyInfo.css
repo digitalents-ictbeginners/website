@@ -20,10 +20,13 @@
     font-size: 48px;
 }
 
+.aiCurve {
+    margin-bottom: -10px;
+}
+
 .aiContentWrapper {
     background-color: lightgray;
     padding-bottom: 100px;
-    border-radius: 50% / 200px 200px 0 0;
 }
 
 .aiContent {
@@ -33,7 +36,6 @@
     justify-content: center;
     justify-items: center;
     margin: 0 auto;
-    padding-top: 150px;
     width: 75%;
     max-width: 1000px;
 }
@@ -84,5 +86,11 @@
 @media only screen and (max-width: 600px) {
     .aiContentWrapper {
         border-radius: 0;
+    }
+    .aiTextBox {
+        max-width: 350px;
+    }
+    .aiTextBox h2 {
+        text-align: center;
     }
 }
