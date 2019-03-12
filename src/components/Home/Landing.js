@@ -20,6 +20,10 @@ class Landing extends React.Component {
         this.wrapper.addEventListener("scroll", this.handleScroll);
     }
 
+    componentWillUnmount(){
+        this.wrapper.removeEventListener("scroll", this.handleScroll);
+    }
+
     handleScroll(){
         if(this.wrapper.scrollTop > 80 && !this.state.scrollIndText){
             this.setState(s => {
