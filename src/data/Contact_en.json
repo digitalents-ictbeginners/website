@@ -23,6 +23,10 @@
             "bypublictransit": {
                 "title": "By Public Transit",
                 "text": "Bussi-, ratikka-, metro-, junalinjat ja niiden pysäkit. Eri suunnista jne jne"
+            },
+            "bigmap": {
+                "embedsrc": "https://www.openstreetmap.org/export/embed.html?bbox=24.9192586%2C60.165855%2C24.923737%2C60.167041&layer=mapnik&marker=60.16645%2C24.92145",
+                "bigmaptext": "Large map"
             }
         }
     },

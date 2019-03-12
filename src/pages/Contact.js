@@ -11,7 +11,7 @@ class Contact extends React.Component {
         const data = this.props.english ? dataEN : dataFI;
         return (
             <div>
-                <Location data={data} overlay={this.props.overlay} />
+                <Location data={data.location} overlay={this.props.overlay} />
                 <People data={data}/>
             </div>
         );

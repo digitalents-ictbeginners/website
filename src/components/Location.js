@@ -13,45 +13,50 @@ export default class Location extends React.Component {
   }
 
   render() {
-    const map = `<iframe class="locationMap" width="${document.documentElement.clientWidth}" height="500" width="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.919258654117588%2C60.16585541850837%2C24.92373794317246%2C60.16704165634451&amp;layer=mapnik&amp;marker=60.16644854277959%2C24.92149829864502"></iframe>`
-    const html = {__html: map};
     const data = this.props.data;
     return (
       <div id="sijainti" className="location">
 
-        <h1>{data.location.title}</h1>
+        <h1>{data.title}</h1>
         <div className="locationInfo">
           <div className="locationAddressContainer">
             <div className="locationAddress">
-              <h4 className="locationAddressTitle">{data.location.visitaddress.title}</h4>
-              <p className="locationText">{data.location.visitaddress.address}</p>
+              <h4 className="locationAddressTitle">{data.visitaddress.title}</h4>
+              <p className="locationText">{data.visitaddress.address}</p>
             </div>
             <div className="locationAddress">
-              <h4 className="locationAddressTitle">{data.location.postaddress.title}</h4>
-              <p className="locationText">{data.location.postaddress.address}</p>
+              <h4 className="locationAddressTitle">{data.postaddress.title}</h4>
+              <p className="locationText">{data.postaddress.address}</p>
             </div>
           </div>
 
-          <h2 className="locationDirectionsTitle">{data.location.directions.title}</h2>
+          <h2 className="locationDirectionsTitle">{data.directions.title}</h2>
           <div className="locationDirections">
             <div>
-              <h3>{data.location.directions.byfoot.title}</h3>
-              <p className="locationText">{data.location.directions.byfoot.text}</p>
+              <h3>{data.directions.byfoot.title}</h3>
+              <p className="locationText">{data.directions.byfoot.text}</p>
             </div>
             <div>
-              <h3>{data.location.directions.bycar.title}</h3>
-              <p className="locationText">{data.location.directions.bycar.text}</p>
+              <h3>{data.directions.bycar.title}</h3>
+              <p className="locationText">{data.directions.bycar.text}</p>
             </div>
             <div>
-              <h3>{data.location.directions.bypublictransit.title}</h3>
-              <p className="locationText">{data.location.directions.bypublictransit.text}</p>
+              <h3>{data.directions.bypublictransit.title}</h3>
+              <p className="locationText">{data.directions.bypublictransit.text}</p>
             </div>
           </div>
 
         </div>
 
         <div className="locationMapsContainer">
-          <div className="locationMapWrapper" dangerouslySetInnerHTML={html} ></div>
+          <div>
+            <div className="locationMapWrapper">
+              <iframe className="locationMap" title="map" frameBorder="0" scrolling="no" src={data.directions.map.embedsrc}></iframe>
+            </div>
+            <a className="locationBigMapLink" href={data.directions.map.embedsrc} rel="noopener noreferrer" target="_blank">
+              <i className="fas fa-search-plus"></i> {data.directions.map.bigmaptext}
+            </a>
+          </div>
           <div className="locationDirectionsGraphic">
             <img alt="" src={ArrivalGraphic}/>
             <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
