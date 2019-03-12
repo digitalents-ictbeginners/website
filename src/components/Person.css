@@ -51,7 +51,12 @@
     width: 250px;
     height: 300px;
     margin: 10px 0;
-    background-color: lightgrey;
+    background-color: #ddd;
+}
+
+.personImg i {
+    color: #aaa;
+    margin: 80px 60px;
 }
 
 .personQuote {

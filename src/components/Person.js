@@ -5,7 +5,13 @@ class Person extends React.Component {
 
     constructor(props){
         super(props);
-        this.image = require("../imgs/people/" + this.props.data.picture);
+        const picfilename = this.props.data.picture;
+        if(picfilename){
+            const img = require("../imgs/people/" + this.props.data.picture);
+            this.image = <img alt="" src={img} className="personImg" />
+        } else {
+            this.image = <div className="personImg"><i className="fas fa-user fa-9x"></i></div>
+        }
     }
 
     render(){
@@ -19,7 +25,7 @@ class Person extends React.Component {
                     <h4><i className="fas fa-mobile-alt"></i> {data.mobile}</h4>
                     <h4><i className="fas fa-envelope"></i> <a className="personEmail" href={"mailto:"+data.email}>{data.email}</a></h4>
                 </div>
-                <img alt="" src={this.image} className="personImg" />
+                {this.image}
                 <div className="personQuote">
                     <i className="fas fa-quote-left fa-2x"></i>
                     <p>{data.quote}</p>
