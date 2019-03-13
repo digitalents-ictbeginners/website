@@ -7,7 +7,7 @@ class Person extends React.Component {
         super(props);
         const picfilename = this.props.data.picture;
         if(picfilename){
-            const img = require("../imgs/people/" + this.props.data.picture);
+            const img = require("../../imgs/people/" + this.props.data.picture);
             this.image = <img alt="" src={img} className="personImg" />
         } else {
             this.image = <div className="personImg"><i className="fas fa-user fa-9x"></i></div>

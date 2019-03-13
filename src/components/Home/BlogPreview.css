@@ -1,0 +1,29 @@
+.blogPreview {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) minmax(0, 20px) 180px;
+    height: 250px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blogPreviewCardContainer {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    column-gap: 10px;
+    justify-items: center;
+    
+}
+
+.blogPreviewCard {
+    width: 175px;
+    height: 250px;
+    background-color: grey;
+}
+
+.blogLinkCard {
+    grid-column: 3;
+    width: 175px;
+    height: 250px;
+    background-color: black;
+}

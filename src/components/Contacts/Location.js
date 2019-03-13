@@ -1,6 +1,6 @@
 import React from 'react'
 import './Location.css'
-import ArrivalGraphic from "../imgs/arrivalgraphicplaceholder.png";
+import ArrivalGraphic from "../../imgs/arrivalgraphicplaceholder.png";
 
 export default class Location extends React.Component {
   constructor(){

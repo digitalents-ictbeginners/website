@@ -1,5 +1,6 @@
 import React from "react";
 import "./MoreInfo.css";
+import BlogPreview from "./BlogPreview";
 
 class MoreInfo extends React.Component {
     render(){
@@ -12,16 +13,7 @@ class MoreInfo extends React.Component {
                     <p>{data.text}</p>
                     <h3>{data.toblog}</h3>
                 </div>
-                <div className="blogPreview">
-                    <div className="blogPreviewCardContainer">
-                        <div className="blogPreviewCard"></div>
-                        <div className="blogPreviewCard"></div>
-                        <div className="blogPreviewCard"></div>
-                        <div className="blogPreviewCard"></div>
-                        <div className="blogPreviewCard"></div>
-                    </div>
-                    <div className="blogLinkCard"></div>
-                </div>
+                <BlogPreview />
             </div>
         );
     }
