@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {HashLink as Link} from "react-router-hash-link";
 import "./TopNavBarElement.css";
 
 class TopNavBarElement extends React.Component {
@@ -18,8 +18,13 @@ class TopNavBarElement extends React.Component {
 
     render(){
         const elemClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem";
+        const toObj = {
+            pathname: this.props.link,
+            search: this.props.english ? "?lang=en" : "",
+            hash: this.props.hash
+        }
         return (
-            <Link className={elemClass} to={this.props.link}>
+            <Link className={elemClass} to={toObj}>
                 <div onMouseEnter={this.select} onClick={this.select}>
                     {this.props.title}
                 </div>

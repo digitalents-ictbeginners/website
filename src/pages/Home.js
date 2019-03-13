@@ -14,7 +14,7 @@ export default class Home extends React.Component {
   render() {
     const data = this.props.english ? dataEN : dataFI;
     return (
-      <div>
+      <div id="top">
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <ProgressionTeaser data={data.teaser}/>

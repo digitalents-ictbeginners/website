@@ -27,7 +27,8 @@ class Footer extends React.Component {
     });
     const toContacts = {
       pathname: "/yhteystiedot",
-      search: this.props.english ? "?lang=en" : ""
+      search: this.props.english ? "?lang=en" : "",
+      hash: "#top"
     }
     return (
       <footer>
