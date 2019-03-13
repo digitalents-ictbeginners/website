@@ -16,14 +16,21 @@
 }
 
 .blogPreviewCard {
+    box-sizing: border-box;
     width: 175px;
     height: 250px;
-    background-color: grey;
+    padding: 5px;
+    background-color: #ccc;
+    text-align: center;
 }
 
 .blogLinkCard {
+    box-sizing: border-box;
     grid-column: 3;
     width: 175px;
     height: 250px;
+    padding: 30px 0 0 0;
+    color: white;
     background-color: black;
+    text-align: center;
 }
