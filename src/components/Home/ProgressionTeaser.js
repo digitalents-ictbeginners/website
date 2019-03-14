@@ -42,7 +42,6 @@ class ProgressionTeaser extends React.Component {
         const item1class = this.state.animate ? "ptItem1 ptFadeIn" : "ptItem1";
         const item2class = this.state.animate ? "ptItem2 ptFadeIn" : "ptItem2";
         const item3class = this.state.animate ? "ptItem3 ptFadeIn" : "ptItem3";
-        const item4class = this.state.animate ? "ptItem4 ptFadeIn" : "ptItem4";
         return (
             <div id={data.id} className="teaser">
                 <div className={lineClass}></div>
@@ -50,7 +49,7 @@ class ProgressionTeaser extends React.Component {
                 <h3 className={item1class}>{data.item1}</h3>
                 <h3 className={item2class}>{data.item2}</h3>
                 <h2 className={item3class}>{data.item3}</h2>
-                <div className={item4class}><i className="fas fa-chevron-down"></i></div>   
+                <div className="ptEllipsis"><i className="fas fa-ellipsis-v fa-2x"></i></div>   
             </div>
         );
     }
