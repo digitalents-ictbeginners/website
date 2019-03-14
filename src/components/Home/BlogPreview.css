@@ -1,36 +1,57 @@
-.blogPreview {
-    display: grid;
-    grid-template-columns: minmax(180px, 1fr) minmax(0, 20px) 180px;
-    height: 250px;
-    max-width: 1000px;
-    margin: 0 auto;
+.blogPreviewTitle {
+    text-align: center;
+    font-size: 24px;
 }
 
-.blogPreviewCardContainer {
+.blogPreview {
     display: grid;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-    column-gap: 10px;
+    grid-template-columns: repeat(5, 180px);
+    justify-content: center;
     justify-items: center;
-    
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .blogPreviewCard {
     box-sizing: border-box;
     width: 175px;
     height: 250px;
-    padding: 5px;
-    background-color: #ccc;
     text-align: center;
 }
 
-.blogLinkCard {
-    box-sizing: border-box;
-    grid-column: 3;
-    width: 175px;
-    height: 250px;
-    padding: 30px 0 0 0;
+.bpcPost {
+    padding: 5px;
+    background-color: #ccc;
+}
+
+.bpcLink {
+    padding-top: 30px;
     color: white;
     background-color: black;
-    text-align: center;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    .blogPreview {
+        grid-template-columns: repeat(3, 180px)
+    }
+    .bpcLink {
+        width: 365px;
+        grid-column: 2 / 4;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .blogPreview {
+        grid-template-columns: repeat(2, 180px);
+        column-gap: 0px;
+        row-gap: 5px;
+    }
+    .bpcLink {
+        width: 355px;
+        height: 200px;
+        padding-top: 20px;
+        grid-row: 3;
+        grid-column: 1 / 3;
+    }
 }

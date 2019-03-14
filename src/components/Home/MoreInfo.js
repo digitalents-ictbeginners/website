@@ -11,9 +11,8 @@ class MoreInfo extends React.Component {
                 <div className="moreInfoInner">
                     <h2>{data.title}</h2>
                     <p>{data.text}</p>
-                    <h3>{data.toblog}</h3>
                 </div>
-                <BlogPreview />
+                <BlogPreview title={data.toblog}/>
             </div>
         );
     }
