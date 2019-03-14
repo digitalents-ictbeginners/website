@@ -6,6 +6,7 @@
     max-width: 900px;
     margin: 100px auto 100px auto;
     text-align: center;
+    padding: 0 10px;
 }
 
 .moreInfoInner h2 {
@@ -16,4 +17,13 @@
 .moreInfoInner p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px){
+    .moreInfoInner h2 {
+        font-size: 32px;
+    }
+    .moreInfoInner p {
+        font-size: 16px;
+    }
 }

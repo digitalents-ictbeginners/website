@@ -8,7 +8,10 @@
   "intro": {
     "id": "intro",
     "title": "Who we are",
-    "text": "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa. Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien.",
+    "text": [
+      "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa.",
+      "Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien."
+    ],
     "question": "Oletko alle 29-vuotias ja kiinnostunut alasta?",
     "joinus": "Tule Mukaan!"
   },
@@ -65,7 +68,11 @@
   "moreinfo": {
     "id": "tietoa",
     "title": "Työpajalla",
-    "text": "Työpajalla pääset tekemään harjoitus- ja tilaustöitä sekä kehittämään ammatillista osaamistasi. Työkokemus parantaa mahdollisuuksia päästä opiskelemaan tai suoraan työhön. Työpajajaksolla ammatilliset valmiutesi kehittyvät ja taitosi pajan erikoistumisalueella kasvavat.",
+    "text": [
+      "Työpajajaksolla ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
+      "Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan kokeilemalla ja tekemällä virheitä apunasi monimuotoiset opiskelumateriaalit sekä hyvä porukka jossa vertaisoppia.",
+      "Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan tilanteessa missä hyvänsä, liittyi ongelma sitten ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin."
+    ],
     "toblog": "Katso toimintaa blogistamme!"
   },
   "applyinfo": {

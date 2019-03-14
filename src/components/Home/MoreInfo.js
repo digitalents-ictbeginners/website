@@ -10,7 +10,9 @@ class MoreInfo extends React.Component {
             <div id={data.id} className="moreInfoBlock">
                 <div className="moreInfoInner">
                     <h2>{data.title}</h2>
-                    <p>{data.text}</p>
+                    <p>{data.text[0]}</p>
+                    <p>{data.text[1]}</p>
+                    <p>{data.text[2]}</p>
                 </div>
                 <BlogPreview title={data.toblog}/>
             </div>

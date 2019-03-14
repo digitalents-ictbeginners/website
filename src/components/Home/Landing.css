@@ -17,6 +17,10 @@
     box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
+.landingContent h3 {
+    color: #444;
+}
+
 .scrollIndicator {
     position: sticky;
     top: calc(100vh - 200px);
@@ -42,6 +46,19 @@
 
 @media only screen and (max-width: 600px){
     .landingContent {
-        padding: 20px 0;
+        padding: 50px 0;
+    }
+    .landingContent h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .landingContent h1 {
+        font-size: 18px;
+    }
+    .landingContent h4 {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
     }
 }

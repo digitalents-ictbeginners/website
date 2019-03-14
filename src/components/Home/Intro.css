@@ -30,3 +30,23 @@
     font-size: 24px;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 600px){
+    .introInner {
+        padding: 0 10px;
+    }
+    .introInner h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .introInner p {
+        font-size: 16px;
+    }
+    .introInner h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .introInner h3 {
+        font-size: 20px;
+    }
+}
