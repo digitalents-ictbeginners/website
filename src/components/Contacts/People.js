@@ -12,9 +12,9 @@ class People extends React.Component{
         });
 
         return (
-            <div>
+            <div className="people" id="ihmiset">
                 <h2 className="peopleTitle">{this.props.data.people.title}</h2>
-                <div className="peopleGrid" id="ihmiset">
+                <div className="peopleGrid">
                     {people}
                 </div>
             </div>

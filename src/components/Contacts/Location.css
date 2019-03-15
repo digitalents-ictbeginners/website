@@ -2,9 +2,9 @@
   background-color: white;
   width: 85%;
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0 10px 0;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-bottom: 10px;
 }
 
 .locationInfo {
