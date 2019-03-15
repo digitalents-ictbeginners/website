@@ -29,10 +29,10 @@ class SideBar extends React.Component {
                 <div key={e.id}>
                     <Link className="sidebarLink" to={mainto} scroll={el => el.scrollIntoView({ behavior: 'smooth' })} onClick={this.props.toggle}>
                         <h2 className="sidebarMainLink">{e.title}</h2>
-                        <div className="sidebarSubLinkContainer">
-                            {sublinks}
-                        </div>
                     </Link>
+                    <div className="sidebarSubLinkContainer">
+                        {sublinks}
+                    </div>
                 </div>
             );
         });
@@ -48,12 +48,18 @@ class SideBar extends React.Component {
                 </div>
                 <div className={"sidebarBackground" + (this.props.open ? " sidebarBgVisible" : "")} onClick={this.props.toggle}></div>
                 <div className={openstateClass}>
-                    <div className="sidebarLangSwitch">{this.props.data.langswitch}</div>
-                    <div className="sidebarCloser" onClick={this.props.toggle}>
-                        <i className="fas fa-times fa-2x"></i>
+                    <div className="sidebarHeader">
+                        <div onClick={this.props.langToggle} className="sidebarLangSwitch">
+                            <h4>{this.props.data.langswitch}</h4>
+                        </div>
+                        <div className="sidebarCloser" onClick={this.props.toggle}>
+                            <i className="fas fa-times fa-2x"></i>
+                        </div>
                     </div>
-                    <div className="sidebarContent">
-                        {links}
+                    <div className="sidebarContentWrapper">
+                        <div className="sidebarContent">
+                            {links}
+                        </div>
                     </div>
                 </div>
             </div>
