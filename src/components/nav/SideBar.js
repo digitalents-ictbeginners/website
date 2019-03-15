@@ -1,37 +1,60 @@
 import React from "react";
+import {HashLink as Link} from "react-router-hash-link";
 import "./SideBar.css";
-import SideBarDropMenu from "./SideBarDropMenu";
-import menuimg from "../../imgs/menu.png";
-import ximg from "../../imgs/x.png";
 import logoimg from "../../imgs/logo_placeholder.png";
 
 class SideBar extends React.Component {
-    constructor(props){
-        super(props);
-        this.handleButton = this.handleButton.bind(this);
-    }
-
-    handleButton(){
-        this.props.toggleFunc();
-    }
-
+    
     render(){
-        const openstateClass = "sidebarWrapper" + (this.props.open ? " sidebarOpen" : " sidebarClosed");
-        const buttonClass = "togglebutton" + (this.props.open ? " buttonOpen" : " buttonClosed");
-        const buttonImg = this.props.open ? ximg : menuimg;
-        const categories = this.props.data.map(e =>{
+        const openstateClass = "sidebar" + (this.props.open ? " sidebarOpen" : " sidebarClosed");
+        const links = this.props.data.navdata.map(e =>{
+            const mainto = {
+                pathname: e.link,
+                search: this.props.english ? "?lang=en" : "",
+                hash: e.hash
+            }
+            const sublinks = e.subLinks.map(esub => {
+                const subto = {
+                    pathname: esub.link,
+                    search: this.props.english ? "?lang=en" : "",
+                    hash: esub.hash
+                }
+                return (
+                    <Link key={esub.id} className="sidebarLink" to={subto} onClick={this.props.toggle}>
+                        <h4 className="sidebarSubLink">{esub.name}</h4>
+                    </Link>
+                );
+            });
             return (
-                <SideBarDropMenu key={e.id} toggleFunc={this.props.toggleFunc} title={e.title} data={e.subLinks}/>
+                <div key={e.id}>
+                    <Link className="sidebarLink" to={mainto} scroll={el => el.scrollIntoView({ behavior: 'smooth' })} onClick={this.props.toggle}>
+                        <h2 className="sidebarMainLink">{e.title}</h2>
+                        <div className="sidebarSubLinkContainer">
+                            {sublinks}
+                        </div>
+                    </Link>
+                </div>
             );
         });
         return (
-            <div className={openstateClass}>
-                <button onClick={this.handleButton} className={buttonClass}>
-                    <img src={buttonImg} width="32px" alt=""/>
-                </button>
-                <img src={logoimg} width="240px" alt=""/>
-                <div className="sidebar">
-                    {categories}
+            <div>
+                <div className="sidebarTopBarWrapper">
+                    <div className="sidebarTopBar">
+                        <div className="sidebarOpener" onClick={this.props.toggle}>
+                            <i className="fas fa-bars fa-2x"></i>
+                        </div>
+                        <img className="sidebarTopBarLogo" alt="" src={logoimg} />
+                    </div>
+                </div>
+                <div className={"sidebarBackground" + (this.props.open ? " sidebarBgVisible" : "")} onClick={this.props.toggle}></div>
+                <div className={openstateClass}>
+                    <div className="sidebarLangSwitch">{this.props.data.langswitch}</div>
+                    <div className="sidebarCloser" onClick={this.props.toggle}>
+                        <i className="fas fa-times fa-2x"></i>
+                    </div>
+                    <div className="sidebarContent">
+                        {links}
+                    </div>
                 </div>
             </div>
         );

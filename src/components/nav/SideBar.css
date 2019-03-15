@@ -1,9 +1,53 @@
-.sidebarWrapper {
+.sidebarTopBarWrapper {
     position: fixed;
-    background-color: #55e;
-    width: 300px;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+}
+
+.sidebarTopBar {
+    width: calc(100% - 40px);
+    height: 60px;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.sidebarOpener {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 15px;
+    cursor: pointer;
+    color: #666;
+}
+
+.sidebarTopBarLogo {
+    display: inline-block;
+    background-color: black;
+    width: 48px;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.sidebarBackground {
+    position: fixed;
+    width: 100%;
     height: 100%;
-    transition: left 0.5s ease;
+    background-color: rgba(80, 80, 80, 0.7);
+    display: none;
+}
+
+.sidebarBgVisible {
+    display: block;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
 }
 
 .sidebarOpen {
@@ -11,37 +55,39 @@
 }
 
 .sidebarClosed {
-    left: -300px;
+    left: -250px;
 }
 
-.togglebutton {
+.sidebarLangSwitch {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0 0 10px;
+}
+
+.sidebarCloser {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 20px;
-    outline: none;
-    transition: filter 0.3s, box-shadow 0.3s;
+    padding: 15px;
+    margin-left: 180px;
     cursor: pointer;
 }
 
-.buttonOpen {
-    background-color: transparent;
-    border: none;
-    left: 240px;
+.sidebarContent {
+    margin-left: 20px;
 }
 
-.buttonClosed {
-    background-color: white;
-    border: 3px solid #55e;
-    border-radius: 50%;
-    box-shadow: 0 0 5px #55e;
-    padding-top: 5px;
-    left: 310px;
+.sidebarLink:any-link {
+    text-decoration: none;
 }
 
-.sidebar {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    color: white;
+.sidebarMainLink {
+    color: #333;
+}
+
+.sidebarSubLinkContainer {
+    margin-left: 20px;
+}
+
+.sidebarSubLink {
+    color: #777;
+    margin: 10px 0;
 }

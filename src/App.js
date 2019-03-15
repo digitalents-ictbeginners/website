@@ -114,7 +114,7 @@ class App extends Component {
     const navData = this.state.english ? navDataEN : navDataFI;
     const navComponent =
       this.state.mobile
-      ? <SideBar open={this.state.sidebarOpen} toggleFunc={this.toggleSidebar} data={navData.navdata}/>
+      ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData}/>
       : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
 
     const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
