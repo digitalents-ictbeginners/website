@@ -15,7 +15,8 @@ export default class Location extends React.Component {
   render() {
     const data = this.props.data;
     return (
-      <div id="sijainti" className="location">
+      <div className="location">
+        <div id={data.id} className="locationAnchor"/>
 
         <h1>{data.title}</h1>
         <div className="locationInfo">

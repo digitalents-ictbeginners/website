@@ -5,15 +5,16 @@ import Person from "./Person";
 class People extends React.Component{
     
     render(){
-        const people = this.props.data.people.peoplecards.map(e => {
+        const data = this.props.data;
+        const people = data.peoplecards.map(e => {
             return (
                 <Person key={e.id} data={e} />
             );
         });
-
         return (
-            <div className="people" id="ihmiset">
-                <h2 className="peopleTitle">{this.props.data.people.title}</h2>
+            <div className="people">
+                <div id={data.id} className="peopleAnchor" />
+                <h2 className="peopleTitle">{data.title}</h2>
                 <div className="peopleGrid">
                     {people}
                 </div>

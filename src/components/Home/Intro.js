@@ -5,7 +5,8 @@ class Intro extends React.Component {
     render(){
         const data = this.props.data;
         return (
-            <div id={data.id} className="introBlock">
+            <div className="introBlock">
+                <div id={data.id} className="introAnchor" />
                 <div className="introInner">
                     <h2>{data.title}</h2>
                     <p>{data.text[0]}</p>

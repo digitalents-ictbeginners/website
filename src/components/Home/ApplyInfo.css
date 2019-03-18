@@ -1,6 +1,12 @@
 .applyInfo {
-    padding: 100px 0 0 0;
+    position: relative;
+    padding-top: 50px;
     text-align: center;
+}
+
+.aiAnchor {
+    position: absolute;
+    top: -60px;
 }
 
 .aiUnderlined {

@@ -8,6 +8,7 @@ class MoreInfo extends React.Component {
         //Blog preview cards should eventually be independent components
         return (
             <div id={data.id} className="moreInfoBlock">
+                <div id={data.id} className="moreInfoAnchor" />
                 <div className="moreInfoInner">
                     <h2>{data.title}</h2>
                     <p>{data.text[0]}</p>

@@ -13,7 +13,8 @@ class ApplyInfo extends React.Component {
             );
         });
         return (
-            <div id={data.id} className="applyInfo">
+            <div className="applyInfo">
+                <div id={data.id} className="aiAnchor" />
                 <div className="aiUnderlined"><h2>{data.interested}</h2></div>
                 <h1>{data.applynow}</h1>
                 <svg className="aiCurve" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">

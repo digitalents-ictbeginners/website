@@ -1,9 +1,16 @@
 .infoGridWrapper {
+    position: relative;
     background-color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infoGridAnchor {
+    position: absolute;
+    top: -60px;
 }
 
 .infoGrid {
-    padding-top: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }

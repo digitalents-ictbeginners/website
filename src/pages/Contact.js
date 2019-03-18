@@ -10,9 +10,9 @@ class Contact extends React.Component {
     render(){
         const data = this.props.english ? dataEN : dataFI;
         return (
-            <div id="top">
+            <div className="contact" id="top">
                 <Location data={data.location} overlay={this.props.overlay} />
-                <People data={data}/>
+                <People data={data.people}/>
             </div>
         );
     }
