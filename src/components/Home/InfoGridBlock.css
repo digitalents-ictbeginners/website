@@ -1,0 +1,62 @@
+.infoBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.ibText {
+    padding-top: 150px;
+    max-width: 500px;
+}
+
+.ibText h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.ibText p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.ibImg {
+    max-width: 500px;
+}
+
+.ibImg img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px){
+    .infoBlock {
+        height: 300px;
+    }
+    .ibText {
+        padding-top: 50px;
+        max-width: 300px;
+    }
+    .ibImg {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .infoBlock {
+        height: 200px;
+    }
+    .ibText {
+        padding-top: 0;
+        max-width: 180px;
+    }
+    .ibText h2 {
+        font-size: 24px;
+    }
+    .ibText p {
+        font-size: 16px;
+    }
+    .ibImg {
+        max-width: 180px;
+    }
+}

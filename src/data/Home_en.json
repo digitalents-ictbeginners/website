@@ -22,46 +22,34 @@
     "item2": "Learn something new",
     "item3": "Is it your thing?"
   },
-  "showreel": {
+  "infogrid": {
     "id": "toiminta",
     "title": "Opit ohjelmointia modernissa oppimisympäristössä",
     "subtitle": "Täällä sinulle on",
-    "elements": [
+    "blocks": [
       {
         "id": 0,
-        "bgimg": "placeholder0.png",
+        "img": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
-        "subtitle": "Koska asiat oppii tekemällä"
+        "text": "Koska asiat oppii parhaiten tekemällä"
       },
       {
         "id": 1,
-        "bgimg": "placeholder1.png",
+        "img": "placeholder1.png",
         "title": "Vertaistukea",
-        "subtitle": "On kivempaa olla ongelmissa yhdessä"
+        "text": "On kivempaa olla pulassa yhdessä"
       },
       {
         "id": 2,
-        "bgimg": "placeholder2.png",
-        "title": "Placeholdertitle 3",
-        "subtitle": "Lorem ipsum placeholder"
+        "img": "placeholder2.png",
+        "title": "Avustavat ohjaajat",
+        "text": "Kysy mitä vaan, milloin vaan!"
       },
       {
         "id": 3,
-        "bgimg": "placeholder3.png",
-        "title": "Placeholdertitle 4",
-        "subtitle": "Lorem ipsum placeholder"
-      },
-      {
-        "id": 4,
-        "bgimg": "placeholder4.png",
-        "title": "Placeholdertitle 5",
-        "subtitle": "Lorem ipsum placeholder"
-      },
-      {
-        "id": 5,
-        "bgimg": "placeholder5.png",
-        "title": "Placeholdertitle 6",
-        "subtitle": "Lorem ipsum placeholder"
+        "img": "placeholder3.png",
+        "title": "Apua jatkopolulle ja työnhakuun",
+        "text": ""
       }
     ]
   },

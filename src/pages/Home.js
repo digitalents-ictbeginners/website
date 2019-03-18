@@ -6,7 +6,8 @@ import dataEN from '../data/Home_en.json';
 import Landing from "../components/Home/Landing";
 import Intro from "../components/Home/Intro";
 import ProgressionTeaser from "../components/Home/ProgressionTeaser";
-import ShowReel from "../components/ShowReel/ShowReel";
+import InfoGrid from "../components/Home/InfoGrid";
+//import ShowReel from "../components/ShowReel/ShowReel";
 import MoreInfo from "../components/Home/MoreInfo";
 import ApplyInfo from "../components/Home/ApplyInfo";
 
@@ -18,10 +19,13 @@ export default class Home extends React.Component {
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <ProgressionTeaser data={data.teaser}/>
-        <ShowReel data={data.showreel} mobile={this.props.mobile}/>
+        <InfoGrid data={data.infogrid}/>
         <MoreInfo data={data.moreinfo}/>
         <ApplyInfo data={data.applyinfo}/>
       </div>
     )
   }
 }
+
+//Deprecated element:
+//<ShowReel data={data.showreel} mobile={this.props.mobile}/>
