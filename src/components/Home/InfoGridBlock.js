@@ -15,7 +15,7 @@ class InfoGridBlock extends React.Component {
                         <p>{data.text}</p>
                     </div>
         const img = <div className="ibImg">
-                        <img src={this.image}/>
+                        <img alt="" src={this.image}/>
                     </div>
         if(i % 2 === 0){
             return (

@@ -15,7 +15,7 @@ export default class Home extends React.Component {
   render() {
     const data = this.props.english ? dataEN : dataFI;
     return (
-      <div id="top">
+      <div id="top" className="home">
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <ProgressionTeaser data={data.teaser}/>
@@ -26,6 +26,3 @@ export default class Home extends React.Component {
     )
   }
 }
-
-//Deprecated element:
-//<ShowReel data={data.showreel} mobile={this.props.mobile}/>

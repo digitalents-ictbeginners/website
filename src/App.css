@@ -4,24 +4,6 @@
     box-sizing: border-box;
 }
 
-.contentWrapper {
-    position: fixed;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 100%;
-    z-index: -1;
-}
-
-.appMobile {
-    margin-top: 60px;
-    height: 100%;
-}
-
-.appDesktop {
-    margin-top: 65px;
-    height: calc(100% - 65px);
-}
-
 .fixedOverlay {
     position: fixed;
     background-color: rgba(180, 180, 180, 0.8);

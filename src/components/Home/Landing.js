@@ -1,6 +1,7 @@
 import React from "react";
 //import ReactDOM from "react-dom";
 import "./Landing.css";
+//import BgImg from "../../imgs/landingbg.png";
 
 class Landing extends React.Component {
 
@@ -10,27 +11,25 @@ class Landing extends React.Component {
             scrollIndText: false //false: default, true: after scroll
         }
         this.handleScroll = this.handleScroll.bind(this);
-        this.wrapper = null;
     }
 
     componentDidMount(){
-        this.wrapper = document.querySelector(".App .contentWrapper");
-        this.wrapper.addEventListener("scroll", this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     }
 
     componentWillUnmount(){
-        this.wrapper.removeEventListener("scroll", this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     }
 
     handleScroll(){
-        if(this.wrapper.scrollTop > 80 && !this.state.scrollIndText){
+        if(document.documentElement.scrollTop > 80 && !this.state.scrollIndText){
             this.setState(s => {
                 return {
                     scrollIndText: true
                 }
             });
         }
-        else if(this.wrapper.scrollTop < 100 && this.state.scrollIndText){
+        else if(document.documentElement.scrollTop < 100 && this.state.scrollIndText){
             this.setState(s => {
                 return {
                     scrollIndText: false
@@ -59,3 +58,9 @@ class Landing extends React.Component {
 }
 
 export default Landing;
+
+/*
+<div className="landingBg">
+    <img alt="" src={BgImg}/>
+</div>
+*/

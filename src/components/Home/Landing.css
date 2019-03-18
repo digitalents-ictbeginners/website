@@ -1,16 +1,17 @@
 .landing {
     height: calc(100vh + 70px);
-    background-image: url("../../imgs/landingbg.png");
-    background-size: 100% calc(100vh - 70px);
-    background-repeat: no-repeat;
+    position: relative;
     text-align: center;
+    background-image: url("../../imgs/landingbg.png");
+    background-size: 100% calc(100% - 120px);
+    background-repeat: no-repeat;
 }
 
 .landingContent {
-    padding: 100px 0;
+    padding: 150px 0;
+    margin-bottom: 110px;
     width: 100%;
     max-height: 370px;
-    margin-bottom: 125px;
     position: sticky;
     top: 0;
     background-color: rgba(255,255,255,0.9);
@@ -23,9 +24,9 @@
 
 .scrollIndicator {
     position: sticky;
+    display: block;
     top: calc(100vh - 200px);
-    width: 200px;
-    margin-left: calc(50vw - 100px);
+    margin: 0 auto;
     color: goldenrod;
     text-align: center;
 }
@@ -46,7 +47,7 @@
 
 @media only screen and (max-width: 600px){
     .landingContent {
-        padding: 50px 0;
+        padding: 100px 0 75px 0;
     }
     .landingContent h3 {
         font-size: 16px;

@@ -11,10 +11,12 @@ class InfoGrid extends React.Component {
             );   
         });
         return (
-            <div id={data.id} className="infoGrid">
-                <h1>{data.title}</h1>
-                <h3>{data.subtitle}</h3>
-                <div className="infoBlocks">{infoBlocks}</div>
+            <div className="infoGridWrapper">
+                <div id={data.id} className="infoGrid">
+                    <h1>{data.title}</h1>
+                    <h3>{data.subtitle}</h3>
+                    <div className="infoBlocks">{infoBlocks}</div>
+                </div>
             </div>
         );
     }

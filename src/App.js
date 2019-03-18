@@ -117,7 +117,6 @@ class App extends Component {
       ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData}/>
       : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
 
-    const viewClass = this.state.mobile ? "contentWrapper appMobile" : "contentWrapper appDesktop";
     return (
       <Router>
         <div className="App">
@@ -125,12 +124,10 @@ class App extends Component {
             <title>Digitalents Academy</title>
           </Helmet>
           {navComponent}
-          <div className={viewClass}>
-            <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
-            <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
-            <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
-            <Footer english={this.state.english} navdata={navData.navdata}/>
-          </div>
+          <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
+          <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
+          <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
+          <Footer english={this.state.english} navdata={navData.navdata}/>
           <div className={overlayClass}>
             <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
             <div className="foContent">

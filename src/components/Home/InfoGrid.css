@@ -1,3 +1,7 @@
+.infoGridWrapper {
+    background-color: white;
+}
+
 .infoGrid {
     padding-top: 50px;
     max-width: 1000px;

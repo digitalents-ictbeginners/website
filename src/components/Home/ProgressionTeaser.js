@@ -9,31 +9,30 @@ class ProgressionTeaser extends React.Component {
             animate: false,
         }
         this.DOMNode = null;
-        this.wrapper = null;
         this.timer = null;
         this.handleScroll = this.handleScroll.bind(this);
     }
 
     componentDidMount(){
         this.DOMNode = ReactDOM.findDOMNode(this);
-        this.wrapper = document.querySelector(".App .contentWrapper");
-        this.wrapper.addEventListener("scroll", this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll);
     }
 
     handleScroll(){
-        if(this.wrapper.scrollTop + document.documentElement.clientHeight >
+        const docelem = document.documentElement;
+        if(docelem.scrollTop + docelem.clientHeight >
             this.DOMNode.offsetTop + 300){
                 this.setState(s => {
                     return {
                         animate: true,
                     }
             });
-            this.wrapper.removeEventListener("scroll", this.handleScroll);
+            window.removeEventListener("scroll", this.handleScroll);
         }
     }
 
     componentWillUnmount(){
-        this.wrapper.removeEventListener("scroll", this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
     }
 
     render(){
