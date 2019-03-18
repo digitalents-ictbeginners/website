@@ -1,7 +1,7 @@
 {
     "id": "contact",
     "location": {
-        "id": "sijainti",
+        "id": "location",
         "title": "Location",
         "visitaddress": {
             "title": "Visit Address",
@@ -32,7 +32,7 @@
         }
     },
     "people": {
-        "id": "ihmiset",
+        "id": "people",
         "title": "People",
         "peoplecards": [
             {

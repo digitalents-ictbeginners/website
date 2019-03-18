@@ -2,13 +2,13 @@
     "navdata": [
         {"id": 0, "title": "Introduction", "link": "/", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Who we are", "link": "/", "hash": "#intro"},
-            {"id": 1, "name": "Activity", "link": "/", "hash": "#toiminta"},
-            {"id": 2, "name": "Information", "link": "/", "hash": "#tietoa"},
-            {"id": 3, "name": "Apply!", "link": "/", "hash": "#hae"}
+            {"id": 1, "name": "Activity", "link": "/", "hash": "#activity"},
+            {"id": 2, "name": "Information", "link": "/", "hash": "#moreinfo"},
+            {"id": 3, "name": "Apply!", "link": "/", "hash": "#apply"}
         ]},
         {"id": 1, "title": "Contacts", "link": "/yhteystiedot", "hash": "#top", "subLinks": [
-            {"id": 0, "name": "Location", "link": "/yhteystiedot", "hash": "#sijainti"},
-            {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#ihmiset"}
+            {"id": 0, "name": "Location", "link": "/yhteystiedot", "hash": "#location"},
+            {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#people"}
         ]}
     ],
     "langswitch": "Suomeksi"

@@ -23,7 +23,7 @@
     "item3": "Is it your thing?"
   },
   "infogrid": {
-    "id": "toiminta",
+    "id": "activity",
     "title": "Opit ohjelmointia modernissa oppimisympäristössä",
     "subtitle": "Täällä sinulle on",
     "blocks": [
@@ -54,7 +54,7 @@
     ]
   },
   "moreinfo": {
-    "id": "tietoa",
+    "id": "moreinfo",
     "title": "Työpajalla",
     "text": [
       "Työpajajaksolla ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
@@ -64,7 +64,7 @@
     "toblog": "Katso toimintaa blogistamme!"
   },
   "applyinfo": {
-    "id": "hae",
+    "id": "apply",
     "interested": "Kiinnostuitko?",
     "applynow": "Hae meille!",
     "process": "Hakeminen",
