@@ -6,12 +6,7 @@
             {"id": 2, "name": "Information", "link": "/", "hash": "#tietoa"},
             {"id": 3, "name": "Apply!", "link": "/", "hash": "#hae"}
         ]},
-        {"id": 1, "title": "For Businesses", "link": "/yrityksille", "hash": "#top", "subLinks": [
-            {"id": 0, "name": "Our Projects", "link": "linkhere", "hash": "#hash"},
-            {"id": 1, "name": "Order Form", "link": "linkhere", "hash": "#hash"},
-            {"id": 2, "name": "CV-Bank", "link": "linkhere", "hash": "#hash"}
-        ]},
-        {"id": 2, "title": "Contacts", "link": "/yhteystiedot", "hash": "#top", "subLinks": [
+        {"id": 1, "title": "Contacts", "link": "/yhteystiedot", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Location", "link": "/yhteystiedot", "hash": "#sijainti"},
             {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#ihmiset"}
         ]}

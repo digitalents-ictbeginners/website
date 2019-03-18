@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Contact from "./pages/Contact";
-import Business from "./pages/Business";
+//import Business from "./pages/Business";
 import navDataFI from "./data/navData_fi.json";
 import navDataEN from "./data/navData_en.json";
 import SideBar from "./components/nav/SideBar";
@@ -125,7 +125,6 @@ class App extends Component {
           </Helmet>
           {navComponent}
           <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
-          <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
           <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
           <Footer english={this.state.english} navdata={navData.navdata}/>
           <div className={overlayClass}>
@@ -141,3 +140,6 @@ class App extends Component {
 }
 
 export default App;
+
+// Unused (for now) route:
+// <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
