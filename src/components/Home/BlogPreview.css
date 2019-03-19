@@ -13,6 +13,10 @@
     margin: 0 auto;
 }
 
+.blogPreview a:any-link {
+    text-decoration: none;
+}
+
 .blogPreviewCard {
     box-sizing: border-box;
     width: 175px;
@@ -23,6 +27,19 @@
 .bpcPost {
     padding: 5px;
     background-color: #ccc;
+}
+
+.bpcPost h4, .bpcPost h3, .bpcPost h2 {
+    color: black;
+    text-shadow: 0 0 2px white;
+}
+
+.bpcPost p {
+    padding: 10px 0;
+    color: white;
+    text-shadow: 0 0 2px black;
+    background-color: rgba(50,50,50,0.3);
+    border-radius: 10px;
 }
 
 .bpcLink {

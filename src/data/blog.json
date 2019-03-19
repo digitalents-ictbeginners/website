@@ -1,0 +1,24 @@
+{
+    "monday": {
+        "date": "Maanantai 18.3",
+        "title": "Aamupala",
+        "text": "Maanantaiaamu alkoi jännitysnäytelmällä – aamupala joutui uhanalaiseksi.",
+        "link": "https://dtacademy.home.blog/2019/03/18/aamupala-18-3/",
+        "backgroundimage": "blogplaceholder.png"
+    },
+    "wednesday": {
+        "date": "Keskiviikko 20.3",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.",
+        "link": "https://dtacademy.home.blog",
+        "backgroundimage": "blogplaceholder.png"
+    },
+    "friday": {
+        "date": "Perjantai 15.3",
+        "title": "Mistakes",
+        "text": "Education through my eyes, throughout living in multiple countries and going through a handful of schools.",
+        "link": "https://dtacademy.home.blog/2019/03/15/perjantai-mistakes/",
+        "backgroundimage": "blogplaceholder.png"
+    },
+    "bloglink": "https://dtacademy.home.blog/"
+}
