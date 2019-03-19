@@ -55,7 +55,7 @@ class Footer extends React.Component {
             <span>{data.streetaddress}</span><br/>
             <span>{data.postnumbercity}</span><br/>
             <span>{data.phonenum}</span><br/>
-            <Link to={toContacts}><h2>{data.morecontacts}</h2></Link>
+            <Link className="ftMoreContacts" to={toContacts}><h2>{data.morecontacts}</h2></Link>
           </div>
         </div>
       </footer>

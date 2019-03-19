@@ -52,8 +52,9 @@
   padding: 0;
 }
 
-.locationText {
-  margin: 0 0 20px 0;
+.locationDirections p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
   font-size: 18px;
   font-weight: 500;
 }

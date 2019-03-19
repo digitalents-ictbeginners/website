@@ -2,16 +2,21 @@ footer {
   background-color: #08415c;
   min-height: 300px;
   padding: 30px 0;
-  color: white;
+  color: #eee;
 }
 
 .ftSitemap {
+  width: 90%;
   max-width: 1000px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 40px auto;
+  padding: 0 0 20px 0;
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
+  justify-content: center;
+  column-gap: 200px;
   text-align: center;
+  border-bottom: 1px solid #aaa;
 }
 
 .ftSitemap h4 {
@@ -27,7 +32,7 @@ footer {
 }
 
 .ftSitemapLink:any-link {
-  color: #ccc;
+  color: #bbb;
   text-decoration: none;
 }
 
@@ -67,9 +72,13 @@ footer {
   line-height: 1.75;
 }
 
-.ftLocation h2 {
+.ftMoreContacts:any-link {
+  color: #ddd;
+}
+
+.ftMoreContacts h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 600px){
