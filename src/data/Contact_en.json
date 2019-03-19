@@ -13,10 +13,18 @@
         },
         "directions": {
             "title": "Directions",
-            "intro": "Digitalents Academy sijaitsee osoitteessa Lapinlahdenkatu 16, Maria 01 -alueella. Toimimme rakennuksessa 5 eli samassa rakennuksessa kuin Games Factory. Ulko-ovi on sama kuin Maki.vc:lla, mutta olemme heti ensimmäisessä kerroksessa portaiden alapäässä.",
+            "intro": {
+                "title": "Maria 01 -area",
+                "text": ["Digitalents Academy sijaitsee osoitteessa Lapinlahdenkatu 16, Maria 01 -alueella. Alueen pääsisäänkäynti on pohjoispäässä Lapinlahdenkadulla, mutta sisään pääsee myös etelästä Mechelininkadulta.",
+                    "Toimimme punatiilisessä rakennuksessa 5, Games Factoryn ohessa. Ulko-ovi on sama kuin Maki.vc:lla, mutta olemme heti ensimmäisessä kerroksessa portaiden alapäässä."
+                ]
+            },
             "byfoot": {
                 "title": "By foot or bicycle",
-                "text": "Kampin metroasemalta paikan päälle pääsee kävellen noin 10 minuutissa. Suunnilleen sama matka menee kävellen Ruoholahden metroasemalta. Rautatieasemalta kävellen pääsee baanaa pitkin noin 20 minuutissa. Baanaa pitkin pääsee kätevästi myös pyörällä, tuli sitten kampista tai rautatieasemalta. Baanaa tullessasi nouse ylös Pohjoiselle Rautatienkadulle ja K-marketin jälkeen käänny Lapinlahdenkadulle. Siellä näetkin jo Maria 01 -alueen."
+                "text": ["Kampin metroasemalta paikan päälle pääsee kävellen noin 10 minuutissa, Radisson-hotellin ohi, alas Lapinrinnettä ja Lapinlahdenkatua pitkin pääportille.",
+                    "Ruoholahden metroasemalta noin samassa ajassa Itämerenkadun ja Mechelininkadun kautta eteläisestä sisäänkäynnistä.",
+                    "Rautatieasemalta kävellen pääsee noin 20 minuutissa pitkin baanaa, jota pääsee kätevästi myös pyörällä. Baanaa tullessasi nouse ylös Pohjoiselle Rautatienkadulle ja K-marketin ohi pääsisäänkäynnille."
+                ]
             },
             "bycar": {
                 "title": "By car",
@@ -24,7 +32,9 @@
             },
             "bypublictransit": {
                 "title": "By Public Transit",
-                "text": "Lähin raitiovaunupysäkki on Maria Mechelinkadulla ja siinä pysähtyy raitiovaunu numero 8. Raitiovaunut 7 ja 9 pysähtyvät Ruoholahden villat -pysäkillä. Lähin linja-autopysäkki on Leppäsuonkatu ja siinä pysähtyvät bussit 24 ja 192."
+                "text": ["Lähin raitiovaunupysäkki on Maria Mechelinkadulla ja siinä pysähtyy raitiovaunu numero 8. Raitiovaunut 7 ja 9 pysähtyvät Ruoholahden villat -pysäkillä.",
+                        "Lähin linja-autopysäkki on Leppäsuonkatu ja siinä pysähtyvät bussit 24 ja 192."
+                ]
             },
             "map": {
                 "embedsrc": "https://www.openstreetmap.org/export/embed.html?bbox=24.9192586%2C60.165855%2C24.923737%2C60.167041&layer=mapnik&marker=60.16645%2C24.92145",

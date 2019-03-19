@@ -33,13 +33,26 @@ export default class Location extends React.Component {
 
           <h2 className="locationDirectionsTitle">{data.directions.title}</h2>
           <div className="locationDirections">
-              <p>{data.directions.intro}</p>
+            <div className="locationDirSub">
+              <h3>{data.directions.intro.title}</h3>
+              <p>{data.directions.intro.text[0]}</p>
+              <p>{data.directions.intro.text[1]}</p>
+            </div>
+            <div className="locationDirSub">
               <h3>{data.directions.byfoot.title}</h3>
-              <p>{data.directions.byfoot.text}</p>
+              <p>{data.directions.byfoot.text[0]}</p>
+              <p>{data.directions.byfoot.text[1]}</p>
+              <p>{data.directions.byfoot.text[2]}</p>
+            </div>
+            <div className="locationDirSub">
               <h3>{data.directions.bycar.title}</h3>
               <p>{data.directions.bycar.text}</p>
+            </div>
+            <div className="locationDirSub">
               <h3>{data.directions.bypublictransit.title}</h3>
-              <p>{data.directions.bypublictransit.text}</p>
+              <p>{data.directions.bypublictransit.text[0]}</p>
+              <p>{data.directions.bypublictransit.text[1]}</p>
+            </div>
           </div>
 
         </div>
