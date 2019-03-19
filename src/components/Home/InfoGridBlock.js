@@ -10,7 +10,7 @@ class InfoGridBlock extends React.Component {
     render(){
         const data = this.props.data;
         const i = this.props.index;
-        const text = <div className="ibText">
+        const text = <div className="ibText" style={{backgroundColor: data.bgcolor}}>
                         <h2>{data.title}</h2>
                         <p>{data.text}</p>
                     </div>
