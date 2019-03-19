@@ -1,13 +1,16 @@
 .teaser {
     position: relative;
     text-align: center;
-    margin: 150px 0;
     background-color: white;
 }
 
-.teaser .vLine {
+.teaser1 {
+    margin: 100px 0 50px 0;
+}
+
+.teaser1 .vLine1 {
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 50%;
     width: 1px;
     height: 0;
@@ -15,8 +18,22 @@
     background-color: black;
 }
 
-.teaser .vLineFull {
-    height: 350px;
+.teaser1 .vLine1Full {
+    height: 225px;
+}
+
+.teaser2 .vLine2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 0;
+    transition: height 2s;
+    background-color: black;
+}
+
+.teaser2 .vLine2Full {
+    height: 100px;
 }
 
 .teaser h2, .teaser h3, .teaser h1 {
@@ -26,25 +43,29 @@
     z-index: 2;
 }
 
-.teaser h2, .teaser h3, .teaser {
+.teaser h3 {
     animation-duration: 0.5s;
     animation-fill-mode: both;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 50px 0 0 0;
 }
 
 .teaser h1 {
+    margin: 0;
     font-size: 40px;
     font-weight: 600;
-    padding-bottom: 30px;
-}
-
-.teaser h3 {
-    font-size: 24px;
-    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .teaser h2 {
     font-size: 36px;
     font-weight: 400;
+}
+
+.teaser2 h2 {
+    margin: 0;
+    padding: 100px 0 0 0;
 }
 
 .ptItem1 {
@@ -57,7 +78,6 @@
 }
 
 .ptItem3 {
-    animation-delay: 1.6s;
     visibility: hidden;
 }
 

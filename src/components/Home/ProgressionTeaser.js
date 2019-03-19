@@ -9,7 +9,6 @@ class ProgressionTeaser extends React.Component {
             animate: false,
         }
         this.DOMNode = null;
-        this.timer = null;
         this.handleScroll = this.handleScroll.bind(this);
     }
 
@@ -20,12 +19,12 @@ class ProgressionTeaser extends React.Component {
 
     handleScroll(){
         const docelem = document.documentElement;
-        if(docelem.scrollTop + docelem.clientHeight >
-            this.DOMNode.offsetTop + 300){
-                this.setState(s => {
-                    return {
-                        animate: true,
-                    }
+        const screenbottom = docelem.scrollTop + docelem.clientHeight;
+        const elemtop = this.DOMNode.offsetParent.offsetTop + this.DOMNode.offsetTop;
+        if( screenbottom > elemtop + 200){
+            this.setState(s => {
+                s.animate = true;
+                return s;
             });
             window.removeEventListener("scroll", this.handleScroll);
         }
@@ -34,24 +33,45 @@ class ProgressionTeaser extends React.Component {
     componentWillUnmount(){
         window.removeEventListener("scroll", this.handleScroll);
     }
+}
+
+class ProgressionTeaser1 extends ProgressionTeaser {
+    constructor(){
+        super();
+    }
 
     render(){
         const data = this.props.data;
-        const lineClass = this.state.animate ? "vLine vLineFull" : "vLine";
+        const line1Class = this.state.animate ? "vLine1 vLine1Full" : "vLine1";
         const item1class = this.state.animate ? "ptItem1 ptFadeIn" : "ptItem1";
         const item2class = this.state.animate ? "ptItem2 ptFadeIn" : "ptItem2";
-        const item3class = this.state.animate ? "ptItem3 ptFadeIn" : "ptItem3";
         return (
-            <div id={data.id} className="teaser">
-                <div className={lineClass}></div>
+            <div className="teaser teaser1">
+                <div className={line1Class}></div>
                 <h1>{data.title}</h1>
                 <h3 className={item1class}>{data.item1}</h3>
                 <h3 className={item2class}>{data.item2}</h3>
-                <h2 className={item3class}>{data.item3}</h2>
-                <div className="ptEllipsis"><i className="fas fa-ellipsis-v fa-2x"></i></div>   
             </div>
         );
     }
 }
 
-export default ProgressionTeaser;
+class ProgressionTeaser2 extends ProgressionTeaser {
+    constructor(){
+        super();
+    }
+
+    render(){
+        const data = this.props.data;
+        const line2Class = this.state.animate ? "vLine2 vLine2Full" : "vLine2";
+        const item3class = this.state.animate ? "ptItem3 ptFadeIn" : "ptItem3";
+        return (
+            <div className="teaser teaser2">
+                <div className={line2Class}></div>
+                <h2 className={item3class}>{data.item3}</h2>
+            </div>
+        );
+    }
+}
+
+export { ProgressionTeaser1, ProgressionTeaser2 };

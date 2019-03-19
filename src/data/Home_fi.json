@@ -15,15 +15,14 @@
     "question": "Oletko alle 29-vuotias ja kiinnostunut alasta?",
     "joinus": "Tule Mukaan!"
   },
-  "teaser": {
-    "id": "teaser",
-    "title": "Selvitä taitosi",
-    "item1": "Kokeile!",
-    "item2": "Opi uutta",
-    "item3": "Onko juttusi?"
-  },
   "infogrid": {
     "id": "toiminta",
+    "teaser": {
+      "title": "Selvitä taitosi",
+      "item1": "Kokeile!",
+      "item2": "Opi uutta",
+      "item3": "Onko juttusi?"
+    },
     "title": "Opit ohjelmointia modernissa oppimisympäristössä",
     "subtitle": "Täällä sinulle on",
     "blocks": [

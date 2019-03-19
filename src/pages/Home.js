@@ -18,7 +18,6 @@ export default class Home extends React.Component {
       <div id="top" className="home">
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
-        <ProgressionTeaser data={data.teaser}/>
         <InfoGrid data={data.infogrid}/>
         <MoreInfo data={data.moreinfo}/>
         <ApplyInfo data={data.applyinfo}/>
