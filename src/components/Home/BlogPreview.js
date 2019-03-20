@@ -23,41 +23,31 @@ class BlogPreview extends React.Component {
             <div>
                 <h3 className="blogPreviewTitle">{this.props.title}</h3>
                 <div className="blogPreview">
-                    <a href={Data.monday.link} rel="noopener noreferrer" target="_blank">
-                        <div style={this.bgstyle(this.monimg)} className="blogPreviewCard bpcPost">
-                            <h4>{Data.monday.date}</h4>
-                            <h3>{Data.monday.title}</h3>
-                            <p>{Data.monday.text}</p>
-                        </div>
+                    <a style={this.bgstyle(this.monimg)} className="blogPreviewCard bpcPost" href={Data.monday.link} rel="noopener noreferrer" target="_blank">
+                        <h4>{Data.monday.date}</h4>
+                        <h3>{Data.monday.title}</h3>
+                        <p>{Data.monday.text}</p>
                     </a>
-                    <a href={Data.wednesday.link} rel="noopener noreferrer" target="_blank">
-                        <div style={this.bgstyle(this.wedimg)} className="blogPreviewCard bpcPost">
-                            <h4>{Data.wednesday.date}</h4>
-                            <h3>{Data.wednesday.title}</h3>
-                            <p>{Data.wednesday.text}</p>
-                        </div>
+                    <a style={this.bgstyle(this.wedimg)} className="blogPreviewCard bpcPost" href={Data.wednesday.link} rel="noopener noreferrer" target="_blank">
+                        <h4>{Data.wednesday.date}</h4>
+                        <h3>{Data.wednesday.title}</h3>
+                        <p>{Data.wednesday.text}</p>
                     </a>
 
-                    <a href={Data.friday.link} rel="noopener noreferrer" target="_blank">
-                        <div style={this.bgstyle(this.friimg)} className="blogPreviewCard bpcPost">
-                            <h4>{Data.friday.date}</h4>
-                            <h3>{Data.friday.title}</h3>
-                            <p>{Data.friday.text}</p>
-                        </div>
+                    <a style={this.bgstyle(this.friimg)} className="blogPreviewCard bpcPost" href={Data.friday.link} rel="noopener noreferrer" target="_blank">
+                        <h4>{Data.friday.date}</h4>
+                        <h3>{Data.friday.title}</h3>
+                        <p>{Data.friday.text}</p>
                     </a>
 
-                    <a href={Data.tipslink} rel="noopener noreferrer" target="_blank">
-                        <div className="blogPreviewCard bpcPost">
-                            <h2>Linkit<br/>&amp;<br/>Vinkit</h2>
-                            <h4>Hyödylliset avut ohjelmointiin</h4>
-                        </div>
+                    <a className="blogPreviewCard bpcPost" href={Data.tipslink} rel="noopener noreferrer" target="_blank">
+                        <h2>Linkit<br/>&amp;<br/>Vinkit</h2>
+                        <h4>Hyödylliset avut ohjelmointiin</h4>
                     </a>
 
-                    <a href={Data.bloglink} rel="noopener noreferrer" target="_blank">
-                        <div className="blogPreviewCard bpcLink">
-                            <h2>Blogiin</h2>
-                            <i className="fas fa-long-arrow-alt-right fa-5x"></i>
-                        </div>
+                    <a className="blogPreviewCard bpcLink" href={Data.bloglink} rel="noopener noreferrer" target="_blank">
+                        <h2>Blogiin</h2>
+                        <i className="fas fa-long-arrow-alt-right fa-5x"></i>
                     </a>
                 </div>
             </div>
@@ -66,3 +56,5 @@ class BlogPreview extends React.Component {
 }
 
 export default BlogPreview;
+
+//

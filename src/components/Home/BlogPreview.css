@@ -19,6 +19,7 @@
 
 .blogPreviewCard {
     box-sizing: border-box;
+    display: block;
     width: 175px;
     height: 250px;
     text-align: center;
