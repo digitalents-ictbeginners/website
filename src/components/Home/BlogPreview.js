@@ -56,5 +56,3 @@ class BlogPreview extends React.Component {
 }
 
 export default BlogPreview;
-
-//

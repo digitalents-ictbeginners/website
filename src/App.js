@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home';
-import Contact from "./pages/Contact";
 //import Business from "./pages/Business";
 import navDataFI from "./data/navData_fi.json";
 import navDataEN from "./data/navData_en.json";
@@ -30,6 +28,9 @@ class App extends Component {
     this.setOverlay = this.setOverlay.bind(this);
     this.closeOverlay = this.closeOverlay.bind(this);
     window.addEventListener("resize", this.setView);
+    
+    this.Home = React.lazy(() => import("./pages/Home"));
+    this.Contact = React.lazy(() => import("./pages/Contact"));
   }
 
   componentDidMount(){
@@ -124,8 +125,10 @@ class App extends Component {
             <title>Digitalents Academy</title>
           </Helmet>
           {navComponent}
-          <Route exact path="/" render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
-          <Route exact path="/yhteystiedot" render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <Route exact path="/" render={props => <this.Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
+            <Route exact path="/yhteystiedot" render={props => <this.Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
+          </React.Suspense>
           <Footer english={this.state.english} navdata={navData.navdata}/>
           <div className={overlayClass}>
             <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
