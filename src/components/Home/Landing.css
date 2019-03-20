@@ -2,20 +2,21 @@
     height: calc(100vh + 70px);
     position: relative;
     text-align: center;
+    border-bottom: -200px solid white;
     background-image: url("../../imgs/landingbg.png");
-    background-size: 100% calc(100% - 120px);
+    background-size: 100% calc(100% - 100px);
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .landingContent {
-    padding: 150px 0;
-    margin-bottom: 110px;
+    padding: 100px 0 50px 0;
+    margin-bottom: 250px;
     width: 100%;
     max-height: 370px;
     position: sticky;
     top: 0;
-    background-color: rgba(255,255,255,0.9);
-    box-shadow: 0 0 10px rgba(255,255,255,0.7);
+    background-color: #f5f5ff;
 }
 
 .landingLogo {
@@ -25,8 +26,8 @@
 .scrollIndicator {
     position: sticky;
     display: block;
-    top: calc(100vh - 200px);
     margin: 0 auto;
+    top: calc(100vh - 200px);
     color: goldenrod;
     text-align: center;
 }
