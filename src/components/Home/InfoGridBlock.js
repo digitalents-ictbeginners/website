@@ -10,11 +10,11 @@ class InfoGridBlock extends React.Component {
     render(){
         const data = this.props.data;
         const i = this.props.index;
-        const text = <div className="ibText" style={{backgroundColor: data.bgcolor}}>
+        const text = <div className="infoSubBlock ibText" style={{backgroundColor: data.bgcolor}}>
                         <h2>{data.title}</h2>
                         <p>{data.text}</p>
                     </div>
-        const img = <div className="ibImg">
+        const img = <div className="infoSubBlock ibImg">
                         <img alt="" src={this.image}/>
                     </div>
         if(i % 2 === 0){
