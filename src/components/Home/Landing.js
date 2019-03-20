@@ -1,16 +1,15 @@
 import React from "react";
-//import ReactDOM from "react-dom";
 import "./Landing.css";
-//import BgImg from "../../imgs/landingbg.png";
 
 class Landing extends React.Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             scrollIndText: false //false: default, true: after scroll
         }
         this.handleScroll = this.handleScroll.bind(this);
+        this.logoimg = require("../../imgs/" + this.props.data.logoimg)
     }
 
     componentDidMount(){
@@ -44,7 +43,7 @@ class Landing extends React.Component {
         return (
             <div className="landing">
                 <div className="landingContent">
-                    <h3>{data.title}</h3>
+                    <img className="landingLogo" alt="" src={this.logoimg} />
                     <h1>{data.slogan}</h1>
                     <h4>{data.subslogan}</h4>
                 </div>
@@ -58,9 +57,3 @@ class Landing extends React.Component {
 }
 
 export default Landing;
-
-/*
-<div className="landingBg">
-    <img alt="" src={BgImg}/>
-</div>
-*/

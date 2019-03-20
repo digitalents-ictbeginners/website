@@ -1,10 +1,12 @@
 import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import "./SideBar.css";
-import logoimg from "../../imgs/logo_placeholder.png";
 
 class SideBar extends React.Component {
-    
+    constructor(props){
+        super(props);
+        this.logoimg = require("../../imgs/" + this.props.data.navlogo.sidebar);
+    }
     render(){
         const openstateClass = "sidebar" + (this.props.open ? " sidebarOpen" : " sidebarClosed");
         const links = this.props.data.navdata.map(e =>{
@@ -43,7 +45,7 @@ class SideBar extends React.Component {
                         <div className="sidebarOpener" onClick={this.props.toggle}>
                             <i className="fas fa-bars fa-2x"></i>
                         </div>
-                        <img className="sidebarTopBarLogo" alt="" src={logoimg} />
+                        <img className="sidebarTopBarLogo" alt="" src={this.logoimg} />
                     </div>
                 </div>
                 <div className={"sidebarBackground" + (this.props.open ? " sidebarBgVisible" : "")} onClick={this.props.toggle}></div>

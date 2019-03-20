@@ -18,8 +18,8 @@
     box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
-.landingContent h3 {
-    color: #444;
+.landingLogo {
+    width: 550px;
 }
 
 .scrollIndicator {
@@ -49,10 +49,8 @@
     .landingContent {
         padding: 100px 0 75px 0;
     }
-    .landingContent h3 {
-        font-size: 16px;
-        font-weight: 600;
-        margin-bottom: 30px;
+    .landingLogo {
+        width: 350px;
     }
     .landingContent h1 {
         font-size: 18px;

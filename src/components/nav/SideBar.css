@@ -24,10 +24,9 @@
 
 .sidebarTopBarLogo {
     display: inline-block;
-    background-color: black;
-    width: 48px;
+    height: 55px;
     position: absolute;
-    top: 5px;
+    top: 2px;
     right: 30px;
 }
 

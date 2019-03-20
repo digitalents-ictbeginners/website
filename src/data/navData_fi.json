@@ -1,4 +1,8 @@
 {
+    "navlogo": {
+        "topnav": "DTA_pienilogo_mustapohja.svg",
+        "sidebar": "DTA_pienilogo_musta.svg"
+    },
     "navdata": [
         {"id": 0, "title": "Esittely", "link": "/", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Keitä olemme", "link": "/", "hash": "#intro"},

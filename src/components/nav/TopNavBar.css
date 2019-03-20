@@ -1,27 +1,30 @@
 .topNavBar {
     background-color: white;
     position: fixed;
+    height: 60px;
     width: 100%;
     z-index: 100;
 }
 
-.topNavBar img {
-    position: fixed;
-    left: 2%;
-    background-color: black;
-}
-
 .navElementWrapper {
     display: flex;
-    max-width: 90%;
+    align-items: center;
+    height: 60px;
+    width: 95%;
     margin: 0 auto;
     border-bottom: 1px solid lightgray;
 }
 
+.navLogo {
+    height: 55px;
+    background-color: black;
+}
+
 .navElementContainer {
-    width: 75%;
+    width: 100%;
     max-width: 800px;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
+    padding: 0 20px;
     display: grid;
     grid-auto-flow: column;
     align-content: center;
@@ -29,7 +32,7 @@
 }
 
 .langSelector {
-    margin-top: 25px;
+    min-width: 80px;
     cursor: pointer;
 }
 

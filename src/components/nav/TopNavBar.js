@@ -3,10 +3,12 @@ import "./TopNavBar.css";
 import "./TopNavBarElement";
 import TopNavBarElement from "./TopNavBarElement";
 import SubNavBar from "./SubNavBar";
-import logo from "../../imgs/logo_placeholder.png";
 
 class TopNavBar extends React.Component {
-
+    constructor(props){
+        super(props);
+        this.logoimg = require("../../imgs/" + this.props.data.navlogo.topnav);
+    }
     render(){
         const navElements = [];
         const subNavBars = [""]; //first element is empty, index 0 -> no subnavbar
@@ -17,8 +19,8 @@ class TopNavBar extends React.Component {
         //the wrapper element is just for the underline border
         return (
             <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
-                <img src={logo} alt="" width="64px" />
                 <div className="navElementWrapper">
+                    <img className="navLogo" src={this.logoimg} alt=""/>
                     <div className="navElementContainer">
                         {navElements}
                     </div>
