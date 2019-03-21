@@ -29,7 +29,7 @@ class SideBar extends React.Component {
             });
             return (
                 <div key={e.id}>
-                    <Link className="sidebarLink" to={mainto} scroll={el => el.scrollIntoView({ behavior: 'smooth' })} onClick={this.props.toggle}>
+                    <Link className="sidebarLink" to={mainto} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})} onClick={this.props.toggle}>
                         <h2 className="sidebarMainLink">{e.title}</h2>
                     </Link>
                     <div className="sidebarSubLinkContainer">

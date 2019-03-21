@@ -15,7 +15,7 @@ class Footer extends React.Component {
         hash: se.hash
       }
       return (
-        <Link key={se.id} to={toObj} className="ftSitemapLink" scroll={el => el.scrollIntoView({ behavior: 'smooth' })}>{se.name}</Link>
+        <Link key={se.id} to={toObj} className="ftSitemapLink" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}>{se.name}</Link>
       );
     });
       return (
