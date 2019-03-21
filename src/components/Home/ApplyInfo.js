@@ -28,11 +28,11 @@ class ApplyInfo extends React.Component {
                         </div>
                         <div className="aiApplyWrapper">
                             <p>{data.toapply.text}</p>
+                            <div className="buttonWrapper">
+                            <i className="fas fa-angle-double-right fa-3x"></i>
                             <a className="aiToApply" href={data.toapply.link} rel="noopener noreferrer" target="_blank">
-                                
-                                    {data.toapply.buttontext}
-                                
-                            </a>
+                            {data.toapply.buttontext}
+                            </a></div>
                         </div>
                     </div>
                 </div>
