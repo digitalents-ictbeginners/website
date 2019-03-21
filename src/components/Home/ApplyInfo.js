@@ -26,11 +26,14 @@ class ApplyInfo extends React.Component {
                             <h2>{data.process}</h2>
                             {texts}
                         </div>
-                        <a className="aiToApply" href={data.toapply.link} rel="noopener noreferrer" target="_blank">
-                            <div>
-                                {data.toapply.text}
-                            </div>
-                        </a>
+                        <div className="aiApplyWrapper">
+                            <p>{data.toapply.text}</p>
+                            <a className="aiToApply" href={data.toapply.link} rel="noopener noreferrer" target="_blank">
+                                
+                                    {data.toapply.buttontext}
+                                
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

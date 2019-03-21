@@ -9,8 +9,7 @@
     "id": "intro",
     "title": "Haaveissa työ- tai opiskelupaikka ICT-alalta?",
     "text": [
-      "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa.",
-      "Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien."
+      "Digitalents Academy on nykyaikainen ja luova oppimisympäristö 17-29-vuotiaille Helsinkiläisille työttömille työnhakijoille. Työkokeilussa perehdyt ohjelmoinnin perusteisiin ja pääset tekemään harjoitus- ja tilaustöitä aiheen parissa. Sinulla ei tarvitse olla aikaisempaa osaamista alalta. Opetussuunnitelmasi räätälöidään toiveittesi ja mielenkiintosi mukaan, ja voit esimerkiksi perehtyä nettisivujen koodaamiseen, suunnitteluun ja ylläpitoon tai keskittyä kokonaan vaikkapa peliohjelmointiin. "
     ],
     "question": "Oletko alle 29-vuotias ja kiinnostunut alasta?",
     "joinus": "Tule Mukaan!"
@@ -74,22 +73,23 @@
     "text": [
       {
         "id": 0,
-        "bold": "Voit hakea työpajalle, jos olet 17-29-vuotias Helsinkiläinen nuori ja olet työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa.",
-        "normal": "Työkokeilu kestää 1-6 kuukautta, jonka päätteeksi tavoitteena on löytää jatkopolku, kuten työ- tai opiskelupaikka, jos ala tuntuu itselle sopivalta."
+        "bold": "Voit hakea Digitalents Academyyn, jos olet 17-29-vuotias Helsinkiläinen nuori ja olet työttömänä työnhakijana TE-toimistossa.",
+        "normal": "Työkokeilu kestää 1-6 kuukautta, jonka päätteeksi tavoitteena on löytää jatkopolku, kuten työ- tai opiskelupaikka."
       },
       {
         "id": 1,
-        "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat aina kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
-        "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan."
+        "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
+        "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan työvalmentajaan."
       },
       {
         "id": 2,
-        "bold": "Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+        "bold": "Digitalents Academyyn haetaan Helsingin työpajojen hakulomakkeen kautta, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
         "normal": ""
       }
     ],
     "toapply": {
-      "text": "Siirry tästä työpajojen yhteiseen hakemuslomakkeeseen. Valitse Yrityksissä tapahtuva valmennus (Digitalents).",
+      "text": "Alta pääset työpajojen yhteiseen hakulomakkeeseen. Ensisijaista toivetta työpajasta kysyttäessä valitse “Yrityksissä tapahtuva valmennus”. (Digitalents ICT Beginners) ",
+      "buttontext":"Hae tästä",
       "link": "https://response.questback.com/isa/qbv.dll/ShowQuest?QuestID=5039569&sid=dClp3aBhxG"
     }
   }

@@ -89,7 +89,8 @@
       }
     ],
     "toapply": {
-      "text": "Siirry tästä työpajojen yhteiseen hakemuslomakkeeseen. Valitse Yrityksissä tapahtuva valmennus (Digitalents).",
+      "text": "Alta pääset työpajojen yhteiseen hakulomakkeeseen. Ensisijaista toivetta työpajasta kysyttäessä valitse “Yrityksissä tapahtuva valmennus”. (Digitalents ICT Beginners) ",
+      "buttontext":"Hae tästä",
       "link": "https://response.questback.com/isa/qbv.dll/ShowQuest?QuestID=5039569&sid=dClp3aBhxG"
     }
   }
