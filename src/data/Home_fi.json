@@ -29,42 +29,33 @@
         "id": 0,
         "img": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
-        "text": "Koska asiat oppii parhaiten tekemällä",
+        "text": "Koska asiat oppii parhaiten tekemällä. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan tekemällä monimuotoisten opiskelumateriaalien avulla hyvässä porukassa vertaisoppien.",
         "bgcolor": "#4d64c1"
       },
       {
         "id": 1,
         "img": "placeholder1.png",
         "title": "Vertaistukea",
-        "text": "On kivempaa olla pulassa yhdessä",
+        "text": "On kivempaa olla pulassa yhdessä. Koodausta opetellessasi pääset jakamaan kokemuksiasi muiden alasta kiinnostuneiden kanssa. Koska porukasta löytyy niin aloittelijoita kuin edistyneempiäkin osallistujia, on avun saanti helppoa ja vertaistukea runsaasti.",
         "bgcolor": "#08415c"
       },
       {
         "id": 2,
         "img": "placeholder2.png",
         "title": "Avustavat ohjaajat",
-        "text": "Kysy mitä vaan, milloin vaan!",
+        "text": "Kysy mitä vaan, milloin vaan! Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan kaikenlaisissa tilanteissa liittyen ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin.",
         "bgcolor": "#000000"
       },
       {
         "id": 3,
         "img": "placeholder3.png",
         "title": "Apua jatkopolulle ja työnhakuun",
-        "text": "",
+        "text": "Vierailemme tapahtumissa, yrityksissä ja oppilaitoksissa tutustumassa tarjontaan, jotta sinä saisit selkeyttä tulevaisuudensuunnitelmiisi. Harjoittelussa ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
         "bgcolor": "#08415c"
       }
     ]
   },
-  "moreinfo": {
-    "id": "tietoa",
-    "title": "Työpajalla",
-    "text": [
-      "Työpajajaksolla ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
-      "Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan kokeilemalla ja tekemällä virheitä apunasi monimuotoiset opiskelumateriaalit sekä hyvä porukka jossa vertaisoppia.",
-      "Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan tilanteessa missä hyvänsä, liittyi ongelma sitten ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin."
-    ],
-    "toblog": "Katso toimintaa blogistamme!"
-  },
+  "toblog": "Katso toimintaa blogistamme!",
   "applyinfo": {
     "id": "hae",
     "interested": "Kiinnostuitko?",

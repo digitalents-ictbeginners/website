@@ -5,8 +5,8 @@ import dataEN from '../data/Home_en.json';
 import Landing from "../components/Home/Landing";
 import Intro from "../components/Home/Intro";
 import InfoGrid from "../components/Home/InfoGrid";
-import MoreInfo from "../components/Home/MoreInfo";
 import ApplyInfo from "../components/Home/ApplyInfo";
+import BlogPreview from "../components/Home/BlogPreview";
 
 export default class Home extends React.Component {
   render() {
@@ -16,7 +16,7 @@ export default class Home extends React.Component {
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <InfoGrid data={data.infogrid}/>
-        <MoreInfo data={data.moreinfo}/>
+        <BlogPreview title={data.toblog}/>
         <ApplyInfo data={data.applyinfo}/>
       </div>
     )
