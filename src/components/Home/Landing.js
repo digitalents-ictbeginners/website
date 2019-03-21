@@ -41,11 +41,13 @@ class Landing extends React.Component {
         const data = this.props.data;
         const scrollTextClass = this.state.scrollIndText ? "scrollText scrollTextVisible" : "scrollText scrollTextHidden";
         return (
-            <div className="landing">
-                <div className="landingContent">
-                    <img className="landingLogo" alt="" src={this.logoimg} />
-                    <h1>{data.slogan}</h1>
-                    <h4>{data.subslogan}</h4>
+            <div>
+                <div className="landing">
+                    <div className="landingContent">
+                        <img className="landingLogo" alt="" src={this.logoimg} />
+                        <h1>{data.slogan}</h1>
+                        <h4>{data.subslogan}</h4>
+                    </div>
                 </div>
                 <div className="scrollIndicator">
                     <i className="fas fa-arrow-alt-circle-down fa-4x"></i>
