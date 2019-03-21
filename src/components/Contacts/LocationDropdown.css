@@ -1,0 +1,50 @@
+.locationDropdown {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.locationDropdownHeader {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.locationDropdownHeader h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+    width: 90%;
+    text-align: start;
+}
+
+.locationDropdownHeader i {
+    width: 10%;
+    margin-left: 30px;
+    text-align: end;
+}
+
+.locationDropdownContent {
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    width: 80%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.ldcHidden {
+    max-height: 0;
+}
+
+.ldcOpen {
+    max-height: 500px;
+}
+
+.locationDropdownContent p {
+    text-align: start;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    font-weight: 400;
+}

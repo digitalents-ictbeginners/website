@@ -28,7 +28,8 @@
             },
             "bycar": {
                 "title": "Autolla",
-                "text": "Ohjeita paikalle löytämiseen ajaen. Mitä kautta, mitkä tiet, mistä sisään jne jne"
+                "text": ["Ohjeita paikalle löytämiseen ajaen. Mitä kautta, mitkä tiet, mistä sisään jne jne"
+                ]
             },
             "bypublictransit": {
                 "title": "Julkisella liikenteellä",

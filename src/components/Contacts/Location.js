@@ -1,5 +1,6 @@
-import React from 'react'
-import './Location.css'
+import React from "react";
+import "./Location.css";
+import LocationDropdown from "./LocationDropdown";
 import ArrivalGraphic from "../../imgs/arrivalgraphicplaceholder.png";
 
 export default class Location extends React.Component {
@@ -33,26 +34,13 @@ export default class Location extends React.Component {
 
           <h2 className="locationDirectionsTitle">{data.directions.title}</h2>
           <div className="locationDirections">
-            <div className="locationDirSub">
-              <h3>{data.directions.intro.title}</h3>
+            <div className="locationDirIntro">
               <p>{data.directions.intro.text[0]}</p>
               <p>{data.directions.intro.text[1]}</p>
             </div>
-            <div className="locationDirSub">
-              <h3>{data.directions.byfoot.title}</h3>
-              <p>{data.directions.byfoot.text[0]}</p>
-              <p>{data.directions.byfoot.text[1]}</p>
-              <p>{data.directions.byfoot.text[2]}</p>
-            </div>
-            <div className="locationDirSub">
-              <h3>{data.directions.bycar.title}</h3>
-              <p>{data.directions.bycar.text}</p>
-            </div>
-            <div className="locationDirSub">
-              <h3>{data.directions.bypublictransit.title}</h3>
-              <p>{data.directions.bypublictransit.text[0]}</p>
-              <p>{data.directions.bypublictransit.text[1]}</p>
-            </div>
+            <LocationDropdown data={data.directions.byfoot}/>
+            <LocationDropdown data={data.directions.bypublictransit}/>
+            <LocationDropdown data={data.directions.bycar}/>
           </div>
 
         </div>
