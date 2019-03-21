@@ -5,10 +5,6 @@ import TopNavBarElement from "./TopNavBarElement";
 import SubNavBar from "./SubNavBar";
 
 class TopNavBar extends React.Component {
-    constructor(props){
-        super(props);
-        this.logoimg = require("../../imgs/" + this.props.data.navlogo.topnav);
-    }
     render(){
         const navElements = [];
         const subNavBars = [""]; //first element is empty, index 0 -> no subnavbar
@@ -20,7 +16,7 @@ class TopNavBar extends React.Component {
         return (
             <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
                 <div className="navElementWrapper">
-                    <img className="navLogo" src={this.logoimg} alt=""/>
+                    <img className="navLogo" src={this.props.logo} alt=""/>
                     <div className="navElementContainer">
                         {navElements}
                     </div>

@@ -28,6 +28,9 @@ class App extends Component {
     this.setOverlay = this.setOverlay.bind(this);
     this.closeOverlay = this.closeOverlay.bind(this);
     window.addEventListener("resize", this.setView);
+
+    this.navdata = navDataFI;
+    this.navLogo = require("./imgs/" + this.navdata.navlogo);
     
     this.Home = React.lazy(() => import("./pages/Home"));
     this.Contact = React.lazy(() => import("./pages/Contact"));
@@ -115,8 +118,8 @@ class App extends Component {
     const navData = this.state.english ? navDataEN : navDataFI;
     const navComponent =
       this.state.mobile
-      ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData}/>
-      : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab}/>;
+      ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.navLogo}/>
+      : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
 
     return (
       <Router>
