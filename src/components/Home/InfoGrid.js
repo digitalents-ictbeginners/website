@@ -9,7 +9,7 @@ class InfoGrid extends React.Component {
         const data = this.props.data;
         const infoBlocks = data.blocks.map((e, i) => {
             return (
-                <InfoGridBlock key={e.id} data={e} index={i} />
+                <InfoGridBlock key={e.id} data={e} index={i} mobile={this.props.mobile} />
             );   
         });
         return (

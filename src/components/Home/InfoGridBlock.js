@@ -17,7 +17,7 @@ class InfoGridBlock extends React.Component {
         const img = <div className="infoSubBlock ibImg">
                         <img alt="" src={this.image}/>
                     </div>
-        if(i % 2 === 0){
+        if((i % 2 === 0) && !this.props.mobile){
             return (
                 <div className="infoBlock ibTextImg">
                     {text}

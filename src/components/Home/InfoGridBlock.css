@@ -65,13 +65,14 @@
 
 @media only screen and (max-width: 600px){
     .infoBlock {
+        grid-template-columns: 1fr;
         height: auto;
-        min-height: 50vw;
-        width: 100vw;
+        min-height: 360px;
+        width: 360px;
     }
     .infoSubBlock {
         height: auto;
-        min-height: 50vw;
-        width: 50vw;
+        min-height: 360px;
+        width: 360px;
     }
 }

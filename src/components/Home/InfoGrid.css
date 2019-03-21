@@ -47,6 +47,6 @@
 
 @media only screen and (max-width: 600px){
     .infoGrid {
-        width: 100vw;
+        width: 360px;
     }
 }
