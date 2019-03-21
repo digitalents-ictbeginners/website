@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.blogPreview a:any-link {
+.blogPreview a {
     text-decoration: none;
 }
 

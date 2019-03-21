@@ -38,12 +38,12 @@
     margin: 20px 0;
 }
 
-.personEmail:any-link {
+.personEmail {
     text-decoration: none;
     color: #08415c;
 }
 
-.personEmail:any-link:hover {
+.personEmail:hover {
     color: #4d64c1;
 }
 
