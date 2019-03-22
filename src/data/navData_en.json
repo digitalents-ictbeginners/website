@@ -4,7 +4,7 @@
         {"id": 0, "title": "Introduction", "link": "/", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Who we are", "link": "/", "hash": "#intro"},
             {"id": 1, "name": "Activity", "link": "/", "hash": "#activity"},
-            {"id": 2, "name": "Information", "link": "/", "hash": "#moreinfo"},
+            {"id": 2, "name": "Blog", "link": "/", "hash": "#blog"},
             {"id": 3, "name": "Apply!", "link": "/", "hash": "#apply"}
         ]},
         {"id": 1, "title": "Contacts", "link": "/yhteystiedot", "hash": "#top", "subLinks": [

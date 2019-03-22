@@ -20,8 +20,9 @@ class BlogPreview extends React.Component {
 
     render(){
         return (
-            <div>
-                <h3 className="blogPreviewTitle">{this.props.title}</h3>
+            <div className="blogPreviewWrapper">
+                <div id={this.props.data.id} className="blogPreviewAnchor" />
+                <h3 className="blogPreviewTitle">{this.props.data.title}</h3>
                 <div className="blogPreview">
                     <a style={this.bgstyle(this.monimg)} className="blogPreviewCard bpcPost" href={Data.monday.link} rel="noopener noreferrer" target="_blank">
                         <h4>{Data.monday.date}</h4>

@@ -21,7 +21,6 @@ class ProgressionTeaser extends React.Component {
         const screenbottom = window.scrollY + window.innerHeight;
         const elemtop = this.DOMNode.offsetParent.offsetTop + this.DOMNode.offsetTop;
         if( screenbottom > elemtop + 200){
-            console.log("animate");
             this.setState(s => {
                 s.animate = true;
                 return s;

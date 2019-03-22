@@ -55,7 +55,10 @@
       }
     ]
   },
-  "toblog": "Katso toimintaa blogistamme!",
+  "blogpreview": {
+    "id": "blog",
+    "title": "Tutustu toimintaan blogistamme!"
+  },
   "applyinfo": {
     "id": "hae",
     "interested": "Kiinnostuitko?",

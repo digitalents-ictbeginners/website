@@ -56,15 +56,9 @@
       }
     ]
   },
-  "moreinfo": {
-    "id": "moreinfo",
-    "title": "Työpajalla",
-    "text": [
-      "Työpajajaksolla ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
-      "Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan kokeilemalla ja tekemällä virheitä apunasi monimuotoiset opiskelumateriaalit sekä hyvä porukka jossa vertaisoppia.",
-      "Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan tilanteessa missä hyvänsä, liittyi ongelma sitten ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin."
-    ],
-    "toblog": "Katso toimintaa blogistamme! (Mostly in Finnish)"
+  "blogpreview": {
+    "id": "blog",
+    "title": "Katso toimintaa blogistamme! (Mostly in Finnish)"
   },
   "applyinfo": {
     "id": "apply",
