@@ -16,7 +16,7 @@ export default class Home extends React.Component {
         <Landing data={data.landing}/>
         <Intro data={data.intro}/>
         <InfoGrid data={data.infogrid} mobile={this.props.mobile}/>
-        <BlogPreview title={data.toblog}/>
+        <BlogPreview data={data.blogpreview}/>
         <ApplyInfo data={data.applyinfo}/>
       </div>
     )

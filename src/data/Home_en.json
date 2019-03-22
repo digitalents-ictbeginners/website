@@ -56,7 +56,10 @@
       }
     ]
   },
-  "toblog": "Katso toimintaa blogistamme! (Mostly in Finnish)",
+  "blogpreview": {
+    "id": "blog",
+    "title": "Katso toimintaa blogistamme! (Mostly in Finnish)"
+  },
   "applyinfo": {
     "id": "apply",
     "interested": "Kiinnostuitko?",
