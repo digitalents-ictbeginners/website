@@ -17,14 +17,7 @@
   },
   "infogrid": {
     "id": "activity",
-    "teaser": {
-      "title": "Check your skills",
-      "item1": "Try it out!",
-      "item2": "Learn something new",
-      "item3": "Is it your thing?"
-    },
-    "title": "Opit ohjelmointia modernissa oppimisympäristössä",
-    "subtitle": "Täällä sinulle on",
+    "title": "We offer you...",
     "blocks": [
       {
         "id": 0,

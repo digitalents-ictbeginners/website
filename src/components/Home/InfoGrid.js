@@ -17,8 +17,7 @@ class InfoGrid extends React.Component {
                 
                 <div id={data.id} className="infoGridAnchor" />
                 <div className="infoGrid">
-                    <h1>{data.title}</h1>
-                    <h3>{data.subtitle}</h3>
+                    <h3>{data.title}</h3>
                     <div className="infoBlocks">{infoBlocks}</div>
                 </div>
                 

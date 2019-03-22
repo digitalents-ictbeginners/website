@@ -16,14 +16,7 @@
   },
   "infogrid": {
     "id": "toiminta",
-    "teaser": {
-      "title": "Selvitä taitosi",
-      "item1": "Kokeile!",
-      "item2": "Opi uutta",
-      "item3": "Onko juttusi?"
-    },
-    "title": "Opit ohjelmointia modernissa oppimisympäristössä",
-    "subtitle": "Täällä sinulle on",
+    "title": "Tarjoamme...",
     "blocks": [
       {
         "id": 0,

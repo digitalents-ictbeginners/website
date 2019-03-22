@@ -40,19 +40,33 @@
     position: relative;
 }
 
-.bpcPost h4, .bpcPost h3, .bpcPost h2 {
-    color: black;
-    text-shadow: 0 0 2px white;
+.bpcPost h4 {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.bpcPost h3 {
+    margin-top: 5px;
 }
 
 .bpcPost p {
     padding: 0 3px;
-    color: black;
-     text-shadow: 0 0 1px #ccc;
- /*     background-color: rgba(50,50,50,0.3);*/    border-radius: 10px;
+    border-radius: 10px;
     position: absolute;
     bottom: 0;
     font-size: 14px;
+}
+
+.bpcTips {
+    padding: 30px;
+    color: white;
+    background-color: #08415c;
+    transition: all 1s;
+}
+
+.bpcTips:hover {
+    background-color: #4d64c1;
 }
 
 .bpcLink {

@@ -4,21 +4,24 @@
         "title": "Aamupala",
         "text": "Maanantaiaamu alkoi jännitysnäytelmällä – aamupala joutui uhanalaiseksi.",
         "link": "https://dtacademy.home.blog/2019/03/18/aamupala-18-3/",
-        "backgroundimage": "blogima.jpg"
+        "backgroundimage": "blogima.svg",
+        "textcolor": "white"
     },
     "wednesday": {
         "date": "Keskiviikko 20.3",
         "title": "Future Talent 2019",
         "text": "Perjantaina 25.1. Digitalents Academy osallistui CGI:n järjestämään Future Talent-tapahtumaan. ",
-        "link": "https://dtacademy.home.blog",
-        "backgroundimage": "blogike.jpg"
+        "link": "https://dtacademy.home.blog/2019/03/20/keskiviikko-future-talent-2019/",
+        "backgroundimage": "blogike.svg",
+        "textcolor": "black"
     },
     "friday": {
-        "date": "Perjantai 15.3",
-        "title": "Mistakes",
-        "text": "Education through my eyes, throughout living in multiple countries and going through a handful of schools.",
-        "link": "https://dtacademy.home.blog/2019/03/15/perjantai-mistakes/",
-        "backgroundimage": "blogipe.jpg"
+        "date": "Perjantai 22.3",
+        "title": "Vinkkejä hyvään uneen",
+        "text": "Unettomuus on yleistä. Sitä tapahtuu meille kaikille ja ainakin joka kolmas aikuinen kärsii vuoden aikana unettomuudesta.",
+        "link": "https://dtacademy.home.blog/2019/03/22/perjantai-vinkkeja-hyvaan-uneen/",
+        "backgroundimage": "blogipe.svg",
+        "textcolor": "black"
     },
     "tipslink": "https://dtacademy.home.blog/linkit-ja-vinkit/",
     "bloglink": "https://dtacademy.home.blog/"
