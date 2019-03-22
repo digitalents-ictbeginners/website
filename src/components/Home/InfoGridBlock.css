@@ -28,6 +28,7 @@
 .ibText p {
     text-align: center;
     font-weight: 600;
+    padding: 30px;
 }
 
 .ibImg img {
