@@ -38,6 +38,11 @@
 .bpcPost {
     background-color: #ccc;
     position: relative;
+    transition: opacity 1s;
+}
+
+.bpcPost:hover {
+    opacity: 0.7;
 }
 
 .bpcPost h4 {
@@ -62,17 +67,18 @@
     padding: 30px;
     color: white;
     background-color: #08415c;
-    transition: all 1s;
 }
 
-.bpcTips:hover {
-    background-color: #4d64c1;
-}
 
 .bpcLink {
     padding-top: 30px;
     color: white;
     background-color: black;
+    transition: all 1s;
+}
+
+.bpcLink:hover {
+    background-color: #4e4e4e;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px){
