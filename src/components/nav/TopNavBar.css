@@ -33,6 +33,8 @@
 .langSelector {
     min-width: 80px;
     cursor: pointer;
+    color: rgb(131, 131, 131);
+    font-size: 0.9rem;
 }
 
 .langSelector:hover {

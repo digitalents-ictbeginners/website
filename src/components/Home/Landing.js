@@ -50,7 +50,7 @@ class Landing extends React.Component {
                     </div>
                 </div>
                 <div className="scrollIndicator">
-                    <i className="fas fa-arrow-alt-circle-down fa-4x"></i>
+                    <i className="fas fa-chevron-circle-down fa-3x"></i>
                     <div className={scrollTextClass}>{data.scrollind}</div>
                 </div>
             </div>

@@ -23,7 +23,7 @@
         "img": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
         "text": "Koska asiat oppii parhaiten tekemällä. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan tekemällä monimuotoisten opiskelumateriaalien avulla hyvässä porukassa vertaisoppien.",
-        "bgcolor": "#4d64c1"
+        "bgcolor": "#ebbab9"
       },
       {
         "id": 1,
@@ -37,14 +37,14 @@
         "img": "placeholder2.png",
         "title": "Avustavat ohjaajat",
         "text": "Kysy mitä vaan, milloin vaan! Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan kaikenlaisissa tilanteissa liittyen ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin.",
-        "bgcolor": "#000000"
+        "bgcolor": "#4c64d1"
       },
       {
         "id": 3,
         "img": "placeholder3.png",
         "title": "Apua jatkopolulle ja työnhakuun",
         "text": "Vierailemme tapahtumissa, yrityksissä ja oppilaitoksissa tutustumassa tarjontaan, jotta sinä saisit selkeyttä tulevaisuudensuunnitelmiisi. Harjoittelussa ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
-        "bgcolor": "#08415c"
+        "bgcolor": "#efc51f"
       }
     ]
   },

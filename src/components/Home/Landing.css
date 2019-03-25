@@ -17,11 +17,16 @@
     max-height: 370px;
     position: sticky;
     top: 0;
-    background-color: #f5f5ff;
+    background-color: #fff;
 }
 
 .landingLogo {
     width: 550px;
+}
+
+.landingContent h1 {
+    font-size: 45px;
+    font-weight: 400;
 }
 
 .scrollIndicator {

@@ -15,15 +15,14 @@ class ApplyInfo extends React.Component {
         return (
             <div className="applyInfo">
                 <div id={data.id} className="aiAnchor" />
-                <div className="aiUnderlined"><h2>{data.interested}</h2></div>
-                <h1>{data.applynow}</h1>
+                <div className="aiUnderlined"></div>
                 <svg className="aiCurve" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
-                    <circle cy="1100" cx="500" r="1100" fill="lightgrey" />
+                    <circle cy="1100" cx="500" r="1100" fill="rgba(77, 100, 193, 0.8)" />
                 </svg>
                 <div className="aiContentWrapper">
                     <div className="aiContent">
                         <div className="aiTextBox">
-                            <h2>{data.process}</h2>
+                            <h2>{data.applynow}</h2>
                             {texts}
                         </div>
                         <div className="aiApplyWrapper">

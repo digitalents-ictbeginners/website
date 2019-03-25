@@ -11,8 +11,6 @@ class Intro extends React.Component {
                     <h2>{data.title}</h2>
                     <p>{data.text[0]}</p>
                     <p>{data.text[1]}</p>
-                    <h4>{data.question}</h4>
-                    <h3>{data.joinus}</h3>
                 </div>
             </div>
         );

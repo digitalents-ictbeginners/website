@@ -138,4 +138,8 @@
     font-size: 16px;
     font-weight: 400;
   }
+
+  .locationDirIntro p {
+    font-size: 16px;
+  }
 }
