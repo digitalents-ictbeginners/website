@@ -11,7 +11,7 @@ class SubNavBar extends React.Component {
                 hash: e.hash
             }
             return (
-                <div key={e.id}><Link to={toObj} onClick={this.props.closeFunc} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}>{e.name}</Link></div>
+                <Link className="snbLink" key={e.id} to={toObj} onClick={this.props.closeFunc} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}>{e.name}</Link>
             )
         });
         return (

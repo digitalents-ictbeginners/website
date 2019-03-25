@@ -17,7 +17,7 @@ class ApplyInfo extends React.Component {
                 <div id={data.id} className="aiAnchor" />
                 <div className="aiUnderlined"></div>
                 <svg className="aiCurve" viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg">
-                    <circle cy="1100" cx="500" r="1100" fill="rgba(77, 100, 193, 0.8)" />
+                    <circle cy="1100" cx="500" r="1100" fill="rgb(100, 120, 200)" />
                 </svg>
                 <div className="aiContentWrapper">
                     <div className="aiContent">
