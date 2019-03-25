@@ -22,28 +22,28 @@
         "id": 0,
         "img": "placeholder0.png",
         "title": "Harjoituksia ja oikeita projekteja",
-        "text": "Koska asiat oppii parhaiten tekemällä. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin, kuten tilaus- ja harjoitustöiden parissa. Pääset oppimaan tekemällä monimuotoisten opiskelumateriaalien avulla hyvässä porukassa vertaisoppien.",
+        "text": "Koska asiat oppii parhaiten tekemällä. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin parissa.",
         "bgcolor": "#ebbab9"
       },
       {
         "id": 1,
         "img": "placeholder1.png",
         "title": "Vertaistukea",
-        "text": "On kivempaa olla pulassa yhdessä. Koodausta opetellessasi pääset jakamaan kokemuksiasi muiden alasta kiinnostuneiden kanssa. Koska porukasta löytyy niin aloittelijoita kuin edistyneempiäkin osallistujia, on avun saanti helppoa ja vertaistukea runsaasti.",
+        "text": "On kivempaa olla pulassa yhdessä. Koodausta opetellessasi pääset jakamaan kokemuksiasi muiden alasta kiinnostuneiden kanssa. ",
         "bgcolor": "#08415c"
       },
       {
         "id": 2,
         "img": "placeholder2.png",
         "title": "Avustavat ohjaajat",
-        "text": "Kysy mitä vaan, milloin vaan! Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan kaikenlaisissa tilanteissa liittyen ohjelmointiin, taloudellisiin asioihin tai henkilökohtaisempiin kysymyksiin.",
+        "text": "Kysy mitä vaan, milloin vaan! Työkokeilun aikana tukenasi ovat ohjaajat ja kouluttaja, jotka pyrkivät auttamaan kaikenlaisissa tilanteissa.",
         "bgcolor": "#4c64d1"
       },
       {
         "id": 3,
         "img": "placeholder3.png",
         "title": "Apua jatkopolulle ja työnhakuun",
-        "text": "Vierailemme tapahtumissa, yrityksissä ja oppilaitoksissa tutustumassa tarjontaan, jotta sinä saisit selkeyttä tulevaisuudensuunnitelmiisi. Harjoittelussa ammatilliset valmiutesi kehittyvät, taitosi kasvavat ja työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
+        "text": "Harjoittelussa ammatilliset valmiutesi kehittyvät ja taitosi kasvavat. Työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
         "bgcolor": "#efc51f"
       }
     ]
