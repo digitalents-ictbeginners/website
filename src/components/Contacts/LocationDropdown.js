@@ -30,7 +30,7 @@ class LocationDropdown extends React.Component {
               <div onClick={this.handleClick} className="locationDropdownHeader">
                 <h3>{data.title}</h3>
                 { this.state.open ?
-                <i className="fas fa-times"></i> :
+                <i className="fas fa-chevron-up"></i> :
                 <i className="fas fa-chevron-down"></i>
                 }
                 
