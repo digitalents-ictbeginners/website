@@ -5,6 +5,8 @@ import './App.css';
 //import Business from "./pages/Business";
 import navDataFI from "./data/navData_fi.json";
 import navDataEN from "./data/navData_en.json";
+import contactDataFI from "./data/Contact_fi.json";
+import contactDataEN from "./data/Contact_en.json";
 import SideBar from "./components/nav/SideBar";
 import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
@@ -121,6 +123,8 @@ class App extends Component {
       ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.navLogo}/>
       : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
 
+    const contactData = this.state.english ? contactDataEN : contactDataFI;
+
     return (
       <Router>
         <div className="App">
@@ -130,9 +134,9 @@ class App extends Component {
           {navComponent}
           <React.Suspense fallback={<div>Loading...</div>}>
             <Route exact path="/" render={props => <this.Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
-            <Route exact path="/yhteystiedot" render={props => <this.Contact {...props} mobile={this.state.mobile} english={this.state.english} overlay={overlayFuncs}/>} />
+            <Route exact path="/yhteystiedot" render={props => <this.Contact {...props} mobile={this.state.mobile} english={this.state.english} contactData={contactData} overlay={overlayFuncs}/>} />
           </React.Suspense>
-          <Footer english={this.state.english} navdata={navData.navdata}/>
+          <Footer english={this.state.english} navdata={navData} contactData={contactData}/>
           <div className={overlayClass}>
             <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
             <div className="foContent">
