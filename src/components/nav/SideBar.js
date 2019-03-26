@@ -34,6 +34,11 @@ class SideBar extends React.Component {
                 </div>
             );
         });
+        const logoToObj = {
+            pathname: this.props.data.navdata[0].link,
+            search: this.props.english ? "?lang=en" : "",
+            hash: this.props.data.navdata[0].hash
+        };
         return (
             <div>
                 <div className="sidebarTopBarWrapper">
@@ -41,7 +46,7 @@ class SideBar extends React.Component {
                         <div className="sidebarOpener" onClick={this.props.toggle}>
                             <i className="fas fa-bars fa-2x"></i>
                         </div>
-                        <img className="sidebarTopBarLogo" alt="" src={this.props.logo} />
+                        <Link to={logoToObj} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}><img className="sidebarTopBarLogo" alt="" src={this.props.logo} /></Link>
                     </div>
                 </div>
                 <div className={"sidebarBackground" + (this.props.open ? " sidebarBgVisible" : "")} onClick={this.props.toggle}></div>

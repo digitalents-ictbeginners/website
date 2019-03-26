@@ -1,4 +1,5 @@
 import React from "react";
+import {HashLink as Link} from "react-router-hash-link";
 import "./TopNavBar.css";
 import "./TopNavBarElement";
 import TopNavBarElement from "./TopNavBarElement";
@@ -12,11 +13,15 @@ class TopNavBar extends React.Component {
             navElements.push(<TopNavBarElement key={e.id} app={this.props.parent} index={e.id+1} openid={this.props.openTab} link={e.link} hash={e.hash} title={e.title} english={this.props.english}/>);
             subNavBars.push(<SubNavBar closeFunc={this.props.closeFunc} english={this.props.english} data={e.subLinks}/>);
         });
-        //the wrapper element is just for the underline border
+        const logoToObj = {
+            pathname: this.props.data.navdata[0].link,
+            search: this.props.english ? "?lang=en" : "",
+            hash: this.props.data.navdata[0].hash
+        };
         return (
             <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
                 <div className="navElementWrapper">
-                    <img className="navLogo" src={this.props.logo} alt=""/>
+                    <Link to={logoToObj} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}><img className="navLogo" src={this.props.logo} alt=""/></Link>
                     <div className="navElementContainer">
                         {navElements}
                     </div>

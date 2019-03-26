@@ -12,5 +12,6 @@
             {"id": 1, "name": "Ihmiset", "link": "/yhteystiedot", "hash": "#ihmiset"}
         ]}
     ],
-    "langswitch": "In English"
+    "langswitch": "In English",
+    "ftMoreContacts": "Lisää yhteystietoja"
 }

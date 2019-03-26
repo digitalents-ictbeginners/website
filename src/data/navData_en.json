@@ -12,5 +12,6 @@
             {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#people"}
         ]}
     ],
-    "langswitch": "Suomeksi"
+    "langswitch": "Suomeksi",
+    "ftMoreContacts": "More contacts"
 }

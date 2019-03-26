@@ -68,6 +68,7 @@ footer {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.75;
+  max-width: 200px;
 }
 
 .ftMoreContacts {
