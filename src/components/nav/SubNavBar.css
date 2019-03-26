@@ -13,8 +13,12 @@
     justify-items: center;
 }
 
-.subNavBar div a {
+.snbLink {
     font-size: 24px;
     text-decoration: none;
     color: #000;
+}
+
+.snbLink:hover {
+    text-decoration: underline;
 }

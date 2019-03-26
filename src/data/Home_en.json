@@ -11,9 +11,7 @@
     "text": [
       "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa.",
       "Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien."
-    ],
-    "question": "Oletko alle 29-vuotias ja kiinnostunut alasta?",
-    "joinus": "Tule Mukaan!"
+    ]
   },
   "infogrid": {
     "id": "activity",
@@ -55,9 +53,7 @@
   },
   "applyinfo": {
     "id": "apply",
-    "interested": "Kiinnostuitko?",
     "applynow": "Hae meille!",
-    "process": "Hakeminen",
     "text": [
       {
         "id": 0,
