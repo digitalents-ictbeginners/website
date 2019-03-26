@@ -1,15 +1,15 @@
 {
     "navlogo": "DTA_pienilogo_musta.svg",
     "navdata": [
-        {"id": 0, "title": "Esittely", "link": "/", "hash": "#top", "subLinks": [
-            {"id": 0, "name": "Keitä olemme", "link": "/", "hash": "#intro"},
+        {"id": 0, "title": "Etusivu", "link": "/", "hash": "#top", "subLinks": [
+            {"id": 0, "name": "Esittely", "link": "/", "hash": "#intro"},
             {"id": 1, "name": "Toiminta", "link": "/", "hash": "#toiminta"},
             {"id": 2, "name": "Blogi", "link": "/", "hash": "#blog"},
             {"id": 3, "name": "Hae!", "link": "/", "hash": "#hae"}
         ]},
         {"id": 1, "title": "Yhteystiedot", "link": "/yhteystiedot", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Sijainti", "link": "/yhteystiedot", "hash": "#sijainti"},
-            {"id": 1, "name": "Ihmiset", "link": "/yhteystiedot", "hash": "#ihmiset"}
+            {"id": 1, "name": "Henkilöstö", "link": "/yhteystiedot", "hash": "#henkilosto"}
         ]}
     ],
     "langswitch": "In English",

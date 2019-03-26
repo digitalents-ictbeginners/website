@@ -1,8 +1,7 @@
 {
   "landing": {
     "logoimg": "DTA_isologo_musta.svg",
-    "slogan": "Meillä tutustut ohjelmoinnin maailmaan",
-    "subslogan": "Yksin ja tiimissä, ohjatusti ja itsenäisesti",
+    "slogan": "Polkusi IT-maailmaan",
     "scrollind": "Lisää meistä"
   },
   "intro": {
@@ -14,7 +13,7 @@
   },
   "infogrid": {
     "id": "toiminta",
-    "title": "Tarjoamme...",
+    "title": "Tarjoamme sinulle...",
     "blocks": [
       {
         "id": 0,

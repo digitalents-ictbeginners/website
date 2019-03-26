@@ -44,13 +44,13 @@
         }
     },
     "people": {
-        "id": "people",
-        "title": "People",
+        "id": "staff",
+        "title": "Staff",
         "peoplecards": [
             {
                 "id": 0,
                 "name": "Arto Aitta",
-                "title": "Job Coach",
+                "title": "Work Coach",
                 "landline": "09 310 20374",
                 "mobile": "040 829 1342",
                 "email": "arto.aitta@edu.hel.fi",
@@ -71,7 +71,7 @@
                 "id": 2,
                 "name": "Elli Vähäkangas",
                 "title": "IT-Assistant",
-                "landline": "09 310 2287",
+                "landline": "09 310 22787",
                 "mobile": "040 641 2092",
                 "email": "elli.vahakangas@edu.hel.fi",
                 "picture": "elli.png",

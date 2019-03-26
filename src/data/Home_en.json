@@ -1,16 +1,14 @@
 {
   "landing": {
     "logoimg": "DTA_isologo_musta.svg",
-    "slogan": "With us you'll introduce yourself to the world of programming",
-    "subslogan": "Alone and in a team, guided and independently",
+    "slogan": "Your path to the world of IT",
     "scrollind": "Read more"
   },
   "intro": {
     "id": "intro",
-    "title": "Who we are",
+    "title": "Dreaming of a career in IT?",
     "text": [
-      "Digitalents-ICT-työpajalla alle 29-vuotiaat nuoret pääsevät kokeilemaan ohjelmointia ja tekemään harjoitus- ja tilaustöitä aiheen parissa.",
-      "Nuorella ei tarvitse olla aikaisempaa osaamista, ja opetussuunnitelma räätälöidään osallistujan toiveiden ja mielenkiinnon mukaan. Opiskelu on monimuotoista, ja tapahtuu niin itsenäisesti kuin ryhmäprojektien parissa modernisti oppien."
+      "Digitalents Academy is a modern and creative learning environment for 17 to 29 year old unemployed jobseekers from Helsinki. Here you will get to know the basics of programming and learn use those skills in practice and work projects. You don’t need to have previous experience from IT. Your studies will be customized to match your interests and wishes. For example you could focus on web development, design, or even fully immerse yourself in game development."
     ]
   },
   "infogrid": {
@@ -20,54 +18,54 @@
       {
         "id": 0,
         "img": "placeholder0.png",
-        "title": "Harjoituksia ja oikeita projekteja",
-        "text": "Koska asiat oppii parhaiten tekemällä",
+        "title": "Practice and work on real projects",
+        "text": "Because things are best learned by doing. We will give you a modern work environment where you can study by yourself and also participate in group projects.",
         "bgcolor": "#4d64c1"
       },
       {
         "id": 1,
         "img": "placeholder1.png",
-        "title": "Vertaistukea",
-        "text": "On kivempaa olla pulassa yhdessä",
+        "title": "Supportive colleagues",
+        "text": "It’s more fun to tackle problems together. While learning code you get to share your experiences and learn from your peers as well.",
         "bgcolor": "#08415c"
       },
       {
         "id": 2,
         "img": "placeholder2.png",
-        "title": "Avustavat ohjaajat",
-        "text": "Kysy mitä vaan, milloin vaan!",
+        "title": "Helpful staff",
+        "text": "Ask anything, anytime! During your stay you will be supported by instructors and a coach that will seek to help you with everything they can.",
         "bgcolor": "#000000"
       },
       {
         "id": 3,
         "img": "placeholder3.png",
-        "title": "Apua jatkopolulle ja työnhakuun",
-        "text": "",
+        "title": "Guidance onwards",
+        "text": "While here your working skills will grow and your coding abilities develop. You’ll gain valuable experience that will grant you more opportunities in work and education.",
         "bgcolor": "#08415c"
       }
     ]
   },
   "blogpreview": {
     "id": "blog",
-    "title": "Katso toimintaa blogistamme! (Mostly in Finnish)"
+    "title": "Take a look at our blog! (Mostly in Finnish)"
   },
   "applyinfo": {
     "id": "apply",
-    "applynow": "Hae meille!",
+    "applynow": "Apply now!",
     "text": [
       {
         "id": 0,
-        "bold": "Voit hakea työpajalle, jos olet 17-29-vuotias Helsinkiläinen nuori ja olet työttömänä työnhakijana TE-toimistossa tai opiskelijana Stadin ammattiopistossa.",
-        "normal": "Työkokeilu kestää 1-6 kuukautta, jonka päätteeksi tavoitteena on löytää jatkopolku, kuten työ- tai opiskelupaikka, jos ala tuntuu itselle sopivalta."
+        "bold": "You can apply to Digitalens Academy if you are: between the ages of 17 to 29, living in Helsinki, and listed as an unemployed jobseeker at the unemployment office. ",
+        "normal": "The work experience placement will last one to six months, after which we will guide you on a path forward such as education or employment. "
       },
       {
         "id": 1,
-        "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat aina kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
-        "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan pajan työpaikkaneuvojaan."
+        "bold": "We accept applications throughout the year and starting dates are the first monday of each month. ",
+        "normal": "You can inquire about available spots even after the starting dates by directly contacting our work coach."
       },
       {
         "id": 2,
-        "bold": "Pajoille voi hakea täyttämällä sähköisen hakulomakkeen, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
+        "bold": "To apply to Digitalents Academy you need to fill out the Helsinki youth workshops application form. All applicants will be contacted by our staff as soon as possible.",
         "normal": ""
       }
     ],

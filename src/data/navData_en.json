@@ -1,15 +1,15 @@
 {
     "navlogo": "DTA_pienilogo_musta.svg",
     "navdata": [
-        {"id": 0, "title": "Introduction", "link": "/", "hash": "#top", "subLinks": [
-            {"id": 0, "name": "Who we are", "link": "/", "hash": "#intro"},
+        {"id": 0, "title": "Home", "link": "/", "hash": "#top", "subLinks": [
+            {"id": 0, "name": "Introduction", "link": "/", "hash": "#intro"},
             {"id": 1, "name": "Activity", "link": "/", "hash": "#activity"},
             {"id": 2, "name": "Blog", "link": "/", "hash": "#blog"},
             {"id": 3, "name": "Apply!", "link": "/", "hash": "#apply"}
         ]},
         {"id": 1, "title": "Contacts", "link": "/yhteystiedot", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Location", "link": "/yhteystiedot", "hash": "#location"},
-            {"id": 1, "name": "People", "link": "/yhteystiedot", "hash": "#people"}
+            {"id": 1, "name": "Staff", "link": "/yhteystiedot", "hash": "#staff"}
         ]}
     ],
     "langswitch": "Suomeksi",

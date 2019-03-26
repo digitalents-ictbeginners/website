@@ -44,8 +44,8 @@
         }
     },
     "people": {
-        "id": "ihmiset",
-        "title": "Ihmiset",
+        "id": "henkilosto",
+        "title": "Henkilöstö",
         "peoplecards": [
             {
                 "id": 0,
