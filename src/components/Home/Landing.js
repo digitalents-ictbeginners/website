@@ -21,14 +21,14 @@ class Landing extends React.Component {
     }
 
     handleScroll(){
-        if(document.documentElement.scrollTop > 80 && !this.state.scrollIndText){
+        if(window.scrollY > 80 && !this.state.scrollIndText){
             this.setState(s => {
                 return {
                     scrollIndText: true
                 }
             });
         }
-        else if(document.documentElement.scrollTop < 100 && this.state.scrollIndText){
+        else if(window.scrollY < 100 && this.state.scrollIndText){
             this.setState(s => {
                 return {
                     scrollIndText: false

@@ -25,7 +25,8 @@
 
 .sloganContainer {
     border-bottom: 2px solid #08415c;
-    max-width: fit-content;
+    width: max-content;
+    max-width: 500px;
     padding: 0 40px;
     margin: 20px auto 25px auto;
 }
@@ -36,7 +37,7 @@
     font-style: italic;
     color: #08415c;
     background-color: white;
-    max-width: fit-content;
+    width: max-content;
     padding: 0 10px;
     margin: 0 auto -20px auto;
     font-family: 'Orbitron', sans-serif;
@@ -73,8 +74,12 @@
     .landingLogo {
         width: 350px;
     }
-    .landingContent h1 {
+    .sloganContainer {
+        border-bottom-width: 1px;
+    }
+    .sloganContainer h1 {
         font-size: 18px;
+        margin-bottom: -10px;
     }
     .landingContent h4 {
         margin-top: 10px;
