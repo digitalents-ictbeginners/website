@@ -45,7 +45,10 @@ class Landing extends React.Component {
                 <div className="landing">
                     <div className="landingContent">
                         <img className="landingLogo" alt="" src={this.logoimg} />
-                        <h1>{data.slogan}</h1>
+                        <div className="sloganContainer">
+                            <h1>{data.slogan}</h1>
+                        </div>
+                        
                     </div>
                 </div>
                 <div className="scrollIndicator">

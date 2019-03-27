@@ -11,8 +11,7 @@
 }
 
 .landingContent {
-    padding: 80px 0 30px 0;
-/*     margin-bottom: 360px;*/    
+    padding: 80px 0 30px 0;   
     width: 100%;
     max-height: 370px;
     position: sticky;
@@ -24,9 +23,22 @@
     width: 550px;
 }
 
-.landingContent h1 {
-    font-size: 45px;
-    font-weight: 400;
+.sloganContainer {
+    border-bottom: 2px solid #08415c;
+    max-width: fit-content;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.sloganContainer h1 {
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    color: #08415c;
+    background-color: white;
+    max-width: fit-content;
+    padding: 0 10px;
+    margin: 0 auto -20px auto;
 }
 
 .scrollIndicator {
