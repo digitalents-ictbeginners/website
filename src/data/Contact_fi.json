@@ -34,8 +34,7 @@
             },
             "bypublictransit": {
                 "title": "Julkisella liikenteellä",
-                "text": ["Lähin raitiovaunupysäkki on Maria Mechelinkadulla ja siinä pysähtyy raitiovaunu numero 8. Raitiovaunut 7 ja 9 pysähtyvät Ruoholahden villat -pysäkillä.",
-                    "Lähin linja-autopysäkki on Leppäsuonkatu ja siinä pysähtyvät bussit 24 ja 192."
+                "text": ["Lähin raitiovaunupysäkki on Maria Mechelininkadulla ja siinä pysähtyy raitiovaunu numero 8. Rautatieasemalta pääsee raitiovaunuilla 7 ja 9, jotka pysähtyvät Ruoholahden villat -pysäkillä. Lähin metroasema on Kampissa. Lähin linja-autopysäkki on Leppäsuonkatu ja siinä pysähtyvät bussit 24 ja 192."
                 ]
             },
             "map": {
