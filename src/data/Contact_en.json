@@ -28,7 +28,8 @@
             },
             "bycar": {
                 "title": "By car",
-                "text": ["Ohjeita paikalle löytämiseen ajaen. Mitä kautta, mitkä tiet, mistä sisään jne jne"
+                "text": ["Pohjoisesta tullessa käänny Mechelininkadulta Pohjoiselle Rautatiekadulle ja heti oikealle pääportista sisään. Idästä tule Helsinginkadun ja Mannerheimintien kautta Pohjoiselle Rautatiekadulle. Lännestä saapuessasi aja Porkkalankadulta Mechelininkadulle, josta pääset sisään eteläiseltä sisäänkäynniltä.",
+                    "Maria 01 -alueelle saapuessa on heti maksullinen pysäköintialue. Maksaminen onnistuu parkkiautomaatilla sekä EasyPark- tai ParkMan-sovelluksilla. Lapinlahdentiellä hautausmaiden välissä on myös mahdollisuus lyhytaikaiseen ilmaiseen pysäköintiin. Tienvarsipysäköinti muualla alueen läheisyydessä on maksullista. Parkkipaikkoja on yleensä rajoitetusti, joten suosittelemme käyttämään julkisia kulkuvälineitä."
                 ]
             },
             "bypublictransit": {
