@@ -6,7 +6,8 @@ class Landing extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            scrollIndText: false //false: default, true: after scroll
+            scrollIndText: false, //false: default, true: after scroll
+            scrollIndVis: true
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.logoimg = require("../../imgs/" + this.props.data.logoimg)
@@ -23,16 +24,26 @@ class Landing extends React.Component {
     handleScroll(){
         if(window.scrollY > 80 && !this.state.scrollIndText){
             this.setState(s => {
-                return {
-                    scrollIndText: true
-                }
+                s.scrollIndText = true;
+                return s;
             });
         }
-        else if(window.scrollY < 100 && this.state.scrollIndText){
+        if(window.scrollY < 100 && this.state.scrollIndText){
             this.setState(s => {
-                return {
-                    scrollIndText: false
-                }
+                s.scrollIndText = false;
+                return s;
+            });
+        }
+        if(window.scrollY > 500 && this.state.scrollIndVis){
+            this.setState(s => {
+                s.scrollIndVis = false;
+                return s;
+            });
+        }
+        if(window.scrollY < 400 && !this.state.scrollIndVis){
+            this.setState(s => {
+                s.scrollIndVis = true;
+                return s;
             });
         }
     }
@@ -40,9 +51,11 @@ class Landing extends React.Component {
     render(){
         const data = this.props.data;
         const scrollTextClass = this.state.scrollIndText ? "scrollText scrollTextVisible" : "scrollText scrollTextHidden";
+        const scrollIndClass = this.state.scrollIndVis ? "scrollIndicator" : "scrollIndicator scrollIndHidden";
         return (
             <div>
                 <div className="landing">
+                    <div className="landingBg"></div>
                     <div className="landingContent">
                         <img className="landingLogo" alt="" src={this.logoimg} />
                         <div className="sloganContainer">
@@ -51,7 +64,7 @@ class Landing extends React.Component {
                         
                     </div>
                 </div>
-                <div className="scrollIndicator">
+                <div className={scrollIndClass}>
                     <i className="fas fa-chevron-circle-down fa-3x"></i>
                     <div className={scrollTextClass}>{data.scrollind}</div>
                 </div>

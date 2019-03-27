@@ -2,10 +2,15 @@
     height: 100vh;
     position: relative;
     text-align: center;
-    border-bottom: -200px solid white;
-    background-image: url("../../imgs/landingbg.png");
-    background-size: 100% 100vh;
-    background-position-y: -30px;
+}
+
+.landingBg {
+    position: absolute;
+    width: 100%;
+    height: 98vh;
+    background-image: url("../../imgs/landingbg.jpg");
+    background-size: cover;
+    background-position-x: 50%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -50,6 +55,7 @@
     margin: 20px auto;
     color: #efc51f;
     text-align: center;
+    transition: opacity 0.5s;
 }
 
 .scrollText {
@@ -67,14 +73,19 @@
     opacity: 0;
 }
 
+.scrollIndHidden {
+    opacity: 0;
+}
+
 @media only screen and (max-width: 600px){
     .landingContent {
-        padding: 100px 0 75px 0;
+        padding: 100px 0 30px 0;
     }
     .landingLogo {
         width: 350px;
     }
     .sloganContainer {
+        padding: 0 20px;
         border-bottom-width: 1px;
     }
     .sloganContainer h1 {
