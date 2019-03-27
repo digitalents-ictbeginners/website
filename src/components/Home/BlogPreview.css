@@ -12,7 +12,7 @@
 .blogPreviewTitle {
     text-align: center;
     font-size: 48px;
-    font-weight: lighter;
+    font-weight: 200;
 }
 
 .blogPreview {
@@ -49,20 +49,24 @@
 
 .bpcPost h4 {
     margin-bottom: 0;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 14px;
 }
 
 .bpcPost h3 {
-    margin-top: 5px;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 .bpcPost p {
     padding: 0 3px;
+    margin: 5px;
     border-radius: 10px;
     position: absolute;
     bottom: 0;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .bpcTips {
