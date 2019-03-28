@@ -19,7 +19,7 @@ class TopNavBarElement extends React.Component {
     render(){
         const elemClass = this.props.index === this.props.openid ? "tnbElem tnbElemOpen" : "tnbElem";
         const toObj = {
-            pathname: this.props.link,
+            pathname: process.env.PUBLIC_URL + this.props.link,
             search: this.props.english ? "?lang=en" : "",
             hash: this.props.hash
         }

@@ -7,13 +7,13 @@ class SideBar extends React.Component {
         const openstateClass = "sidebar" + (this.props.open ? " sidebarOpen" : " sidebarClosed");
         const links = this.props.data.navdata.map(e =>{
             const mainto = {
-                pathname: e.link,
+                pathname: process.env.PUBLIC_URL + e.link,
                 search: this.props.english ? "?lang=en" : "",
                 hash: e.hash
             }
             const sublinks = e.subLinks.map(esub => {
                 const subto = {
-                    pathname: esub.link,
+                    pathname: process.env.PUBLIC_URL + esub.link,
                     search: this.props.english ? "?lang=en" : "",
                     hash: esub.hash
                 }
@@ -35,7 +35,7 @@ class SideBar extends React.Component {
             );
         });
         const logoToObj = {
-            pathname: this.props.data.navdata[0].link,
+            pathname: process.env.PUBLIC_URL + this.props.data.navdata[0].link,
             search: this.props.english ? "?lang=en" : "",
             hash: this.props.data.navdata[0].hash
         };

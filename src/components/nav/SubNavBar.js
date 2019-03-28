@@ -6,7 +6,7 @@ class SubNavBar extends React.Component {
     render(){
         const links = this.props.data.map(e => {
             const toObj = {
-                pathname: e.link,
+                pathname: process.env.PUBLIC_URL + e.link,
                 search: this.props.english ? "?lang=en" : "",
                 hash: e.hash
             }

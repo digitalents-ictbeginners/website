@@ -14,7 +14,7 @@ class TopNavBar extends React.Component {
             subNavBars.push(<SubNavBar closeFunc={this.props.closeFunc} english={this.props.english} data={e.subLinks}/>);
         });
         const logoToObj = {
-            pathname: this.props.data.navdata[0].link,
+            pathname: process.env.PUBLIC_URL + this.props.data.navdata[0].link,
             search: this.props.english ? "?lang=en" : "",
             hash: this.props.data.navdata[0].hash
         };

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 //import Business from "./pages/Business";
 import navDataFI from "./data/navData_fi.json";
@@ -10,6 +10,8 @@ import contactDataEN from "./data/Contact_en.json";
 import SideBar from "./components/nav/SideBar";
 import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 class App extends Component {
   constructor(){
@@ -34,8 +36,8 @@ class App extends Component {
     this.navdata = navDataFI;
     this.navLogo = require("./imgs/" + this.navdata.navlogo);
     
-    this.Home = React.lazy(() => import("./pages/Home"));
-    this.Contact = React.lazy(() => import("./pages/Contact"));
+    //this.Home = React.lazy(() => import("./pages/Home"));
+    //this.Contact = React.lazy(() => import("./pages/Contact"));
   }
 
   componentDidMount(){
@@ -102,13 +104,15 @@ class App extends Component {
   }
 
   render() {
+    const baseUrl = process.env.PUBLIC_URL;
+
     const host = window.location.host;
     const hash = window.location.hash;
     const path = window.location.pathname;
     if(this.state.english){
-      window.history.replaceState(null, null, "http://" + host + path + "?lang=en" + hash);
+      window.history.replaceState(null, null, "https://" + host + path + "?lang=en" + hash);
     } else {
-      window.history.replaceState(null, null, "http://" + host + path + hash);
+      window.history.replaceState(null, null, "https://" + host + path + hash);
     }
 
     const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
@@ -132,10 +136,8 @@ class App extends Component {
             <title>Digitalents Academy</title>
           </Helmet>
           {navComponent}
-          <React.Suspense fallback={<div>Loading...</div>}>
-            <Route exact path="/" render={props => <this.Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
-            <Route exact path="/yhteystiedot" render={props => <this.Contact {...props} mobile={this.state.mobile} english={this.state.english} contactData={contactData} overlay={overlayFuncs}/>} />
-          </React.Suspense>
+          <Route exact path={baseUrl + "/"} render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
+          <Route exact path={baseUrl + "/yhteystiedot"} render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} contactData={contactData} overlay={overlayFuncs}/>} />
           <Footer english={this.state.english} navdata={navData} contactData={contactData}/>
           <div className={overlayClass}>
             <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
@@ -153,3 +155,6 @@ export default App;
 
 // Unused (for now) route:
 // <Route exact path="/yrityksille" render={props => <Business {...props} mobile={this.state.mobile}/>} />
+
+// Unused suspense:
+// <React.Suspense fallback={<div>Loading...</div>}> </React.Suspense>

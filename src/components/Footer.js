@@ -9,7 +9,7 @@ class Footer extends React.Component {
     const sitemapElems = this.props.navdata.navdata.map(e => {
     const sitemapSubElems = e.subLinks.map(se => {
       const toObj = {
-        pathname: se.link,
+        pathname: process.env.PUBLIC_URL + se.link,
         search: this.props.english ? "?lang=en" : "",
         hash: se.hash
       }
@@ -25,7 +25,7 @@ class Footer extends React.Component {
       );
     });
     const toContacts = {
-      pathname: "/yhteystiedot",
+      pathname: process.env.PUBLIC_URL + "/yhteystiedot",
       search: this.props.english ? "?lang=en" : "",
       hash: "#top"
     }
