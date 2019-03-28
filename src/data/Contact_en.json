@@ -15,26 +15,26 @@
             "title": "Directions",
             "intro": {
                 "title": "Maria 01 -area",
-                "text": ["Digitalents Academy sijaitsee osoitteessa Lapinlahdenkatu 16, Maria 01 -alueella. Alueen pääsisäänkäynti on pohjoispäässä Lapinlahdenkadulla, mutta sisään pääsee myös etelästä Mechelininkadulta.",
-                    "Toimimme punatiilisessä rakennuksessa 5, Games Factoryn ohessa. Ulko-ovi on sama kuin Maki.vc:lla, mutta olemme heti ensimmäisessä kerroksessa portaiden alapäässä."
+                "text": ["Digitalents Academy is located at Lapinlahdenkatu 16, in the Maria 01 -area. The main entrance of the area is to the north end on Lapinlahdenkatu, but you can also enter from the south via Mechelininkatu.",
+                    "We operate in the red brick building number 5, alongside Games Factory. We share a door with Maki.vc, but our classroom is immediately in the first floor, at the bottom end of the staircase."
                 ]
             },
             "byfoot": {
                 "title": "By foot or bicycle",
-                "text": ["Kampin metroasemalta paikan päälle pääsee kävellen noin 10 minuutissa, Radisson-hotellin ohi, alas Lapinrinnettä ja Lapinlahdenkatua pitkin pääportille.",
-                    "Ruoholahden metroasemalta noin samassa ajassa Itämerenkadun ja Mechelininkadun kautta eteläisestä sisäänkäynnistä.",
-                    "Rautatieasemalta kävellen pääsee noin 20 minuutissa pitkin baanaa, jota pääsee kätevästi myös pyörällä. Baanaa tullessasi nouse ylös Pohjoiselle Rautatienkadulle ja K-marketin ohi pääsisäänkäynnille."
+                "text": ["From the Kamppi metro station you can walk to us in about 10 minutes, past the Radisson hotel, down Lapinrinne and along Lapinlahdenkatu to the main gate.",
+                    "From the Ruoholahti metro station, in approximately the same time via Itämerenkatu and Mechelininkatu and through the southern entrance.",
+                    "From the Central Railway Station you can walk here in about 20 minutes using the Baana, which is also suitable for biking. When coming via Baana, ascend to Pohjoinen Rautatienkatu and go past the K-Market to the main entrance."
                 ]
             },
             "bycar": {
                 "title": "By car",
-                "text": ["Pohjoisesta tullessa käänny Mechelininkadulta Pohjoiselle Rautatiekadulle ja heti oikealle pääportista sisään. Idästä tule Helsinginkadun ja Mannerheimintien kautta Pohjoiselle Rautatiekadulle. Lännestä saapuessasi aja Porkkalankadulta Mechelininkadulle, josta pääset sisään eteläiseltä sisäänkäynniltä.",
-                    "Maria 01 -alueelle saapuessa on heti maksullinen pysäköintialue. Maksaminen onnistuu parkkiautomaatilla sekä EasyPark- tai ParkMan-sovelluksilla. Lapinlahdentiellä hautausmaiden välissä on myös mahdollisuus lyhytaikaiseen ilmaiseen pysäköintiin. Tienvarsipysäköinti muualla alueen läheisyydessä on maksullista. Parkkipaikkoja on yleensä rajoitetusti, joten suosittelemme käyttämään julkisia kulkuvälineitä."
+                "text": ["Arriving from the north, turn from Mechelininkatu onto Pohjoinen Rautatienkatu, then immediately right onto Lapinlahdenkatu and again to the right through the main gate. From the east, drive via Helsinginkatu and Mannerheimintie to Pohjoinen Rautatienkatu. Coming from the west, drive from Porkkalankatu onto Mechelininkatu, from which you can enter through the southern entrance.",
+                    "Arriving at the Maria 01 -area, you can immediately find a paid parking area. You can pay using the ticket machine or the EasyPark or ParkMan apps. On Lapinlahdentie between the cemeteries there is also an opportunity for free short term parking. Road side parking elsewhere in the vicinity is paid. There is usually a limited number of parking spaces so we recommend using public transit."
                 ]
             },
             "bypublictransit": {
                 "title": "By Public Transit",
-                "text": ["Lähin raitiovaunupysäkki on Maria Mechelininkadulla ja siinä pysähtyy raitiovaunu numero 8. Rautatieasemalta pääsee raitiovaunuilla 7 ja 9, jotka pysähtyvät Ruoholahden villat -pysäkillä. Lähin metroasema on Kampissa. Lähin linja-autopysäkki on Leppäsuonkatu ja siinä pysähtyvät bussit 24 ja 192."
+                "text": ["The nearest tram stop is “Maria” on Mechelininkatu, and on it stops tram number 8. From the Central Railway Station you can take trams 7 or 9, that will stop on the “Ruoholahden villat” stop. The closest metro station is in Kamppi. The bus stop closest to us is “Leppäsuonkatu”, and is served by lines 24 and 192."
                 ]
             },
             "map": {
@@ -55,7 +55,7 @@
                 "mobile": "040 829 1342",
                 "email": "arto.aitta@edu.hel.fi",
                 "picture": "",
-                "quote": "Some nice quote here"
+                "quote": "..."
             },
             {
                 "id": 1,
@@ -65,7 +65,7 @@
                 "mobile": "040 508 0336",
                 "email": "krishna.regmi@edu.hel.fi",
                 "picture": "krishna.png",
-                "quote": "Some nice quote here"
+                "quote": "I’m responsible for the curriculum, instruction and teaching as well as clarifying career paths. You can approach me about anything regarding education and instructing. I can also help with other matters and, if necessary, refer you to others."
             },
             {
                 "id": 2,
@@ -75,17 +75,17 @@
                 "mobile": "040 641 2092",
                 "email": "elli.vahakangas@edu.hel.fi",
                 "picture": "elli.png",
-                "quote": "Some nice quote here"
+                "quote": "You can approach me when you need help with your assignments. If I’m unable to help you myself, we’ll figure it out together or I’ll find someone to assist. The design side of things as well as many Adobe programs are familiar to me."
             },
             {
                 "id": 3,
                 "name": "Nina Maneejun",
-                "title": "nina english title here",
+                "title": "Rehabilitating instructor",
                 "landline": "09 310 23406",
                 "mobile": "040 506 1549",
                 "email": "nina.maneejun@edu.hel.fi",
                 "picture": "",
-                "quote": "Some nice quote here"
+                "quote": "..."
             },
             {
                 "id": 4,
@@ -94,8 +94,8 @@
                 "landline": "-",
                 "mobile": "040 669 2530",
                 "email": "tarja.kurvinen@hel.fi",
-                "picture": "",
-                "quote": "Some nice quote here"
+                "picture": "tarja.png",
+                "quote": "Together with the young person, I will think of and fulfill supportive measures through which learning and work skills can be improved. I will be supporting at the side of the youngster on their way towards their dreams, employment or studies."
             }
         ]
     }

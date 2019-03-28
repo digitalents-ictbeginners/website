@@ -28,7 +28,7 @@
             },
             "bycar": {
                 "title": "Autolla",
-                "text": ["Pohjoisesta tullessa käänny Mechelininkadulta Pohjoiselle Rautatiekadulle ja heti oikealle pääportista sisään. Idästä tule Helsinginkadun ja Mannerheimintien kautta Pohjoiselle Rautatiekadulle. Lännestä saapuessasi aja Porkkalankadulta Mechelininkadulle, josta pääset sisään eteläiseltä sisäänkäynniltä.",
+                "text": ["Pohjoisesta tullessa käänny Mechelininkadulta Pohjoiselle Rautatiekadulle ja heti oikealle Lapinlahdenkadulle ja taas oikealle pääportista sisään. Idästä tule Helsinginkadun ja Mannerheimintien kautta Pohjoiselle Rautatiekadulle. Lännestä saapuessasi aja Porkkalankadulta Mechelininkadulle, josta pääset sisään eteläiseltä sisäänkäynniltä.",
                     "Maria 01 -alueelle saapuessa on heti maksullinen pysäköintialue. Maksaminen onnistuu parkkiautomaatilla sekä EasyPark- tai ParkMan-sovelluksilla. Lapinlahdentiellä hautausmaiden välissä on myös mahdollisuus lyhytaikaiseen ilmaiseen pysäköintiin. Tienvarsipysäköinti muualla alueen läheisyydessä on maksullista. Parkkipaikkoja on yleensä rajoitetusti, joten suosittelemme käyttämään julkisia kulkuvälineitä."
                 ]
             },
@@ -55,7 +55,7 @@
                 "mobile": "040 829 1342",
                 "email": "arto.aitta@edu.hel.fi",
                 "picture": "",
-                "quote": "Some nice quote here"
+                "quote": "..."
             },
             {
                 "id": 1,
@@ -85,7 +85,7 @@
                 "mobile": "040 506 1549",
                 "email": "nina.maneejun@edu.hel.fi",
                 "picture": "",
-                "quote": "Some nice quote here"
+                "quote": "..."
             },
             {
                 "id": 4,
@@ -94,8 +94,8 @@
                 "landline": "-",
                 "mobile": "040 669 2530",
                 "email": "tarja.kurvinen@hel.fi",
-                "picture": "",
-                "quote": "Some nice quote here"
+                "picture": "tarja.png",
+                "quote": "Mietin ja toteutan nuoren kanssa yhdessä tukitoimenpiteitä, joilla nuoren oppimista ja työelämätaitoja voidaan vahvistaa ja kehittää. Olen nuoren tukena hänen matkallaan kohti unelmia, työelämää tai jatko-opintoja."
             }
         ]
     }
