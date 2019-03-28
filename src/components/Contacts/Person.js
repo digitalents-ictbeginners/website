@@ -27,9 +27,9 @@ class Person extends React.Component {
                 </div>
                 {this.image}
                 <div className="personQuote">
-                    <i className="fas fa-quote-left fa-2x"></i>
+                    <i className="fas fa-quote-left"></i>
                     <p>{data.quote}</p>
-                    <i className="fas fa-quote-right fa-2x personRightQuote"></i>
+                    <i className="fas fa-quote-right personRightQuote"></i>
                 </div>
             </div>
         );
