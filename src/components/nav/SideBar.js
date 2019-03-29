@@ -41,13 +41,11 @@ class SideBar extends React.Component {
         };
         return (
             <div>
-                <div className="sidebarTopBarWrapper">
-                    <div className="sidebarTopBar">
-                        <div className="sidebarOpener" onClick={this.props.toggle}>
-                            <i className="fas fa-bars fa-2x"></i>
-                        </div>
-                        <Link to={logoToObj} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}><img className="sidebarTopBarLogo" alt="" src={this.props.logo} /></Link>
+                <div className="sidebarTopBar">
+                    <div className="sidebarOpener" onClick={this.props.toggle}>
+                        <i className="fas fa-bars fa-2x"></i>
                     </div>
+                    <Link to={logoToObj} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}><img className="sidebarTopBarLogo" alt="" src={this.props.logo} /></Link>
                 </div>
                 <div className={"sidebarBackground" + (this.props.open ? " sidebarBgVisible" : "")} onClick={this.props.toggle}></div>
                 <div className={openstateClass}>
