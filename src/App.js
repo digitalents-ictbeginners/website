@@ -110,9 +110,9 @@ class App extends Component {
     const hash = window.location.hash;
     const path = window.location.pathname;
     if(this.state.english){
-      window.history.replaceState(null, null, "https://" + host + path + "?lang=en" + hash);
+      window.history.replaceState(null, null, "http://" + host + path + "?lang=en" + hash);
     } else {
-      window.history.replaceState(null, null, "https://" + host + path + hash);
+      window.history.replaceState(null, null, "http://" + host + path + hash);
     }
 
     const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
