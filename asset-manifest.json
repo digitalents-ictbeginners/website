@@ -1,7 +1,7 @@
 {
-  "main.css": "/website/static/css/main.38114697.chunk.css",
-  "main.js": "/website/static/js/main.da332213.chunk.js",
-  "main.js.map": "/website/static/js/main.da332213.chunk.js.map",
+  "main.css": "/website/static/css/main.c6461465.chunk.css",
+  "main.js": "/website/static/js/main.07d6e70c.chunk.js",
+  "main.js.map": "/website/static/js/main.07d6e70c.chunk.js.map",
   "static/js/1.3799804f.chunk.js": "/website/static/js/1.3799804f.chunk.js",
   "static/js/1.3799804f.chunk.js.map": "/website/static/js/1.3799804f.chunk.js.map",
   "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
@@ -22,8 +22,8 @@
   "static/media/placeholder0.png": "/website/static/media/placeholder0.4aaeacf3.png",
   "static/media/DTA_pienilogo_mustapohja.svg": "/website/static/media/DTA_pienilogo_mustapohja.64114bb7.svg",
   "static/media/office.jpg": "/website/static/media/office.7cf14776.jpg",
-  "static/css/main.38114697.chunk.css.map": "/website/static/css/main.38114697.chunk.css.map",
+  "static/css/main.c6461465.chunk.css.map": "/website/static/css/main.c6461465.chunk.css.map",
   "index.html": "/website/index.html",
-  "precache-manifest.0f0f078aedcb8ab1834b9082de0c88d2.js": "/website/precache-manifest.0f0f078aedcb8ab1834b9082de0c88d2.js",
+  "precache-manifest.f2430febed51717ff212f005b812cd4e.js": "/website/precache-manifest.f2430febed51717ff212f005b812cd4e.js",
   "service-worker.js": "/website/service-worker.js"
 }
