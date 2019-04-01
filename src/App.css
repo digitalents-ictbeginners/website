@@ -36,6 +36,7 @@
 
 .foContent img {
     display: block;
-    max-width: 90%;
+    max-width: 80vw;
+    max-height: 80vh;
     margin: 0 auto;
 }

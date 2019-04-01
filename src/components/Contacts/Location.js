@@ -1,7 +1,7 @@
 import React from "react";
 import "./Location.css";
 import LocationDropdown from "./LocationDropdown";
-import ArrivalGraphic from "../../imgs/arrivalgraphicplaceholder.png";
+import ArrivalGraphic from "../../imgs/map.svg";
 
 export default class Location extends React.Component {
   constructor(){
