@@ -11,14 +11,22 @@ Welcome to Digitalents Academy Website's documentation!
    :caption: Contents:
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+This is the documentation for the website of Digitalents Academy.
 
 
+public/index.html
+=================
 
-Hello world!
+Main html file everything is inserted into.
+
+
+src/index.js
+============
+
+React application entry point.
+
+
+src/App.js
+==========
+
+Main component of the application.
