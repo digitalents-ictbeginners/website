@@ -1,6 +1,10 @@
-# Website project for Digitalents ICT-beginners
+# Website project for Digitalents Academy
 
-We're using Scrum. Name may change.
+Our Scrum-powered project to develop the website for Digitalents Academy.
+The website is a single page application.
+
+Documentation can be found at:
+https://digitalents-academy-website.readthedocs.io/en/latest/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
