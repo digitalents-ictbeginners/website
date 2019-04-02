@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import Location from "../components/Contacts/Location";
-import People from "../components/Contacts/People";
+import People from "../components/Contacts/People/People";
 
 class Contact extends React.Component {
 

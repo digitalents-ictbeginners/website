@@ -4,7 +4,7 @@ import dataFI from '../data/Home_fi.json';
 import dataEN from '../data/Home_en.json';
 import Landing from "../components/Home/Landing";
 import Intro from "../components/Home/Intro";
-import InfoGrid from "../components/Home/InfoGrid";
+import InfoGrid from "../components/Home/InfoGrid/InfoGrid";
 import ApplyInfo from "../components/Home/ApplyInfo";
 import BlogPreview from "../components/Home/BlogPreview";
 

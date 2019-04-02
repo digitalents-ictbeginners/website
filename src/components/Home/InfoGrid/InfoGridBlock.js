@@ -4,7 +4,7 @@ import "./InfoGridBlock.css";
 class InfoGridBlock extends React.Component {
     constructor(props){
         super(props);
-        this.image = require("../../imgs/infogrid/" + this.props.data.img);
+        this.image = require("../../../imgs/infogrid/" + this.props.data.img);
     }
 
     render(){

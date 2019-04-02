@@ -1,7 +1,6 @@
 import React from "react";
 import "./InfoGrid.css";
 import InfoGridBlock from "./InfoGridBlock";
-//import {ProgressionTeaser1, ProgressionTeaser2} from "./ProgressionTeaser";
 
 class InfoGrid extends React.Component {
 
@@ -27,7 +26,3 @@ class InfoGrid extends React.Component {
 }
 
 export default InfoGrid;
-
-//<ProgressionTeaser1 data={data.teaser}/>
-
-//<ProgressionTeaser2 data={data.teaser}/>
