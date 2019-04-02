@@ -1,7 +1,7 @@
 footer {
   background-color: #08415c;
   min-height: 300px;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   color: #eee;
   box-shadow: 0px -2px 2px #08415c;
 }
@@ -78,6 +78,12 @@ footer {
 .ftMoreContacts h2 {
   margin: 0;
   font-size: 22px;
+}
+
+.ftHelLogo {
+  display: block;
+  margin: 50px auto;
+  width: 200px;
 }
 
 @media only screen and (max-width: 600px){

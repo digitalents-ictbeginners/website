@@ -1,6 +1,7 @@
 import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import "./Footer.css";
+import HelLogo from "../imgs/heltunnus_valk.png";
 
 class Footer extends React.Component {
   render() {
@@ -55,6 +56,7 @@ class Footer extends React.Component {
             <Link className="ftMoreContacts" to={toContacts}><h2>{this.props.navdata.ftMoreContacts}</h2></Link>
           </div>
         </div>
+        <img className="ftHelLogo" alt="" src={HelLogo} />
       </footer>
     )
   }
