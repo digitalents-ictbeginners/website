@@ -73,12 +73,11 @@
     background-color: #08415c;
 }
 
-
 .bpcLink {
     padding-top: 30px;
     color: white;
     background-color: black;
-    transition: all 1s;
+    transition: background-color 1s;
 }
 
 .bpcLink:hover {

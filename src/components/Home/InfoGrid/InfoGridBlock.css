@@ -1,13 +1,13 @@
 .infoBlock {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 600px;
+    height: 450px;
 }
 
 .infoSubBlock {
     box-sizing: border-box;
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
 }
 
 .ibText {
@@ -21,15 +21,17 @@
 .ibText h2 {
     margin: 0 0 20px 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
 .ibText p {
     text-align: center;
+    font-size: 18px;
     font-weight: 600;
     padding: 30px;
+    margin: 0;
 }
 
 .ibImg {
@@ -40,7 +42,7 @@
     height: 100%;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1330px){
+@media only screen and (min-width: 601px) and (max-width: 950px){
     .infoBlock {
         width: 90vw;
         height: 45vw;
@@ -52,19 +54,10 @@
         width: 45vw;
     }
     .ibText h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
     .ibText p {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 900px){
-    .ibText h2 {
-        font-size: 20px;
-        margin: 30px 0 0 0;
-    }
-    .ibText p {
+        padding: 0 10px;
         font-size: 16px;
     }
 }
@@ -80,6 +73,12 @@
         height: auto;
         min-height: 360px;
         width: 360px;
+    }
+    .ibText h2 {
+        font-size: 30px;
+    }
+    .ibText p {
+        padding: 0 10px;
     }
     .ibImg {
         height: 360px;
