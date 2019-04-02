@@ -62,15 +62,10 @@
         "id": 1,
         "bold": "Haku on käynnissä jatkuvasti, ja aloitukset ovat kuun ensimmäisenä maanantaina, mikäli vapaita paikkoja löytyy.",
         "normal": "Voit tiedustella peruutus- tai täydennyspaikkoja myös ryhmien aloittamisen jälkeen ottamalla yhteyttä suoraan työvalmentajaan."
-      },
-      {
-        "id": 2,
-        "bold": "Digitalents Academyyn haetaan Helsingin työpajojen hakulomakkeen kautta, jonka jälkeen hakijaan otetaan yhteyttä mahdollisimman pian.",
-        "normal": ""
       }
     ],
     "toapply": {
-      "text": "Hakulomakkeessa ensisijaista toivetta työpajasta kysyttäessä valitse “Yrityksissä tapahtuva valmennus”. (Digitalents ICT Beginners) ",
+      "text": "Digitalents Academyyn haetaan Helsingin työpajojen hakulomakkeen kautta. Hakijaan otetaan yhteyttä mahdollisimman pian.",
       "buttontext":"Hae tästä",
       "link": "https://response.questback.com/isa/qbv.dll/ShowQuest?QuestID=5039569&sid=dClp3aBhxG"
     }
