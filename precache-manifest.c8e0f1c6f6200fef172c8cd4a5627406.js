@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/website/static/media/placeholder5.8874d838.png"
   },
   {
-    "revision": "439567a27190bc937607",
-    "url": "/website/static/css/main.4c13d658.chunk.css"
+    "revision": "32e6fd4661a2c968222b",
+    "url": "/website/static/css/main.d53e4381.chunk.css"
   },
   {
-    "revision": "dec823ac7065325d8ee0",
-    "url": "/website/static/js/1.dec823ac.chunk.js"
+    "revision": "30827e5d92237f21455d",
+    "url": "/website/static/js/1.30827e5d.chunk.js"
   },
   {
     "revision": "df8eefd1f2dbc5f3d248",
@@ -18,6 +18,10 @@ self.__precacheManifest = [
   {
     "revision": "67e77880098ff05364b05c6369d400d1",
     "url": "/website/static/media/map.67e77880.svg"
+  },
+  {
+    "revision": "65e999da38a7c5736fcce64d3069b1d9",
+    "url": "/website/static/media/heltunnus_valk.65e999da.png"
   },
   {
     "revision": "efd5160a6c41e7b64714827f7305386b",
@@ -44,8 +48,8 @@ self.__precacheManifest = [
     "url": "/website/static/media/placeholder4.8605c96a.png"
   },
   {
-    "revision": "439567a27190bc937607",
-    "url": "/website/static/js/main.439567a2.chunk.js"
+    "revision": "32e6fd4661a2c968222b",
+    "url": "/website/static/js/main.32e6fd46.chunk.js"
   },
   {
     "revision": "409ede51669f3cf121e323615ef4e017",
@@ -88,7 +92,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/office.7cf14776.jpg"
   },
   {
-    "revision": "285eddf8f802d4f7cacf236077085eb5",
+    "revision": "3269076dc3c3516ce14c12512f22b708",
     "url": "/website/index.html"
   }
 ];
