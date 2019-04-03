@@ -1,5 +1,14 @@
+App
+===
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+
+   app
+
 src/App.js
-==========
+..........
 
 Main component of the application.
 
@@ -8,14 +17,15 @@ constructor()
 
 **this.VIEW_THRESHOLD**
 
-    Sets the threshold at which the view changes between compact ("mobile") or
-    wide ("desktop").
+Sets the threshold at which the view changes between compact ("mobile") or
+wide ("desktop"). Default value is 600 and should probably stay there unless
+you want to change a bunch of numbers all over the place.
 
 ----
 
 **this.state**
 
-    Holds all the main state information of the app.
+Holds all the main state information of the app.
 
     :mobile: Boolean: is mobile mode active
     :english: Boolean: true = english, false = finnish
@@ -115,7 +125,7 @@ itself.
 
 
 src/App.css
-=======
+...........
 
 Everything in the App render JSX is split into components so styling here is
 only for "App" div element.
