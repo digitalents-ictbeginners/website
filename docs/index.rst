@@ -10,23 +10,32 @@ Welcome to Digitalents Academy Website's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   app
 
-This is the documentation for the website of Digitalents Academy.
+
+This is the documentation for the website of Digitalents Academy. While the
+website will be/is used the code was also written as a learning project. That
+means there may be some parts (especially older ones) that use strange
+structures.
 
 
 public/index.html
-=================
+-----------------
 
-Main html file everything is inserted into.
+Main html template file. Everything the React App renders it inserted into the "root" div
+element.
+
+Put externally loaded fonts and other stuff here.
+Currently holds a reference to Font Awesome.
 
 
 src/index.js
-============
+------------
 
-React application entry point.
+React application entry point. You can pretty much just ignore this.
 
 
-src/App.js
-==========
+src/index.css
+-------------
 
-Main component of the application.
+Holds some global styling information, including font-family definitions.
