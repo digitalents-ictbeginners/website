@@ -8,3 +8,4 @@
    home
    contact
    misc
+   data

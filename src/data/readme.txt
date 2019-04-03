@@ -3,3 +3,6 @@ Some notes:
   word wrap in your editor as a visual aid.
 - Language translations may be unfinished/unimplemented so don't be confused if
   you see Finnish where English is supposed to be.
+  
+Detailed documentation at:
+https://digitalents-academy-website.readthedocs.io/en/latest/data.html

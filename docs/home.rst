@@ -70,6 +70,9 @@ Styling for landing element. Class names should be quite self-explanatory.
 src/components/Home/Intro.js
 ............................
 
+Component for the small bit of introductory text at the beginning of the main
+content.
+
 
 src/components/Home/Intro.css
 .............................
@@ -77,6 +80,8 @@ src/components/Home/Intro.css
 
 src/components/Home/InfoGrid/InfoGrid.js
 ........................................
+
+Wrapper component for the alternating image/text information element.
 
 
 src/components/Home/InfoGrid/InfoGrid.css
