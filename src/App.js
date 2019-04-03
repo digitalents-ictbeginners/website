@@ -12,6 +12,7 @@ import TopNavBar from "./components/nav/TopNavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import ImageOverlay from "./components/ImageOverlay";
 
 class App extends Component {
   constructor(){
@@ -116,22 +117,25 @@ class App extends Component {
   }
 
   render() {
-    const baseUrl = process.env.PUBLIC_URL;
+    const baseUrl = process.env.PUBLIC_URL; //base url needed for routing
 
     this.updateURL();
 
-    const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
+    //package funcs
     const overlayFuncs = {
       set: this.setOverlay,
       close: this.closeOverlay
     }
 
-    const navData = this.state.english ? navDataEN : navDataFI;
+    const navData = this.state.english ? navDataEN : navDataFI; // select navData based on language state
+
+    //select sidebar or top navbar based on mobile state
     const navComponent =
       this.state.mobile
       ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.navLogo}/>
       : <TopNavBar setSubNav={this.setSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
 
+    //select contactData based on language state
     const contactData = this.state.english ? contactDataEN : contactDataFI;
 
     return (
@@ -144,12 +148,7 @@ class App extends Component {
           <Route exact path={baseUrl + "/"} render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
           <Route exact path={baseUrl + "/yhteystiedot"} render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} contactData={contactData} overlay={overlayFuncs}/>} />
           <Footer english={this.state.english} navdata={navData} contactData={contactData}/>
-          <div className={overlayClass}>
-            <i onClick={this.closeOverlay} className="fas fa-times fa-4x"></i>
-            <div className="foContent">
-              <img alt="" src={this.state.overlayImg}/>
-            </div>
-          </div>
+          <ImageOverlay img={this.state.overlayImg} open={this.state.overlayOpen} closeFunc={this.closeOverlay}/>
         </div>
       </Router>
     );
