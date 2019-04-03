@@ -10,7 +10,7 @@ Welcome to Digitalents Academy Website's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   app
+   index
 
 
 This is the documentation for the website of Digitalents Academy. While the

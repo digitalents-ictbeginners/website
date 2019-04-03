@@ -114,7 +114,7 @@ itself.
 *Returns JSX to insert into html*
 
 
-App.css
+src/App.css
 =======
 
 Everything in the App render JSX is split into components so styling here is
