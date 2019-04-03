@@ -19,7 +19,7 @@ class TopNavBar extends React.Component {
             hash: this.props.data.navdata[0].hash
         };
         return (
-            <div className="topNavBar" onMouseLeave={this.props.closeFunc}>
+            <div className="topNavBar" onMouseLeave={() => {this.props.setSubNav(0)}}>
                 <div className="navElementWrapper">
                     <Link to={logoToObj} scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}><img className="navLogo" src={this.props.logo} alt=""/></Link>
                     <div className="navElementContainer">

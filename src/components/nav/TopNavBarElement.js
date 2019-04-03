@@ -21,7 +21,7 @@ class TopNavBarElement extends React.Component {
         }
         return (
             <Link className={elemClass} to={toObj}>
-                <div onMouseEnter={this.selectSubNav} onClick={this.select}>
+                <div onMouseEnter={this.selectSubNav} onClick={this.selectSubNav}>
                     <span>{this.props.title}</span>
                 </div>
             </Link>
