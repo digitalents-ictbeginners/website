@@ -5,15 +5,11 @@ import "./TopNavBarElement.css";
 class TopNavBarElement extends React.Component {
     constructor(props){
         super(props);
-        this.select = this.select.bind(this);
+        this.selectSubNav = this.selectSubNav.bind(this);
     }
 
-    select(){
-        this.props.app.setState(s => {
-            return {
-                navTab: this.props.index
-            }
-        });
+    selectSubNav(){
+        this.props.setSubNav(this.props.index);
     }
 
     render(){
@@ -25,7 +21,7 @@ class TopNavBarElement extends React.Component {
         }
         return (
             <Link className={elemClass} to={toObj}>
-                <div onMouseEnter={this.select} onClick={this.select}>
+                <div onMouseEnter={this.selectSubNav} onClick={this.select}>
                     <span>{this.props.title}</span>
                 </div>
             </Link>

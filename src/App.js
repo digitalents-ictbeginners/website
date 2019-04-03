@@ -27,7 +27,7 @@ class App extends Component {
     }
     this.setView = this.setView.bind(this);
     this.toggleSidebar = this.toggleSidebar.bind(this);
-    this.closeSubNav = this.closeSubNav.bind(this);
+    this.setSubNav = this.setSubNav.bind(this);
     this.toggleLanguage = this.toggleLanguage.bind(this);
     this.setOverlay = this.setOverlay.bind(this);
     this.closeOverlay = this.closeOverlay.bind(this);
@@ -74,9 +74,9 @@ class App extends Component {
     });
   }
 
-  closeSubNav(){
+  setSubNav(index){
     this.setState(s => {
-      s.navTab = 0;
+      s.navTab = index;
       return s;
     });
   }
@@ -125,7 +125,7 @@ class App extends Component {
     const navComponent =
       this.state.mobile
       ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.navLogo}/>
-      : <TopNavBar parent={this} closeFunc={this.closeSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
+      : <TopNavBar setSubNav={this.setSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
 
     const contactData = this.state.english ? contactDataEN : contactDataFI;
 
