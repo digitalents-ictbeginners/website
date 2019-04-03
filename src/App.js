@@ -31,6 +31,7 @@ class App extends Component {
     this.toggleLanguage = this.toggleLanguage.bind(this);
     this.setOverlay = this.setOverlay.bind(this);
     this.closeOverlay = this.closeOverlay.bind(this);
+    this.updateURL = this.updateURL.bind(this);
     window.addEventListener("resize", this.setView);
 
     this.navdata = navDataFI;
@@ -103,9 +104,7 @@ class App extends Component {
     });
   }
 
-  render() {
-    const baseUrl = process.env.PUBLIC_URL;
-
+  updateURL(){
     const host = window.location.host;
     const hash = window.location.hash;
     const path = window.location.pathname;
@@ -114,6 +113,12 @@ class App extends Component {
     } else {
       window.history.replaceState(null, null, "http://" + host + path + hash);
     }
+  }
+
+  render() {
+    const baseUrl = process.env.PUBLIC_URL;
+
+    this.updateURL();
 
     const overlayClass = this.state.overlayOpen ? "fixedOverlay foVisible" : "fixedOverlay foHidden";
     const overlayFuncs = {
