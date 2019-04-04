@@ -19,24 +19,29 @@
                     "We operate in the red brick building number 5, alongside Games Factory. We share a door with Maki.vc, but our classroom is immediately in the first floor, at the bottom end of the staircase."
                 ]
             },
-            "byfoot": {
-                "title": "By foot or bicycle",
-                "text": ["From the Kamppi metro station you can walk to us in about 10 minutes, past the Radisson hotel, down Lapinrinne and along Lapinlahdenkatu to the main gate.",
-                    "From the Ruoholahti metro station, in approximately the same time via Itämerenkatu and Mechelininkatu and through the southern entrance.",
-                    "From the Central Railway Station you can walk here in about 20 minutes using the Baana, which is also suitable for biking. When coming via Baana, ascend to Pohjoinen Rautatienkatu and go past the K-Market to the main entrance."
-                ]
-            },
-            "bycar": {
-                "title": "By car",
-                "text": ["Arriving from the north, turn from Mechelininkatu onto Pohjoinen Rautatienkatu, then immediately right onto Lapinlahdenkatu and again to the right through the main gate. From the east, drive via Helsinginkatu and Mannerheimintie to Pohjoinen Rautatienkatu. Coming from the west, drive from Porkkalankatu onto Mechelininkatu, from which you can enter through the southern entrance.",
-                    "Arriving at the Maria 01 -area, you can immediately find a paid parking area. You can pay using the ticket machine or the EasyPark or ParkMan apps. On Lapinlahdentie between the cemeteries there is also an opportunity for free short term parking. Road side parking elsewhere in the vicinity is paid. There is usually a limited number of parking spaces so we recommend using public transit."
-                ]
-            },
-            "bypublictransit": {
-                "title": "By Public Transit",
-                "text": ["The nearest tram stop is “Maria” on Mechelininkatu, and on it stops tram number 8. From the Central Railway Station you can take trams 7 or 9, that will stop on the “Ruoholahden villat” stop. The closest metro station is in Kamppi. The bus stop closest to us is “Leppäsuonkatu”, and is served by lines 24 and 192."
-                ]
-            },
+            "arrivalmethods": [
+                {
+                    "id": 0,
+                    "title": "By foot or bicycle",
+                    "text": ["From the Kamppi metro station you can walk to us in about 10 minutes, past the Radisson hotel, down Lapinrinne and along Lapinlahdenkatu to the main gate.",
+                        "From the Ruoholahti metro station, in approximately the same time via Itämerenkatu and Mechelininkatu and through the southern entrance.",
+                        "From the Central Railway Station you can walk here in about 20 minutes using the Baana, which is also suitable for biking. When coming via Baana, ascend to Pohjoinen Rautatienkatu and go past the K-Market to the main entrance."
+                    ]
+                },
+                {
+                    "id": 1,
+                    "title": "By car",
+                    "text": ["Arriving from the north, turn from Mechelininkatu onto Pohjoinen Rautatienkatu, then immediately right onto Lapinlahdenkatu and again to the right through the main gate. From the east, drive via Helsinginkatu and Mannerheimintie to Pohjoinen Rautatienkatu. Coming from the west, drive from Porkkalankatu onto Mechelininkatu, from which you can enter through the southern entrance.",
+                        "Arriving at the Maria 01 -area, you can immediately find a paid parking area. You can pay using the ticket machine or the EasyPark or ParkMan apps. On Lapinlahdentie between the cemeteries there is also an opportunity for free short term parking. Road side parking elsewhere in the vicinity is paid. There is usually a limited number of parking spaces so we recommend using public transit."
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "By Public Transit",
+                    "text": ["The nearest tram stop is “Maria” on Mechelininkatu, and on it stops tram number 8. From the Central Railway Station you can take trams 7 or 9, that will stop on the “Ruoholahden villat” stop. The closest metro station is in Kamppi. The bus stop closest to us is “Leppäsuonkatu”, and is served by lines 24 and 192."
+                    ]
+                }
+            ],
             "map": {
                 "embedsrc": "https://www.openstreetmap.org/export/embed.html?bbox=24.9192586%2C60.165855%2C24.923737%2C60.167041&layer=mapnik&marker=60.16645%2C24.92145",
                 "bigmaptext": "Large map"

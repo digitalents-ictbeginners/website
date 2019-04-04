@@ -15,6 +15,13 @@ export default class Location extends React.Component {
 
   render() {
     const data = this.props.data;
+
+    const arrivalmethods = data.directions.arrivalmethods.map(e => {
+      return (
+        <LocationDropdown data={e} />
+      );
+    });
+
     return (
       <div className="location">
         <div id={data.id} className="locationAnchor"/>
@@ -38,9 +45,7 @@ export default class Location extends React.Component {
               <p>{data.directions.intro.text[0]}</p>
               <p>{data.directions.intro.text[1]}</p>
             </div>
-            <LocationDropdown data={data.directions.byfoot}/>
-            <LocationDropdown data={data.directions.bypublictransit}/>
-            <LocationDropdown data={data.directions.bycar}/>
+            {arrivalmethods}
           </div>
 
         </div>
