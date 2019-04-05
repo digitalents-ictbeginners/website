@@ -16,13 +16,6 @@
     border-bottom: 1px solid lightgray;
 }
 
-.aiUnderlined h2 {
-    margin: 0 0 10px 0;
-    font-size: 32px;
-    font-weight: 500;
-    color: #ebbab9;
-}
-
 .applyInfo h1 {
     font-size: 48px;
     font-weight: 500;
@@ -33,7 +26,7 @@
 }
 
 .aiContentWrapper {
-    background-color: rgb(100, 120, 200);
+    background-color: #0072c6;
     padding-bottom: 160px;
 }
 
@@ -103,7 +96,7 @@
 
 
 .aiToApply { 
-    background-color: #efc51f;
+    background-color: #FFC61E;
     color: black; 
     font-size: 17px;
     text-decoration: none;

@@ -2,6 +2,7 @@ import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import "./Footer.css";
 import HelLogo from "../imgs/heltunnus_valk.png";
+import WaveImg from "../imgs/wave.svg";
 
 class Footer extends React.Component {
   render() {
@@ -32,6 +33,7 @@ class Footer extends React.Component {
     }
     return (
       <footer>
+        <img className="ftWave" alt="" src={WaveImg} />
         <div className="ftSitemap">
           {sitemapElems}
         </div>
