@@ -2,7 +2,6 @@ import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import "./Footer.css";
 import HelLogo from "../imgs/heltunnus_valk.png";
-import WaveImg from "../imgs/wave.svg";
 
 class Footer extends React.Component {
   render() {
@@ -33,32 +32,34 @@ class Footer extends React.Component {
     }
     return (
       <footer>
-        <img className="ftWave" alt="" src={WaveImg} />
-        <div className="ftSitemap">
-          {sitemapElems}
+        <div className="ftWave"></div>
+        <div className="ftContentWrapper">
+          <div className="ftSitemap">
+            {sitemapElems}
+          </div>
+          <div className="ftContent">
+            <div className="ftPerson">
+              <i className="fas fa-user fa-2x"></i>
+              <h4>{people[0].title}</h4>
+              <h5>{people[0].name}</h5>
+              <h5>{people[0].email}</h5>
+              <h5>{people[0].mobile}</h5>
+            </div>
+            <div className="ftPerson">
+              <i className="fas fa-user fa-2x"></i>
+              <h4>{people[1].title}</h4>
+              <h5>{people[1].name}</h5>
+              <h5>{people[1].email}</h5>
+              <h5>{people[1].mobile}</h5>
+            </div>
+            <div className="ftLocation">
+              <i className="fas fa-map-marker-alt fa-2x"></i><br/>
+              <span>{data.location.visitaddress.address}</span><br/>
+              <Link className="ftMoreContacts" to={toContacts}><h2>{this.props.navdata.ftMoreContacts}</h2></Link>
+            </div>
+          </div>
+          <img className="ftHelLogo" alt="" src={HelLogo} />
         </div>
-        <div className="ftContent">
-          <div className="ftPerson">
-            <i className="fas fa-user fa-2x"></i>
-            <h4>{people[0].title}</h4>
-            <h5>{people[0].name}</h5>
-            <h5>{people[0].email}</h5>
-            <h5>{people[0].mobile}</h5>
-          </div>
-          <div className="ftPerson">
-            <i className="fas fa-user fa-2x"></i>
-            <h4>{people[1].title}</h4>
-            <h5>{people[1].name}</h5>
-            <h5>{people[1].email}</h5>
-            <h5>{people[1].mobile}</h5>
-          </div>
-          <div className="ftLocation">
-            <i className="fas fa-map-marker-alt fa-2x"></i><br/>
-            <span>{data.location.visitaddress.address}</span><br/>
-            <Link className="ftMoreContacts" to={toContacts}><h2>{this.props.navdata.ftMoreContacts}</h2></Link>
-          </div>
-        </div>
-        <img className="ftHelLogo" alt="" src={HelLogo} />
       </footer>
     )
   }

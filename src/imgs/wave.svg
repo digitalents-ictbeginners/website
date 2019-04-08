@@ -1,1 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432.46 57.15"><defs><style>.cls-1{fill:#0000BF;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M432.46,57.15V2.39H432c-4.5,0-4.5-2.39-9-2.39s-4.5,2.39-9,2.39S409.53,0,405,0s-4.49,2.39-9,2.39S391.55,0,387.05,0s-4.49,2.39-9,2.39S373.57,0,369.07,0s-4.49,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39S337.6,0,333.11,0s-4.5,2.39-9,2.39S319.63,0,315.13,0s-4.49,2.39-9,2.39S301.65,0,297.15,0s-4.5,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39S247.7,0,243.21,0s-4.5,2.39-9,2.39S229.72,0,225.22,0s-4.49,2.39-9,2.39h-.46c-4.49,0-4.49-2.39-9-2.39s-4.49,2.39-9,2.39S193.3,0,188.8,0s-4.49,2.39-9,2.39S175.32,0,170.82,0s-4.49,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39-4.5-2.39-9-2.39-4.5,2.39-9,2.39S103.4,0,98.9,0s-4.49,2.39-9,2.39S85.41,0,80.92,0s-4.5,2.39-9,2.39S67.43,0,62.94,0s-4.5,2.39-9,2.39S49.45,0,45,0s-4.5,2.39-9,2.39S31.47,0,27,0s-4.49,2.39-9,2.39S13.49,0,9,0,4.5,2.39,0,2.39H.37V57.15Z"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 143.00001 7.0000013"
+   version="1.1"
+   id="svg12"
+   sodipodi:docname="wave.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   width="143"
+   height="7">
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="32"
+     inkscape:cx="2.038356"
+     inkscape:cy="-0.044668923"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#0072C6;}</style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3724">
+      <rect
+         id="rect3726"
+         width="143.82001"
+         height="31.629366"
+         x="0"
+         y="-4.0898328"
+         style="stroke-width:0.97632754" />
+    </clipPath>
+  </defs>
+  <title
+     id="title6">Asset 1</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     clip-path="url(#clipPath3724)">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <path
+         class="cls-1"
+         d="m 143,7.0000015 v -4.61 C 138.57812,1.7181265 139.13,1.5258789e-6 134.63,1.5258789e-6 c -4.5,0 -4.5,2.3899999741211 -9,2.3899999741211 -4.5,0 -4.5,-2.3899999741211 -9,-2.3899999741211 -4.5,0 -4.5,2.3899999741211 -9,2.3899999741211 -4.5,0 -4.5,-2.3900015 -9,-2.3900015 -4.5,0 -4.49,2.39 -9,2.39 -4.51,0 -4.51,-2.39 -9,-2.39 -4.49,0 -4.5,2.39 -9,2.39 -4.5,0 -4.51,-2.39 -9,-2.39 -4.49,0 -4.5,2.39 -9,2.39 -4.5,0 -4.55,-2.39 -9,-2.39 -4.45,0 -4.5,2.39 -9,2.39 -4.5,0 -4.53,-2.39 -9,-2.39 -4.47,0 -4.49,2.39 -9,2.39 C 13.12,2.39 13.12,0 8.63,0 4.14,0 4.5,2.39 0,2.39 v 0 4.6100015 z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill:#0072c6"
+         sodipodi:nodetypes="ccssssssssssssssscccc" />
+    </g>
+  </g>
+</svg>
