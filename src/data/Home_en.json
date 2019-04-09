@@ -17,31 +17,31 @@
     "blocks": [
       {
         "id": 0,
-        "img": "placeholder0.png",
+        "img": "projects.png",
         "title": "Practice and work on real projects",
         "text": "Because things are best learned by doing. We will give you a modern work environment where you can study by yourself and also participate in group projects.",
-        "bgcolor": "#4d64c1"
+        "bgcolor": "#ebbab9"
       },
       {
         "id": 1,
-        "img": "placeholder1.png",
+        "img": "support.png",
         "title": "Supportive colleagues",
         "text": "It’s more fun to tackle problems together. While learning code you get to share your experiences and learn from your peers as well.",
         "bgcolor": "#08415c"
       },
       {
         "id": 2,
-        "img": "placeholder2.png",
+        "img": "teacher.png",
         "title": "Helpful staff",
         "text": "Ask anything, anytime! During your stay you will be supported by instructors and a teacher that will seek to help you with everything they can.",
-        "bgcolor": "#000000"
+        "bgcolor": "#4c64d1"
       },
       {
         "id": 3,
-        "img": "placeholder3.png",
+        "img": "forward.png",
         "title": "Guidance onwards",
         "text": "While here your working skills will grow and your coding abilities develop. You’ll gain valuable experience that will grant you more opportunities in work and education.",
-        "bgcolor": "#08415c"
+        "bgcolor": "#efc51f"
       }
     ]
   },

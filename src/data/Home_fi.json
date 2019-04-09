@@ -17,28 +17,28 @@
     "blocks": [
       {
         "id": 0,
-        "img": "placeholder0.png",
+        "img": "projects.png",
         "title": "Harjoituksia ja oikeita projekteja",
         "text": "Koska asiat oppii parhaiten tekemällä. Työskentely tapahtuu modernisti niin itsenäisen opiskelun kuin ryhmäprojektienkin parissa.",
         "bgcolor": "#ebbab9"
       },
       {
         "id": 1,
-        "img": "placeholder1.png",
+        "img": "support.png",
         "title": "Vertaistukea",
         "text": "On kivempaa olla pulassa yhdessä. Koodausta opetellessasi pääset jakamaan kokemuksiasi muiden alasta kiinnostuneiden kanssa. ",
         "bgcolor": "#08415c"
       },
       {
         "id": 2,
-        "img": "placeholder2.png",
+        "img": "teacher.png",
         "title": "Avustavat ohjaajat",
         "text": "Kysy mitä vaan, milloin vaan! Työkokeilun aikana tukenasi ovat ohjaajat ja opettaja, jotka pyrkivät auttamaan kaikenlaisissa tilanteissa.",
         "bgcolor": "#4c64d1"
       },
       {
         "id": 3,
-        "img": "placeholder3.png",
+        "img": "forward.png",
         "title": "Apua jatkopolulle ja työnhakuun",
         "text": "Harjoittelussa ammatilliset valmiutesi kehittyvät ja taitosi kasvavat. Työkokemuksen karttuessa parannat mahdollisuuksiasi päästä opiskelemaan tai suoraan työhön.",
         "bgcolor": "#efc51f"
