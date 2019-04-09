@@ -14,6 +14,9 @@
 #docs preview build
 /docs/_build
 
+#editor stuff
+/.vscode
+
 # misc
 .DS_Store
 .env.local
