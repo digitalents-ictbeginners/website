@@ -1,7 +1,3 @@
-.tnbElemLink {
-    text-decoration: none;
-}
-
 .tnbElem {
     display: flex;
     flex-direction: column;
