@@ -41,14 +41,14 @@
   margin-bottom: 5px;
 }
 
-.locationDirections {
-  margin-bottom: 30px;
-}
-
 .locationDirectionsTitle {
   font-size: 26px;
   margin: 0 0 30px 0;
   text-align: center;
+}
+
+.locationDirections {
+  margin-bottom: 30px;
 }
 
 .locationDirIntro {
@@ -63,6 +63,25 @@
   justify-items: center;
   gap: 50px 20px;
   grid-template-columns: repeat(auto-fill, 400px);
+}
+
+.locationMapWrapper {
+  width: 350px;
+  height: 350px;
+}
+
+.locationMap {
+  filter: saturate(50%);
+  height: 350px;
+  width: 100%;
+}
+
+.locationBigMapLink {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #08415c;
 }
 
 .locationDirectionsGraphic {
@@ -96,25 +115,6 @@
 
 .locationDirGrZoomOverlay i {
   margin-top: 100px;
-}
-
-.locationMapWrapper {
-  width: 350px;
-  height: 350px;
-}
-
-.locationMap {
-  filter: saturate(50%);
-  height: 350px;
-  width: 100%;
-}
-
-.locationBigMapLink {
-  display: block;
-  margin-top: 10px;
-  text-align: center;
-  font-size: 20px;
-  color: #08415c;
 }
 
 @media only screen and (max-width: 600px){

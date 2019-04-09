@@ -3,12 +3,13 @@ import "./Location.css";
 import LocationDropdown from "./LocationDropdown";
 import ArrivalGraphic from "../../imgs/map.svg";
 
-export default class Location extends React.Component {
+class Location extends React.Component {
   constructor(){
     super();
     this.openGraphic = this.openGraphic.bind(this);
   }
 
+  //Just an alias for the function that sets the image and opens the overlay
   openGraphic(){
     this.props.overlay.set(ArrivalGraphic);
   }
@@ -16,12 +17,18 @@ export default class Location extends React.Component {
   render() {
     const data = this.props.data;
 
+    //Map arrival method data into LocationDropdown components
     const arrivalmethods = data.directions.arrivalmethods.map(e => {
       return (
         <LocationDropdown data={e} />
       );
     });
 
+    //Render parts:
+    //The anchor for hash navigation,
+    //the title and the addresses,
+    //the directions elements,
+    //the maps/graphics
     return (
       <div className="location">
         <div id={data.id} className="locationAnchor"/>
@@ -69,3 +76,5 @@ export default class Location extends React.Component {
     )
   }
 }
+
+export default Location;
