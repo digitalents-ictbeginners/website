@@ -4,9 +4,10 @@
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{fill:#EFC51F;}
-	.st2{fill:#08415C;}
-	.st3{fill:none;stroke:#B3B3B3;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#FFC61E;}
+	.st2{fill:#9FC9EB;}
+	.st4{fill:#0072C6;}
+	.st3{fill:none;stroke:#777;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <rect class="st0" width="1000" height="1000"/>
 <path class="st1" d="M461.6,480.1"/>
@@ -32,12 +33,12 @@
 	<polygon class="st1" points="673.5,869.2 744.6,861.3 755.3,869.2 744.6,877.2 	"/>
 </g>
 <g>
-	<polygon class="st2" points="222.9,786.9 234.7,810.7 261,814.5 241.9,833.1 246.4,859.3 222.9,847 199.3,859.3 203.8,833.1 
+	<polygon class="st4" points="222.9,786.9 234.7,810.7 261,814.5 241.9,833.1 246.4,859.3 222.9,847 199.3,859.3 203.8,833.1 
 		184.8,814.5 211.1,810.7 	"/>
 </g>
 <g>
 	<path class="st3" d="M239.5,805.5c0-47,123-85,275-85"/>
 </g>
 <line class="st3" x1="568.5" y1="-0.5" x2="494.5" y2="999.5"/>
-<polygon class="st2" points="735,747 735,787 745.5,787 745.5,762.4 765.2,787 775,787 775,747 765.2,747 765.2,771 745.5,747 "/>
+<polygon class="st4" points="735,747 735,787 745.5,787 745.5,762.4 765.2,787 775,787 775,747 765.2,747 765.2,771 745.5,747 "/>
 </svg>

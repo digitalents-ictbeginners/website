@@ -39,11 +39,11 @@
 
 .personEmail {
     text-decoration: none;
-    color: #08415c;
+    color: #0072C6;
 }
 
 .personEmail:hover {
-    color: #4d64c1;
+    color: #9FC9EB;
 }
 
 .personImg {
@@ -64,7 +64,7 @@
     grid-template-columns: 32px 1fr 32px;
     grid-template-rows: 32px 1fr 32px;
     align-items: center;
-    background-color: rgba(235, 186, 185, 0.3);
+    background-color: #FFE977;
     box-shadow: 2px 2px 5px grey;
     border-radius: 3px;
     width: 320px;
@@ -83,7 +83,7 @@
 
 .personQuote i {
     font-size: 20px;
-    color: rgba(8, 65, 92,0.9);
+    color: #0072C6;
 }
 
 .personRightQuote {
