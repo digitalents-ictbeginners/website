@@ -28,7 +28,7 @@ class Location extends React.Component {
     //The anchor for hash navigation,
     //the title and the addresses,
     //the directions elements,
-    //the maps/graphics
+    //the maps/graphics/video
     return (
       <div className="location">
         <div id={data.id} className="locationAnchor"/>
@@ -66,10 +66,9 @@ class Location extends React.Component {
               <i className="fas fa-search-plus"></i> {data.directions.map.bigmaptext}
             </a>
           </div>
-          <div className="locationDirectionsGraphic">
-            <img alt="" src={ArrivalGraphic}/>
-            <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
-          </div>
+
+          <iframe className="locationDirectionsVideo" src={data.directions.ytembedsrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
         </div>
 
       </div>
@@ -78,3 +77,8 @@ class Location extends React.Component {
 }
 
 export default Location;
+
+/*<div className="locationDirectionsGraphic">
+  <img alt="" src={ArrivalGraphic}/>
+  <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
+</div>*/

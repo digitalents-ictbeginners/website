@@ -51,10 +51,13 @@ src/components/Contacts/Location.css
 
 :locationBigMapLink: The link to a bigger version of the map.
 
+:locationDirectionsVideo: Youtube arrival help video embed iframe.
+
 :locationDirectionsGraphic: Wrapper for the helpful directions graphic.
+                            **Probably deprecated.**
 
 :locationDirGrZoomOverlay: The overlay on the graphic that indicates it can be
-                           clicked to zoom.
+                           clicked to zoom. **Probably deprecated.**
 
 
 src/components/Contacts/LocationDropdown.js

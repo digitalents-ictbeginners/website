@@ -192,6 +192,8 @@ Data related to finding one's way to Digitalents Academy.
 :map.bigmaptext: The text of link that leads to opening a big map in a new
                  tab.
 
+:ytembedsrc: The source URL for embedding a youtube video.
+
 people
 ------
 

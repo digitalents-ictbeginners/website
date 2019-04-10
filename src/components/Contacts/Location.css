@@ -84,7 +84,12 @@
   color: #08415c;
 }
 
-.locationDirectionsGraphic {
+.locationDirectionsVideo {
+  width: 350px;
+  height: 350px;
+}
+
+/*.locationDirectionsGraphic {
   position: relative;
   background-color: lightgrey;
   width: 350px;
@@ -115,7 +120,7 @@
 
 .locationDirGrZoomOverlay i {
   margin-top: 100px;
-}
+}*/
 
 @media only screen and (max-width: 600px){
   .locationMap{
