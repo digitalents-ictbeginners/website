@@ -20,7 +20,7 @@ class Location extends React.Component {
     //Map arrival method data into LocationDropdown components
     const arrivalmethods = data.directions.arrivalmethods.map(e => {
       return (
-        <LocationDropdown data={e} />
+        <LocationDropdown key={e.id} data={e} />
       );
     });
 
@@ -67,7 +67,7 @@ class Location extends React.Component {
             </a>
           </div>
 
-          <iframe className="locationDirectionsVideo" src={data.directions.ytembedsrc} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className="locationDirectionsVideo" title="dirvid" src={data.directions.ytembedsrc} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           
         </div>
 
