@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/teacher.73b7e5a6.png"
   },
   {
-    "revision": "6e9332025cea9fa76f92",
+    "revision": "e8b1fbb98ca87e99de3d",
     "url": "/website/static/css/main.9f939518.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/website/static/media/support.402ebe8d.png"
   },
   {
-    "revision": "6e9332025cea9fa76f92",
-    "url": "/website/static/js/main.6e933202.chunk.js"
+    "revision": "e8b1fbb98ca87e99de3d",
+    "url": "/website/static/js/main.e8b1fbb9.chunk.js"
   },
   {
     "revision": "409ede51669f3cf121e323615ef4e017",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/DTA_pienilogo_musta.6a4e7120.svg"
   },
   {
-    "revision": "17d4cba0f331f0e0ee3ab3d8f840f8fd",
+    "revision": "e70f3733b636c3a39b6919c7299542d8",
     "url": "/website/index.html"
   }
 ];
