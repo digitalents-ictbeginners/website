@@ -5,7 +5,7 @@ import LocationDropdown from "./LocationDropdown";
 class Location extends React.Component {
   constructor(){
     super();
-    this.openGraphic = this.openGraphic.bind(this);
+    //this.openGraphic = this.openGraphic.bind(this);
   }
 
   //Just an alias for the function that sets the image and opens the overlay

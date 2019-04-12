@@ -13,8 +13,8 @@ src/data/navData\_\*.json
 Data file for everything related to navigation. Comes in Finnish and English
 versions.
 
-:navlogo: Filename, relative to src/imgs with no preceding slash, of the
-          small logo that appears at the top nav element in any view.
+:logo: Filename, relative to src/imgs with no preceding slash, of the
+       logo used on the site.
 
 :navdata: Nested objects that describe the navigation structure of the site.
           Top level objects are links to different pages, while the subLinks

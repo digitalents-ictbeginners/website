@@ -27,6 +27,10 @@ Footer styling.
 
 :ftMoreContacts: The shortcut link element to the contacts page.
 
+:ftLogos: Container for logos.
+
+:ftDTHLogo: The Digitalents Helsinki logo.
+
 :ftHelLogo: The Helsinki logo.
 
 src/components/ImageOverlay.js
