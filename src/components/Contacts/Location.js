@@ -1,7 +1,6 @@
 import React from "react";
 import "./Location.css";
 import LocationDropdown from "./LocationDropdown";
-import ArrivalGraphic from "../../imgs/map.svg";
 
 class Location extends React.Component {
   constructor(){
@@ -10,9 +9,10 @@ class Location extends React.Component {
   }
 
   //Just an alias for the function that sets the image and opens the overlay
-  openGraphic(){
+  //currently not used
+  /*openGraphic(){
     this.props.overlay.set(ArrivalGraphic);
-  }
+  }*/
 
   render() {
     const data = this.props.data;
@@ -78,6 +78,7 @@ class Location extends React.Component {
 
 export default Location;
 
+//unused zoomable graphic element:
 /*<div className="locationDirectionsGraphic">
   <img alt="" src={ArrivalGraphic}/>
   <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>

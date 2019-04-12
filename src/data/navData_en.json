@@ -1,5 +1,5 @@
 {
-    "navlogo": "DTA_pienilogo_musta.svg",
+    "logo": "DTA_pienilogo_musta.svg",
     "navdata": [
         {"id": 0, "title": "Home", "link": "/", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Introduction", "link": "/", "hash": "#intro"},
