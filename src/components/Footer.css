@@ -9,8 +9,8 @@ footer {
 .ftSitemap {
   width: 90%;
   max-width: 1000px;
-  margin: 0 auto 40px auto;
-  padding: 0 0 20px 0;
+  margin: 0 auto 50px auto;
+  padding: 20px 0 40px 0;
   display: grid;
   grid-auto-flow: column;
   justify-items: center;
@@ -41,6 +41,7 @@ footer {
 .ftContacts {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 30px 0 0 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(180px, 1fr));
   justify-items: center;
@@ -65,10 +66,10 @@ footer {
 
 .ftLocation {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.75;
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .ftMoreContacts {
@@ -77,13 +78,28 @@ footer {
 
 .ftMoreContacts h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.ftLogos {
+  display: grid;
+  max-width: 700px;
+  padding: 0 40px;
+  margin: 100px auto;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.ftDTHLogo {
+  display: block;
+  width: 250px;
+  justify-self: left;
 }
 
 .ftHelLogo {
   display: block;
-  margin: 50px auto;
-  width: 200px;
+  width: 250px;
+  justify-self: right;
 }
 
 @media only screen and (max-width: 600px){
@@ -97,11 +113,19 @@ footer {
   .ftPerson:last-of-type {
     grid-row: 2;
   }
-  .ftContent {
+  .ftContacts {
     grid-template-columns: 1fr;
   }
   .ftLocation {
     margin-top: 50px;
     grid-row: 3;
+  }
+  .ftLogos {
+    grid-auto-flow: row;
+    margin: 50px auto;
+  }
+  .ftDTHLogo, .ftHelLogo {
+    justify-self: center;
+    margin: 50px 0;
   }
 }

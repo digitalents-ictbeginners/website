@@ -2,6 +2,7 @@ import React from "react";
 import {HashLink as Link} from "react-router-hash-link";
 import "./Footer.css";
 import HelLogo from "../imgs/heltunnus_valk.png";
+import DTHLogo from "../imgs/digitalents_logo.png";
 
 class Footer extends React.Component {
   render() {
@@ -76,7 +77,10 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <img className="ftHelLogo" alt="" src={HelLogo} />
+        <div className="ftLogos">
+          <img className="ftDTHLogo" alt="" src={DTHLogo} />
+          <img className="ftHelLogo" alt="" src={HelLogo} />
+        </div>
 
       </footer>
     )
