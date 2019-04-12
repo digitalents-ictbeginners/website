@@ -1,7 +1,7 @@
 {
   "main.css": "/website/static/css/main.9f939518.chunk.css",
-  "main.js": "/website/static/js/main.e8b1fbb9.chunk.js",
-  "main.js.map": "/website/static/js/main.e8b1fbb9.chunk.js.map",
+  "main.js": "/website/static/js/main.0aea5df0.chunk.js",
+  "main.js.map": "/website/static/js/main.0aea5df0.chunk.js.map",
   "static/js/1.8e87eee3.chunk.js": "/website/static/js/1.8e87eee3.chunk.js",
   "static/js/1.8e87eee3.chunk.js.map": "/website/static/js/1.8e87eee3.chunk.js.map",
   "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
@@ -21,6 +21,6 @@
   "static/media/digitalents_logo.png": "/website/static/media/digitalents_logo.4126ed35.png",
   "static/css/main.9f939518.chunk.css.map": "/website/static/css/main.9f939518.chunk.css.map",
   "index.html": "/website/index.html",
-  "precache-manifest.8860fea8b413eaf08af1f0c2a421ace1.js": "/website/precache-manifest.8860fea8b413eaf08af1f0c2a421ace1.js",
+  "precache-manifest.c85a1117f586cb3b1a601033b1010a5e.js": "/website/precache-manifest.c85a1117f586cb3b1a601033b1010a5e.js",
   "service-worker.js": "/website/service-worker.js"
 }
