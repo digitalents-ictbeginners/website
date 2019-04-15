@@ -10,7 +10,6 @@ class Landing extends React.Component {
             scrollIndVis: true
         }
         this.handleScroll = this.handleScroll.bind(this);
-        this.logoimg = require("../../imgs/" + this.props.data.logoimg)
     }
 
     componentDidMount(){
@@ -57,7 +56,7 @@ class Landing extends React.Component {
                 <div className="landing">
                     <div className="landingBg"></div>
                     <div className="landingContent">
-                        <img className="landingLogo" alt="" src={this.logoimg} />
+                        <img className="landingLogo" alt="" src={this.props.logo} />
                         <div className="sloganContainer">
                             <h1>{data.slogan}</h1>
                         </div>

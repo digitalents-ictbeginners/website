@@ -7,7 +7,7 @@
     text-align: end;
 }
 
-.fixedOverlay i {
+.foCloser {
     margin: 20px 50px 20px 0;
     color: white;
     opacity: 0.8;

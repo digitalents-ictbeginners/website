@@ -4,22 +4,33 @@ import "./Footer.css";
 import HelLogo from "../imgs/heltunnus_valk.png";
 import LocIcon from "../imgs/icons/hkiiconsijainti.svg";
 import PersonIcon from "../imgs/icons/hkiiconperson.svg";
+import DTHLogo from "../imgs/digitalents_logo.png";
 
 class Footer extends React.Component {
   render() {
+    //alias for contact data from props
     const data = this.props.contactData;
+    //alias for the people part of the data
     const people = data.people.peoplecards;
+
+    //Map data from navdata to JSX to build sitemap
     const sitemapElems = this.props.navdata.navdata.map(e => {
-    const sitemapSubElems = e.subLinks.map(se => {
-      const toObj = {
-        pathname: process.env.PUBLIC_URL + se.link,
-        search: this.props.english ? "?lang=en" : "",
-        hash: se.hash
-      }
-      return (
-        <Link key={se.id} to={toObj} className="ftSitemapLink" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}>{se.name}</Link>
-      );
-    });
+
+      //Map data to JSX for sub links
+      const sitemapSubElems = e.subLinks.map(se => {
+
+        //Link data for sublinks
+        const toObj = {
+          pathname: process.env.PUBLIC_URL + se.link,
+          search: this.props.english ? "?lang=en" : "",
+          hash: se.hash
+        }
+        //return link element for rendering
+        return (
+          <Link key={se.id} to={toObj} className="ftSitemapLink" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start"})}>{se.name}</Link>
+        );
+      });
+      //return list of links for a page
       return (
         <div key={e.id} className="ftSitemapSub">
           <h4>{e.title}</h4>
@@ -27,11 +38,18 @@ class Footer extends React.Component {
         </div>
       );
     });
+
+    //Link data object for shortcut link to contacts page
     const toContacts = {
       pathname: process.env.PUBLIC_URL + "/yhteystiedot",
       search: this.props.english ? "?lang=en" : "",
       hash: "#top"
     }
+
+    //Render all the parts:
+    //The sitemap,
+    //The important contacts, and
+    //The Helsinki logo
     return (
       <footer>
         <div className="ftWave"></div>
@@ -39,7 +57,7 @@ class Footer extends React.Component {
           <div className="ftSitemap">
             {sitemapElems}
           </div>
-          <div className="ftContent">
+          <div className="ftContacts">
             <div className="ftPerson">
               <img width="30px" alt="" src={PersonIcon} />
               <h4>{people[0].title}</h4>
@@ -60,7 +78,12 @@ class Footer extends React.Component {
               <Link className="ftMoreContacts" to={toContacts}><h2>{this.props.navdata.ftMoreContacts}</h2></Link>
             </div>
           </div>
-          <img className="ftHelLogo" alt="" src={HelLogo} />
+
+          <div className="ftLogos">
+            <img className="ftDTHLogo" alt="" src={DTHLogo} />
+            <img className="ftHelLogo" alt="" src={HelLogo} />
+          </div>
+
         </div>
       </footer>
     )

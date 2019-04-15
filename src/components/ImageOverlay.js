@@ -9,7 +9,7 @@ class ImageOverlay extends React.Component {
 
         return (
             <div className={overlayClass}>
-                <i onClick={this.props.closeFunc} className="fas fa-times fa-4x"></i>
+                <i onClick={this.props.closeFunc} className="foCloser fas fa-times fa-4x"></i>
                 <div className="foContent">
                     <img alt="" src={this.props.img}/>
                 </div>

@@ -6,11 +6,14 @@ class People extends React.Component{
     
     render(){
         const data = this.props.data;
+
+        //Map from data into Person components
         const people = data.peoplecards.map(e => {
             return (
                 <Person key={e.id} data={e} />
             );
         });
+        //Render the layout with the Person elements
         return (
             <div className="people">
                 <div id={data.id} className="peopleAnchor" />

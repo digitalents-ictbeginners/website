@@ -36,7 +36,7 @@ class App extends Component {
     window.addEventListener("resize", this.setView);
 
     this.navdata = navDataFI;
-    this.navLogo = require("./imgs/" + this.navdata.navlogo);
+    this.logo = require("./imgs/" + this.navdata.logo);
     
     //this.Home = React.lazy(() => import("./pages/Home"));
     //this.Contact = React.lazy(() => import("./pages/Contact"));
@@ -132,8 +132,8 @@ class App extends Component {
     //select sidebar or top navbar based on mobile state
     const navComponent =
       this.state.mobile
-      ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.navLogo}/>
-      : <TopNavBar setSubNav={this.setSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.navLogo}/>;
+      ? <SideBar open={this.state.sidebarOpen} toggle={this.toggleSidebar} english={this.state.english} langToggle={this.toggleLanguage} data={navData} logo={this.logo}/>
+      : <TopNavBar setSubNav={this.setSubNav} english={this.state.english} langToggle={this.toggleLanguage} data={navData} openTab={this.state.navTab} logo={this.logo}/>;
 
     //select contactData based on language state
     const contactData = this.state.english ? contactDataEN : contactDataFI;
@@ -145,7 +145,7 @@ class App extends Component {
             <title>Digitalents Academy</title>
           </Helmet>
           {navComponent}
-          <Route exact path={baseUrl + "/"} render={props => <Home {...props} mobile={this.state.mobile} english={this.state.english}/>} />
+          <Route exact path={baseUrl + "/"} render={props => <Home {...props} logo={this.logo} mobile={this.state.mobile} english={this.state.english}/>} />
           <Route exact path={baseUrl + "/yhteystiedot"} render={props => <Contact {...props} mobile={this.state.mobile} english={this.state.english} contactData={contactData} overlay={overlayFuncs}/>} />
           <Footer english={this.state.english} navdata={navData} contactData={contactData}/>
           <ImageOverlay img={this.state.overlayImg} open={this.state.overlayOpen} closeFunc={this.closeOverlay}/>

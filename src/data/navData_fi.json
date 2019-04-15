@@ -1,5 +1,5 @@
 {
-    "navlogo": "DTA_pienilogo_musta.svg",
+    "logo": "DTA_pienilogo_musta.svg",
     "navdata": [
         {"id": 0, "title": "Etusivu", "link": "/", "hash": "#top", "subLinks": [
             {"id": 0, "name": "Esittely", "link": "/", "hash": "#intro"},

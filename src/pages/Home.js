@@ -13,7 +13,7 @@ export default class Home extends React.Component {
     const data = this.props.english ? dataEN : dataFI;
     return (
       <div id="top" className="home">
-        <Landing data={data.landing}/>
+        <Landing data={data.landing} logo={this.props.logo}/>
         <Intro data={data.intro}/>
         <InfoGrid data={data.infogrid} mobile={this.props.mobile}/>
         <BlogPreview data={data.blogpreview}/>

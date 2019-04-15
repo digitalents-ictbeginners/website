@@ -1,27 +1,34 @@
 import React from "react";
 import "./Location.css";
 import LocationDropdown from "./LocationDropdown";
-import ArrivalGraphic from "../../imgs/map.svg";
 
-export default class Location extends React.Component {
+class Location extends React.Component {
   constructor(){
     super();
-    this.openGraphic = this.openGraphic.bind(this);
+    //this.openGraphic = this.openGraphic.bind(this);
   }
 
-  openGraphic(){
+  //Just an alias for the function that sets the image and opens the overlay
+  //currently not used
+  /*openGraphic(){
     this.props.overlay.set(ArrivalGraphic);
-  }
+  }*/
 
   render() {
     const data = this.props.data;
 
+    //Map arrival method data into LocationDropdown components
     const arrivalmethods = data.directions.arrivalmethods.map(e => {
       return (
-        <LocationDropdown data={e} />
+        <LocationDropdown key={e.id} data={e} />
       );
     });
 
+    //Render parts:
+    //The anchor for hash navigation,
+    //the title and the addresses,
+    //the directions elements,
+    //the maps/graphics/video
     return (
       <div className="location">
         <div id={data.id} className="locationAnchor"/>
@@ -59,13 +66,20 @@ export default class Location extends React.Component {
               <i className="fas fa-search-plus"></i> {data.directions.map.bigmaptext}
             </a>
           </div>
-          <div className="locationDirectionsGraphic">
-            <img alt="" src={ArrivalGraphic}/>
-            <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
-          </div>
+
+          <iframe className="locationDirectionsVideo" title="dirvid" src={data.directions.ytembedsrc} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          
         </div>
 
       </div>
     )
   }
 }
+
+export default Location;
+
+//unused zoomable graphic element:
+/*<div className="locationDirectionsGraphic">
+  <img alt="" src={ArrivalGraphic}/>
+  <div onClick={this.openGraphic} className="locationDirGrZoomOverlay"><i className="fas fa-search-plus fa-9x"></i></div>
+</div>*/
